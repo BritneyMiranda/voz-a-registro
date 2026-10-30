@@ -45,6 +45,21 @@ def leer_json(respuesta: str) -> dict:
     return objeto if isinstance(objeto, dict) else {}
 
 
+def _numero(valor):
+    """El modelo a veces devuelve «ciento doce» o «6.500 soles» en vez de un número: se pasa por la misma
+    conversión de números dichos que la transcripción. Si no hay número, None."""
+    if isinstance(valor, (int, float)):
+        return float(valor)
+    m = re.search(r"\d+(?:\.\d+)?", normalizar(str(valor or "")))
+    return float(m.group(0)) if m else None
+
+
+def _moneda(texto):
+    """El modelo a veces escribe «S/» o «soles» aunque el prompt pide «PEN»: es formato, no contenido."""
+    t = normalizar(str(texto or ""))
+    return "USD" if re.search(r"usd|dolar|\$|us", t) else "PEN"
+
+
 def _par(d, clave):
     v = d.get(clave)
     return (v.get("valor"), v.get("cita")) if isinstance(v, dict) else (v, None)
@@ -57,8 +72,7 @@ def a_registro(respuesta: str, esquema: str, cfg: dict):
     if esquema == "entrevista":
         for c in ("anios_experiencia", "ultimo_puesto", "nivel_ingles"):
             campos[c], evid[c] = _par(d, c)
-        if campos["anios_experiencia"] is not None:
-            campos["anios_experiencia"] = float(campos["anios_experiencia"])
+        campos["anios_experiencia"] = _numero(campos["anios_experiencia"])
         if campos["nivel_ingles"]:
             campos["nivel_ingles"] = {"basico": "básico"}.get(normalizar(campos["nivel_ingles"]),
                                                               normalizar(campos["nivel_ingles"]))
@@ -68,8 +82,8 @@ def a_registro(respuesta: str, esquema: str, cfg: dict):
         campos["tecnologias"] = [canon.get(normalizar(x), x) for x in tecnos or []]
         evid["tecnologias"] = list(tecnos or [])                 # cada tecnología debe estar en el texto
         sal, evid["pretension_salarial"] = _par(d, "pretension_salarial")
-        campos["pretension_salarial"] = ({"monto": float(sal["monto"]), "moneda": sal.get("moneda", "PEN")}
-                                         if isinstance(sal, dict) and sal.get("monto") is not None else None)
+        monto = _numero(sal.get("monto")) if isinstance(sal, dict) else None
+        campos["pretension_salarial"] = {"monto": monto, "moneda": _moneda(sal.get("moneda"))} if monto else None
         disp, evid["disponibilidad"] = _par(d, "disponibilidad")
         campos["disponibilidad"] = (resolver_fecha(normalizar(str(disp)), date.fromisoformat(cfg["fecha_escena"]))
                                     if disp else None)
@@ -88,7 +102,7 @@ def a_registro(respuesta: str, esquema: str, cfg: dict):
             tam = next((t for t, al in cp["alias_tamanos"].items() if any(re.fullmatch(a, tam) for a in al)),
                        cp["tamano_por_defecto"][producto])
             tam = tam if tam in cp["carta"][producto] else cp["tamano_por_defecto"][producto]
-            campos["items"].append({"producto": producto, "tamano": tam, "cantidad": int(it.get("cantidad") or 0),
+            campos["items"].append({"producto": producto, "tamano": tam, "cantidad": int(_numero(it.get("cantidad")) or 0),
                                     "precio_unitario": cp["carta"][producto][tam]})
             evid["items"].append(cita)
         promo, evid["promocion"] = _par(d, "promocion")
@@ -100,7 +114,7 @@ def a_registro(respuesta: str, esquema: str, cfg: dict):
         pago, evid["metodo_pago"] = _par(d, "metodo_pago")
         campos["metodo_pago"] = normalizar(pago) if pago else None
         total, evid["total_dicho"] = _par(d, "total_dicho")
-        campos["total_dicho"] = float(total) if total is not None else None
+        campos["total_dicho"] = _numero(total)
     return campos, evid
 
 
