@@ -18,7 +18,8 @@ celdas = [
            "la corrida en GPU muere sin transcribir nada. Se instalan aquí y se agregan a `LD_LIBRARY_PATH`."),
     ("code", "!pip install -q nvidia-cublas-cu12 'nvidia-cudnn-cu12==9.*'\n"
              "import os, nvidia.cublas.lib, nvidia.cudnn.lib\n"
-             "libs = [os.path.dirname(nvidia.cublas.lib.__file__), os.path.dirname(nvidia.cudnn.lib.__file__)]\n"
+             "# son paquetes sin __init__.py: __file__ es None, la carpeta está en __path__\n"
+             "libs = [list(nvidia.cublas.lib.__path__)[0], list(nvidia.cudnn.lib.__path__)[0]]\n"
              "os.environ['LD_LIBRARY_PATH'] = ':'.join(libs + [os.environ.get('LD_LIBRARY_PATH', '')])\n"
              "print(os.environ['LD_LIBRARY_PATH'])"),
     ("code", "import ctranslate2, torch\nprint('GPUs que ve ctranslate2:', ctranslate2.get_cuda_device_count())\n"
