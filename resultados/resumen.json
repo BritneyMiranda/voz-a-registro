@@ -1,0 +1,200 @@
+{
+ "transcripcion": [
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "clips": 10,
+   "wer": 0.07068299387797258,
+   "wer_ic95": [
+    0.059403195283043234,
+    0.0822128448973823
+   ],
+   "cer": 0.039844384037017316,
+   "segundos_por_minuto": 142.08999999999997,
+   "vram_pico_mb": NaN,
+   "vram_total_usada_mb": NaN,
+   "dispositivo": "cpu",
+   "gpu": null
+  }
+ ],
+ "comparaciones_texto": [],
+ "glosario": [],
+ "registro": [
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "entrevista",
+   "campo": "anios_experiencia",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "entrevista",
+   "campo": "disponibilidad",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "entrevista",
+   "campo": "nivel_ingles",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "entrevista",
+   "campo": "pretension_salarial",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "entrevista",
+   "campo": "tecnologias",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "entrevista",
+   "campo": "ultimo_puesto",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "pedido",
+   "campo": "direccion_entrega",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "pedido",
+   "campo": "items",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "pedido",
+   "campo": "metodo_pago",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "pedido",
+   "campo": "promocion",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "tarea": "pedido",
+   "campo": "total_dicho",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  }
+ ],
+ "macro_f1": [
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "macro_f1_ingles": 1.0
+  }
+ ],
+ "validacion": [
+  {
+   "corrida": "L0_large-v3-turbo_int8_cpu_glosario-ninguno",
+   "metodo": "reglas",
+   "errores_plantados": 3,
+   "atrapados": 3,
+   "perdidos": 0,
+   "registros_rotos": 5,
+   "rotos_atrapados": 5,
+   "rotos_perdidos": 0,
+   "registros_sanos": 0,
+   "falsas_alarmas": 0,
+   "diagnosticos_evaluables": 5,
+   "diagnosticos_correctos": 4
+  }
+ ]
+}

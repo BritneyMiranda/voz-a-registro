@@ -1,0 +1,11 @@
+corrida,clip,tarea,wer,cer,dispositivo,precision,gpu,segundos_por_minuto,vram_pico_mb,vram_total_usada_mb
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E01,entrevista,0.05596107055961071,0.036499560246262094,cpu,int8_float32,,96.04,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E02,entrevista,0.0728862973760933,0.030975735673722252,cpu,int8_float32,,76.45,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E03,entrevista,0.05649717514124294,0.03076923076923077,cpu,int8_float32,,183.01,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E04,entrevista,0.07894736842105263,0.055990367248645395,cpu,int8_float32,,159.3,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E05,entrevista,0.03474903474903475,0.022758620689655173,cpu,int8_float32,,167.97,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L01,pedido,0.07272727272727272,0.044270833333333336,cpu,int8_float32,,195.02,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L02,pedido,0.07906976744186046,0.0412725709372313,cpu,int8_float32,,132.24,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L03,pedido,0.08095238095238096,0.06291706387035272,cpu,int8_float32,,128.13,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L04,pedido,0.10697674418604651,0.04013961605584642,cpu,int8_float32,,144.74,,
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L05,pedido,0.06806282722513089,0.03285024154589372,cpu,int8_float32,,138.0,,

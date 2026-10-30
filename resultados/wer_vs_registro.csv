@@ -1,0 +1,11 @@
+corrida,clip,wer,exactitud_registro
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E01,0.05596107055961071,0.8333333333333334
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E02,0.0728862973760933,0.8333333333333334
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E03,0.05649717514124294,1.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E04,0.07894736842105263,0.8333333333333334
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,E05,0.03474903474903475,1.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L01,0.07272727272727272,0.8
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L02,0.07906976744186046,0.8
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L03,0.08095238095238096,1.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L04,0.10697674418604651,0.8
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,L05,0.06806282722513089,0.8
