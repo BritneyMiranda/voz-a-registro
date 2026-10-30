@@ -3,7 +3,7 @@
 De una entrevista de trabajo grabada a una ficha de candidato, y de una llamada de venta a un pedido que se revisa
 solo. Proyecto integrador de reconocimiento de voz (ASR): las dos tareas usan **el mismo motor**.
 
-- **Documento del pipeline (Notion):** _enlace pendiente_
+- **Documento del pipeline (Notion):** https://classy-channel-7f6.notion.site/pipeline_notion-6df6a9ca170d825e928701b2ca46dc62
 - **Video (≤ 8 min):** _enlace pendiente_
 - **App:** `streamlit run app.py`
 
