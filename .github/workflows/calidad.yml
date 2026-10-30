@@ -1,0 +1,23 @@
+name: Puerta de calidad
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  metricas:
+    # Los runners estándar no tienen GPU: aquí solo se recalculan métricas desde cache/, nunca se transcribe.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-ci.txt
+      - name: Recalcular métricas desde la caché
+        run: python scripts/evaluar.py
+      - name: Comprobar umbrales
+        run: python scripts/puerta_calidad.py
+      - name: El motor no importa librerías de interfaz
+        run: "! grep -rnE '^\\s*(import|from)\\s+(streamlit|altair|gradio|flask)' motor/"
