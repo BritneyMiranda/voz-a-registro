@@ -185,16 +185,51 @@ with pedidos:
                      alt="Resultado de la validación aritmética por llamada")
 
 with probador:
-    st.subheader("Prueba el motor con tu propio audio")
+    st.subheader("Prueba el motor")
+    st.caption("Con un audio nuevo, el motor transcribe (en CPU tarda ~2 s por segundo de audio). Con un clip del "
+               "corpus usa su transcripción guardada y corre en vivo la extracción, la verificación y la validación.")
+    origen = st.segmented_control("Origen", ["Clip del corpus", "Subir audio"], default="Clip del corpus")
     with st.form("probar"):
-        subido = st.file_uploader("Audio", type=["mp3", "m4a", "wav", "ogg", "opus"])
-        esquema = st.segmented_control("Tipo de registro", ["entrevista", "pedido"], default="entrevista")
+        if origen == "Subir audio":
+            subido = st.file_uploader("Audio", type=["mp3", "m4a", "wav", "ogg", "opus"])
+            esquema = st.segmented_control("Tipo de registro", ["entrevista", "pedido"], default="entrevista")
+        else:
+            nivel = st.segmented_control("Nivel de la escalera", NIVELES, default="L0")
+            clip_prueba = st.selectbox("Clip", sorted(referencias))
+            metodo_prueba = st.segmented_control("Extracción", ["reglas", "llm"], default="reglas",
+                                                 help="El LLM no corre aquí: con «llm» se usa su respuesta guardada.")
         enviar = st.form_submit_button("Procesar", icon=":material/play_arrow:", type="primary")
-    if enviar and subido:
+    r = None
+    if enviar and origen == "Subir audio" and subido:
         with tempfile.NamedTemporaryFile(suffix=Path(subido.name).suffix, delete=False) as f:
             f.write(subido.getbuffer())
         with st.spinner("Transcribiendo y extrayendo…"):
             r = procesar(f.name, esquema)
+    elif enviar and origen == "Clip del corpus":
+        corrida_prueba = corrida_principal(nivel)
+        t = leer_transcripcion(corrida_prueba, clip_prueba) if corrida_prueba else None
+        if t is None:
+            st.warning("Ese clip no está en la caché para ese nivel.")
+        elif metodo_prueba == "llm":
+            from motor.extraccion_llm import a_registro
+            from motor.validacion import validar
+            from motor.verificacion import verificar
+            p = RAIZ / R["cache"] / "extracciones_llm" / corrida_prueba / f"{clip_prueba}.json"
+            esquema_prueba = "entrevista" if clip_prueba[0] == "E" else "pedido"
+            if p.exists():
+                x = json.loads(p.read_text(encoding="utf-8"))
+                campos, evid = a_registro(x["respuesta"], esquema_prueba, cfg)
+                r = {"error": None, "transcripcion": t["texto"], "campos": campos, "dispositivo": t["dispositivo"],
+                     "segundos": x["segundos"], "verificacion": verificar(campos, evid, t["texto"], esquema_prueba, cfg),
+                     "validacion": validar(campos, cfg, t["palabras"]) if esquema_prueba == "pedido" else None}
+            else:
+                st.warning("No hay respuesta del LLM guardada para ese clip y nivel.")
+        else:
+            r = procesar(f"{clip_prueba}", "entrevista" if clip_prueba[0] == "E" else "pedido",
+                         metodo="reglas", cfg=cfg, transcripcion=t)
+    elif enviar:
+        st.warning("Sube un audio primero.")
+    if r:
         if r["error"]:
             st.error(r["error"], title="El motor devolvió un error")
         else:
@@ -217,5 +252,3 @@ with probador:
                         st.error(f"Calculado {v['total_calculado']:.2f}, dicho {v['total_dicho']:.2f}. "
                                  f"Diagnóstico: {v['diagnostico']} — {v.get('motivo', '')}",
                                  title="El total no cuadra")
-    elif enviar:
-        st.warning("Sube un audio primero.")
