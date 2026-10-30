@@ -1,17 +1,17 @@
-Buenas tardes, Martín. Te habla Paola, de Kallpa Software. Gracias por darte el tiempo.
+Buenas tardes, Martín tao. Te habla Paola, de Kallpa Software. Gracias por darte el tiempo.
 Buenas tardes, Paola, un gusto. Antes de empezar, una consulta: ¿la entrevista es en español o en inglés? Lo pregunto porque mi inglés es avanzado, trabajé dos años con un equipo en Texas, pero si se puede, prefiero en español.
-En español, tranquilo. Más adelante quizá tengas una conversación técnica en inglés con el líder del equipo, pero hoy no. Cuéntame, ¿cuánto tiempo de experiencia tienes como desarrollador?
+En español, tranquilo. Más adelante quizás tengas la conversación técnica en inglés con el líder del equipo, pero hoy no. Cuéntame, ¿cuánto tiempo de experiencia tienes como desarrollador?
 Siete años… bueno, a ver, déjame contar bien. Empecé en abril de dos mil veinte, así que son seis años y medio.
 Perfecto, seis y medio. ¿Y antes de eso?
-Antes estuve un tiempo en soporte técnico en una universidad, pero eso no lo considero desarrollo.
+Antes estuve un tiempo en soporte técnico en la universidad, pero eso no lo considero desarrollo.
 ¿Cuál fue tu último puesto?
 Desarrollador backend en Fintech Pucará. Ahí veía los servicios de pagos y de conciliación. Al final también me tocaba revisar el código de los más nuevos, pero el cargo seguía siendo desarrollador backend.
 Dijiste «fue». ¿Ya no estás ahí?
 No, hubo una reestructuración la semana pasada y cerraron el área. Así que mi disponibilidad es inmediata, podría empezar mañana si hiciera falta.
-Entiendo, lo siento. Hablemos de lo económico. ¿Qué expectativa tienes?
-Yo me movería entre siete y ocho mil soles. Si me pide un número exacto, siete mil doscientos al mes.
+Entiendo, lo siento. Hablemos de lo económico. ¿Qué expectativas tienes?
+Yo me movería entre siete mil y ocho mil soles. Si me pide un número exacto, siete mil doscientos al mes.
 Bien, lo anoto. Ahora sí, lo técnico. ¿Con qué stack has trabajado?
-Principalmente Java con Spring Boot. Como base de datos, PostgreSQL. Todo lo desplegábamos en contenedores con Docker, y en el último año pasamos a Kubernetes. También he hecho algo de Go, pero muy poco, no lo pondría como fortaleza.
+Principalmente Java con Spring Boot. Como base de datos, PostgreSQL. Todo lo desplegábamos en contenedores de Docker, y el último año pasamos a Kubernetes. También he hecho algo de Go, pero muy poco asi que, no lo pondría como fortaleza.
 ¿Y Kubernetes lo manejabas tú o había un equipo de plataforma?
 Había un equipo de plataforma, pero los manifiestos de nuestros servicios los escribíamos nosotros, y cuando algo fallaba en producción, el que revisaba los pods era yo.
 Perfecto. Por mi parte es todo. ¿Alguna duda?

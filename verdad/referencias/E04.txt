@@ -6,16 +6,16 @@ Claro. Tengo ocho años en datos. Los primeros seis fui ingeniero de datos en un
 Formalmente, jefe de ingeniería de datos. Aunque en el día a día sigo escribiendo pipelines.
 Entiendo. Hablemos de herramientas.
 Lo central es PySpark sobre Databricks. Todo está en AWS, sobre todo S3 y Glue. El almacén de datos es Snowflake y las transformaciones las hacemos con dbt.
-Cuéntame de un proyecto del que estés orgulloso.
+Cuéntame de un proyecto del que estés orgullosa.
 El año pasado migramos todas las cargas nocturnas de un servidor propio a Databricks. Antes el proceso tardaba once horas y ahora termina en cuarenta minutos. Eso nos permitió tener los reportes de siniestros a primera hora.
 Muy bien. Y sobre lo económico, para ir viendo si estamos alineados.
 Hoy gano ocho mil soles. Para moverme buscaría nueve mil quinientos.
-Nueve mil quinientos, anotado. Va a depender de la banda, pero está cerca. El equipo de riesgos con el que trabajarías está en Madrid y en Miami. ¿Qué tal tu inglés?
+Nueve mil quinientos, anotado. Va a depender de la banda, pero está cerca. El equipo de riesgos con el que trabajarías está en Madrid y en Miami. ¿Qué tal tu nivel de inglés?
 Avanzado. Tengo una certificación C1, y en la consultora atendía a un cliente canadiense: todas las reuniones eran en inglés.
 Perfecto. ¿Y cuándo podrías empezar?
-En la aseguradora tengo que dejar todo documentado y capacitar a mi reemplazo, así que en un mes.
+En la aseguradora tengo que dejar todo documentado y capacitar a mi reemplazo, así que creo que en un mes.
 Un mes, ok. ¿Algo que quieras preguntar?
-Sí, ¿el puesto tendría personas a cargo?
-Sí, al inicio dos, y la idea es crecer a cinco el próximo año.
+Sí en realidad, ¿el puesto tendría personas a cargo?
+Sí, al inicio a dos, y la idea es crecer a cinco el próximo año.
 Perfecto. Eso me interesa mucho.
 Gracias, Jorge. Te llamamos la próxima semana.
