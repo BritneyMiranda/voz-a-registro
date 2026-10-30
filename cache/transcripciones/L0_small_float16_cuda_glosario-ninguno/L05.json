@@ -1,0 +1,1267 @@
+{
+ "texto": "¡Buenas tardes! Habla Kevin. Hola Kevin, buenas tardes. Es un pedido para una oficina. Claro, dígame. Un chicharrón de pescado personal y un ceviche clásico personal. Un chicharrón de pescado personal y un ceviche clásico personal. ¿Algo más? Un cispiero alimeño. Le comento que el cispiero está en dos por uno. Si pide dos, el segundo es gratis. No, gracias. Uno de más. Estoy a dieta. Bueno, más o menos. ¿Un cispiero bebida? Un hinca cola de litro y medio para compartir con mi compañera. Perfecto. ¿Y el descuento de 10 soles? Ese es para pedidos desde 100 soles y el suyo no llega, así que esta vez no hay promoción. No hay problema. ¿La dirección? Avenida de Equipa 4.120, oficina 501, Miraflores. Hay que dejarlo en recepción en el primer piso. Avenida de Equipa 4.120, oficina 501, Miraflores. Se deja en recepción. ¿Forma de pago? Contageta, por favor. Le confirmo. Chicharrón de pescado personal, 29, cevichería clásico personal, 28, cispiero alimeño, 12, hinca cola de litro y medio, 10. Su total es 79 soles. 79, perfecto. Llega en 30 minutos aproximadamente. Gracias. Gracias Kevin.",
+ "segmentos": [
+  {
+   "inicio": 0.8,
+   "fin": 2.66,
+   "texto": "¡Buenas tardes! Habla Kevin."
+  },
+  {
+   "inicio": 3.8,
+   "fin": 7.34,
+   "texto": "Hola Kevin, buenas tardes. Es un pedido para una oficina."
+  },
+  {
+   "inicio": 9.2,
+   "fin": 10.02,
+   "texto": "Claro, dígame."
+  },
+  {
+   "inicio": 11.22,
+   "fin": 15.02,
+   "texto": "Un chicharrón de pescado personal y un ceviche clásico personal."
+  },
+  {
+   "inicio": 16.76,
+   "fin": 21.36,
+   "texto": "Un chicharrón de pescado personal y un ceviche clásico personal. ¿Algo más?"
+  },
+  {
+   "inicio": 22.54,
+   "fin": 23.96,
+   "texto": "Un cispiero alimeño."
+  },
+  {
+   "inicio": 25.3,
+   "fin": 30.44,
+   "texto": "Le comento que el cispiero está en dos por uno. Si pide dos, el segundo es gratis."
+  },
+  {
+   "inicio": 31.72,
+   "fin": 36.0,
+   "texto": "No, gracias. Uno de más. Estoy a dieta. Bueno, más o menos."
+  },
+  {
+   "inicio": 37.72,
+   "fin": 39.86,
+   "texto": "¿Un cispiero bebida?"
+  },
+  {
+   "inicio": 41.16,
+   "fin": 44.86,
+   "texto": "Un hinca cola de litro y medio para compartir con mi compañera."
+  },
+  {
+   "inicio": 47.1,
+   "fin": 47.68,
+   "texto": "Perfecto."
+  },
+  {
+   "inicio": 48.42,
+   "fin": 50.5,
+   "texto": "¿Y el descuento de 10 soles?"
+  },
+  {
+   "inicio": 51.86,
+   "fin": 58.2,
+   "texto": "Ese es para pedidos desde 100 soles y el suyo no llega, así que esta vez no hay promoción."
+  },
+  {
+   "inicio": 58.6,
+   "fin": 60.44,
+   "texto": "No hay problema."
+  },
+  {
+   "inicio": 61.74,
+   "fin": 62.62,
+   "texto": "¿La dirección?"
+  },
+  {
+   "inicio": 64.24,
+   "fin": 72.16,
+   "texto": "Avenida de Equipa 4.120, oficina 501, Miraflores. Hay que dejarlo en recepción en el primer piso."
+  },
+  {
+   "inicio": 73.76,
+   "fin": 79.62,
+   "texto": "Avenida de Equipa 4.120, oficina 501, Miraflores."
+  },
+  {
+   "inicio": 79.62,
+   "fin": 82.56,
+   "texto": "Se deja en recepción. ¿Forma de pago?"
+  },
+  {
+   "inicio": 83.34,
+   "fin": 84.6,
+   "texto": "Contageta, por favor."
+  },
+  {
+   "inicio": 85.82,
+   "fin": 86.96,
+   "texto": "Le confirmo."
+  },
+  {
+   "inicio": 87.38,
+   "fin": 97.9,
+   "texto": "Chicharrón de pescado personal, 29, cevichería clásico personal, 28, cispiero alimeño, 12, hinca cola de litro y medio, 10."
+  },
+  {
+   "inicio": 98.46,
+   "fin": 100.78,
+   "texto": "Su total es 79 soles."
+  },
+  {
+   "inicio": 102.34,
+   "fin": 104.02,
+   "texto": "79, perfecto."
+  },
+  {
+   "inicio": 105.02,
+   "fin": 108.64,
+   "texto": "Llega en 30 minutos aproximadamente. Gracias."
+  },
+  {
+   "inicio": 109.4,
+   "fin": 110.42,
+   "texto": "Gracias Kevin."
+  }
+ ],
+ "palabras": [
+  {
+   "palabra": "¡Buenas",
+   "inicio": 0.8,
+   "fin": 1.56,
+   "prob": 0.561
+  },
+  {
+   "palabra": "tardes!",
+   "inicio": 1.56,
+   "fin": 2.0,
+   "prob": 0.985
+  },
+  {
+   "palabra": "Habla",
+   "inicio": 2.08,
+   "fin": 2.34,
+   "prob": 0.618
+  },
+  {
+   "palabra": "Kevin.",
+   "inicio": 2.34,
+   "fin": 2.66,
+   "prob": 0.854
+  },
+  {
+   "palabra": "Hola",
+   "inicio": 3.8,
+   "fin": 4.28,
+   "prob": 0.107
+  },
+  {
+   "palabra": "Kevin,",
+   "inicio": 4.28,
+   "fin": 4.56,
+   "prob": 0.915
+  },
+  {
+   "palabra": "buenas",
+   "inicio": 4.72,
+   "fin": 4.9,
+   "prob": 0.855
+  },
+  {
+   "palabra": "tardes.",
+   "inicio": 4.9,
+   "fin": 5.46,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Es",
+   "inicio": 5.64,
+   "fin": 5.74,
+   "prob": 0.906
+  },
+  {
+   "palabra": "un",
+   "inicio": 5.74,
+   "fin": 5.86,
+   "prob": 0.997
+  },
+  {
+   "palabra": "pedido",
+   "inicio": 5.86,
+   "fin": 6.24,
+   "prob": 0.991
+  },
+  {
+   "palabra": "para",
+   "inicio": 6.24,
+   "fin": 6.5,
+   "prob": 0.993
+  },
+  {
+   "palabra": "una",
+   "inicio": 6.5,
+   "fin": 6.82,
+   "prob": 0.982
+  },
+  {
+   "palabra": "oficina.",
+   "inicio": 6.82,
+   "fin": 7.34,
+   "prob": 0.997
+  },
+  {
+   "palabra": "Claro,",
+   "inicio": 9.2,
+   "fin": 9.5,
+   "prob": 0.785
+  },
+  {
+   "palabra": "dígame.",
+   "inicio": 9.66,
+   "fin": 10.02,
+   "prob": 0.89
+  },
+  {
+   "palabra": "Un",
+   "inicio": 11.22,
+   "fin": 11.56,
+   "prob": 0.862
+  },
+  {
+   "palabra": "chicharrón",
+   "inicio": 11.56,
+   "fin": 11.94,
+   "prob": 0.902
+  },
+  {
+   "palabra": "de",
+   "inicio": 11.94,
+   "fin": 12.1,
+   "prob": 0.999
+  },
+  {
+   "palabra": "pescado",
+   "inicio": 12.1,
+   "fin": 12.48,
+   "prob": 0.967
+  },
+  {
+   "palabra": "personal",
+   "inicio": 12.48,
+   "fin": 13.08,
+   "prob": 0.991
+  },
+  {
+   "palabra": "y",
+   "inicio": 13.08,
+   "fin": 13.52,
+   "prob": 0.937
+  },
+  {
+   "palabra": "un",
+   "inicio": 13.52,
+   "fin": 13.76,
+   "prob": 0.992
+  },
+  {
+   "palabra": "ceviche",
+   "inicio": 13.76,
+   "fin": 14.02,
+   "prob": 0.935
+  },
+  {
+   "palabra": "clásico",
+   "inicio": 14.02,
+   "fin": 14.54,
+   "prob": 0.962
+  },
+  {
+   "palabra": "personal.",
+   "inicio": 14.54,
+   "fin": 15.02,
+   "prob": 0.574
+  },
+  {
+   "palabra": "Un",
+   "inicio": 16.76,
+   "fin": 17.24,
+   "prob": 0.77
+  },
+  {
+   "palabra": "chicharrón",
+   "inicio": 17.24,
+   "fin": 17.7,
+   "prob": 0.982
+  },
+  {
+   "palabra": "de",
+   "inicio": 17.7,
+   "fin": 17.88,
+   "prob": 0.999
+  },
+  {
+   "palabra": "pescado",
+   "inicio": 17.88,
+   "fin": 18.22,
+   "prob": 0.996
+  },
+  {
+   "palabra": "personal",
+   "inicio": 18.22,
+   "fin": 18.84,
+   "prob": 0.991
+  },
+  {
+   "palabra": "y",
+   "inicio": 18.84,
+   "fin": 19.12,
+   "prob": 0.993
+  },
+  {
+   "palabra": "un",
+   "inicio": 19.12,
+   "fin": 19.22,
+   "prob": 0.998
+  },
+  {
+   "palabra": "ceviche",
+   "inicio": 19.22,
+   "fin": 19.6,
+   "prob": 0.997
+  },
+  {
+   "palabra": "clásico",
+   "inicio": 19.6,
+   "fin": 20.26,
+   "prob": 0.998
+  },
+  {
+   "palabra": "personal.",
+   "inicio": 20.26,
+   "fin": 20.78,
+   "prob": 0.967
+  },
+  {
+   "palabra": "¿Algo",
+   "inicio": 20.96,
+   "fin": 21.14,
+   "prob": 0.922
+  },
+  {
+   "palabra": "más?",
+   "inicio": 21.14,
+   "fin": 21.36,
+   "prob": 0.992
+  },
+  {
+   "palabra": "Un",
+   "inicio": 22.54,
+   "fin": 22.94,
+   "prob": 0.736
+  },
+  {
+   "palabra": "cispiero",
+   "inicio": 22.94,
+   "fin": 23.36,
+   "prob": 0.469
+  },
+  {
+   "palabra": "alimeño.",
+   "inicio": 23.36,
+   "fin": 23.96,
+   "prob": 0.707
+  },
+  {
+   "palabra": "Le",
+   "inicio": 25.3,
+   "fin": 25.88,
+   "prob": 0.12
+  },
+  {
+   "palabra": "comento",
+   "inicio": 25.88,
+   "fin": 26.32,
+   "prob": 0.979
+  },
+  {
+   "palabra": "que",
+   "inicio": 26.32,
+   "fin": 26.42,
+   "prob": 0.99
+  },
+  {
+   "palabra": "el",
+   "inicio": 26.42,
+   "fin": 26.54,
+   "prob": 0.965
+  },
+  {
+   "palabra": "cispiero",
+   "inicio": 26.54,
+   "fin": 27.04,
+   "prob": 0.006
+  },
+  {
+   "palabra": "está",
+   "inicio": 27.04,
+   "fin": 27.4,
+   "prob": 0.804
+  },
+  {
+   "palabra": "en",
+   "inicio": 27.4,
+   "fin": 27.56,
+   "prob": 0.989
+  },
+  {
+   "palabra": "dos",
+   "inicio": 27.56,
+   "fin": 27.72,
+   "prob": 0.188
+  },
+  {
+   "palabra": "por",
+   "inicio": 27.72,
+   "fin": 27.94,
+   "prob": 0.953
+  },
+  {
+   "palabra": "uno.",
+   "inicio": 27.94,
+   "fin": 28.16,
+   "prob": 0.929
+  },
+  {
+   "palabra": "Si",
+   "inicio": 28.36,
+   "fin": 28.44,
+   "prob": 0.966
+  },
+  {
+   "palabra": "pide",
+   "inicio": 28.44,
+   "fin": 28.74,
+   "prob": 0.855
+  },
+  {
+   "palabra": "dos,",
+   "inicio": 28.74,
+   "fin": 29.04,
+   "prob": 0.91
+  },
+  {
+   "palabra": "el",
+   "inicio": 29.3,
+   "fin": 29.34,
+   "prob": 0.964
+  },
+  {
+   "palabra": "segundo",
+   "inicio": 29.34,
+   "fin": 29.6,
+   "prob": 0.97
+  },
+  {
+   "palabra": "es",
+   "inicio": 29.6,
+   "fin": 29.84,
+   "prob": 0.991
+  },
+  {
+   "palabra": "gratis.",
+   "inicio": 29.84,
+   "fin": 30.44,
+   "prob": 0.998
+  },
+  {
+   "palabra": "No,",
+   "inicio": 31.72,
+   "fin": 32.22,
+   "prob": 0.634
+  },
+  {
+   "palabra": "gracias.",
+   "inicio": 32.34,
+   "fin": 32.68,
+   "prob": 0.992
+  },
+  {
+   "palabra": "Uno",
+   "inicio": 33.04,
+   "fin": 33.18,
+   "prob": 0.851
+  },
+  {
+   "palabra": "de",
+   "inicio": 33.18,
+   "fin": 33.34,
+   "prob": 0.338
+  },
+  {
+   "palabra": "más.",
+   "inicio": 33.34,
+   "fin": 33.56,
+   "prob": 0.928
+  },
+  {
+   "palabra": "Estoy",
+   "inicio": 33.78,
+   "fin": 33.98,
+   "prob": 0.959
+  },
+  {
+   "palabra": "a",
+   "inicio": 33.98,
+   "fin": 34.16,
+   "prob": 0.888
+  },
+  {
+   "palabra": "dieta.",
+   "inicio": 34.16,
+   "fin": 34.36,
+   "prob": 0.994
+  },
+  {
+   "palabra": "Bueno,",
+   "inicio": 34.98,
+   "fin": 35.14,
+   "prob": 0.957
+  },
+  {
+   "palabra": "más",
+   "inicio": 35.5,
+   "fin": 35.62,
+   "prob": 0.963
+  },
+  {
+   "palabra": "o",
+   "inicio": 35.62,
+   "fin": 35.78,
+   "prob": 0.993
+  },
+  {
+   "palabra": "menos.",
+   "inicio": 35.78,
+   "fin": 36.0,
+   "prob": 1.0
+  },
+  {
+   "palabra": "¿Un",
+   "inicio": 37.72,
+   "fin": 38.3,
+   "prob": 0.503
+  },
+  {
+   "palabra": "cispiero",
+   "inicio": 38.3,
+   "fin": 38.88,
+   "prob": 0.806
+  },
+  {
+   "palabra": "bebida?",
+   "inicio": 38.88,
+   "fin": 39.86,
+   "prob": 0.976
+  },
+  {
+   "palabra": "Un",
+   "inicio": 41.16,
+   "fin": 41.62,
+   "prob": 0.426
+  },
+  {
+   "palabra": "hinca",
+   "inicio": 41.62,
+   "fin": 41.84,
+   "prob": 0.358
+  },
+  {
+   "palabra": "cola",
+   "inicio": 41.84,
+   "fin": 42.14,
+   "prob": 0.932
+  },
+  {
+   "palabra": "de",
+   "inicio": 42.14,
+   "fin": 42.38,
+   "prob": 0.974
+  },
+  {
+   "palabra": "litro",
+   "inicio": 42.38,
+   "fin": 42.66,
+   "prob": 0.976
+  },
+  {
+   "palabra": "y",
+   "inicio": 42.66,
+   "fin": 42.74,
+   "prob": 0.997
+  },
+  {
+   "palabra": "medio",
+   "inicio": 42.74,
+   "fin": 42.98,
+   "prob": 0.998
+  },
+  {
+   "palabra": "para",
+   "inicio": 42.98,
+   "fin": 43.38,
+   "prob": 0.892
+  },
+  {
+   "palabra": "compartir",
+   "inicio": 43.38,
+   "fin": 43.84,
+   "prob": 0.994
+  },
+  {
+   "palabra": "con",
+   "inicio": 43.84,
+   "fin": 44.08,
+   "prob": 0.994
+  },
+  {
+   "palabra": "mi",
+   "inicio": 44.08,
+   "fin": 44.2,
+   "prob": 0.993
+  },
+  {
+   "palabra": "compañera.",
+   "inicio": 44.2,
+   "fin": 44.86,
+   "prob": 0.998
+  },
+  {
+   "palabra": "Perfecto.",
+   "inicio": 47.1,
+   "fin": 47.68,
+   "prob": 0.83
+  },
+  {
+   "palabra": "¿Y",
+   "inicio": 48.42,
+   "fin": 48.84,
+   "prob": 0.833
+  },
+  {
+   "palabra": "el",
+   "inicio": 48.84,
+   "fin": 49.06,
+   "prob": 0.974
+  },
+  {
+   "palabra": "descuento",
+   "inicio": 49.06,
+   "fin": 49.38,
+   "prob": 0.792
+  },
+  {
+   "palabra": "de",
+   "inicio": 49.38,
+   "fin": 49.68,
+   "prob": 0.994
+  },
+  {
+   "palabra": "10",
+   "inicio": 49.68,
+   "fin": 50.02,
+   "prob": 0.68
+  },
+  {
+   "palabra": "soles?",
+   "inicio": 50.02,
+   "fin": 50.5,
+   "prob": 0.906
+  },
+  {
+   "palabra": "Ese",
+   "inicio": 51.86,
+   "fin": 52.66,
+   "prob": 0.448
+  },
+  {
+   "palabra": "es",
+   "inicio": 52.66,
+   "fin": 52.78,
+   "prob": 0.915
+  },
+  {
+   "palabra": "para",
+   "inicio": 52.78,
+   "fin": 52.96,
+   "prob": 0.966
+  },
+  {
+   "palabra": "pedidos",
+   "inicio": 52.96,
+   "fin": 53.46,
+   "prob": 0.947
+  },
+  {
+   "palabra": "desde",
+   "inicio": 53.46,
+   "fin": 53.7,
+   "prob": 0.937
+  },
+  {
+   "palabra": "100",
+   "inicio": 53.7,
+   "fin": 54.08,
+   "prob": 0.623
+  },
+  {
+   "palabra": "soles",
+   "inicio": 54.08,
+   "fin": 54.48,
+   "prob": 0.894
+  },
+  {
+   "palabra": "y",
+   "inicio": 54.48,
+   "fin": 54.68,
+   "prob": 0.759
+  },
+  {
+   "palabra": "el",
+   "inicio": 54.68,
+   "fin": 54.8,
+   "prob": 0.952
+  },
+  {
+   "palabra": "suyo",
+   "inicio": 54.8,
+   "fin": 55.16,
+   "prob": 0.973
+  },
+  {
+   "palabra": "no",
+   "inicio": 55.16,
+   "fin": 55.44,
+   "prob": 0.985
+  },
+  {
+   "palabra": "llega,",
+   "inicio": 55.44,
+   "fin": 55.74,
+   "prob": 0.666
+  },
+  {
+   "palabra": "así",
+   "inicio": 55.94,
+   "fin": 56.14,
+   "prob": 0.963
+  },
+  {
+   "palabra": "que",
+   "inicio": 56.14,
+   "fin": 56.32,
+   "prob": 0.997
+  },
+  {
+   "palabra": "esta",
+   "inicio": 56.32,
+   "fin": 56.54,
+   "prob": 0.966
+  },
+  {
+   "palabra": "vez",
+   "inicio": 56.54,
+   "fin": 56.76,
+   "prob": 0.998
+  },
+  {
+   "palabra": "no",
+   "inicio": 56.76,
+   "fin": 57.16,
+   "prob": 0.977
+  },
+  {
+   "palabra": "hay",
+   "inicio": 57.16,
+   "fin": 57.24,
+   "prob": 0.994
+  },
+  {
+   "palabra": "promoción.",
+   "inicio": 57.24,
+   "fin": 58.2,
+   "prob": 0.975
+  },
+  {
+   "palabra": "No",
+   "inicio": 58.6,
+   "fin": 59.36,
+   "prob": 0.176
+  },
+  {
+   "palabra": "hay",
+   "inicio": 59.36,
+   "fin": 59.38,
+   "prob": 0.994
+  },
+  {
+   "palabra": "problema.",
+   "inicio": 59.38,
+   "fin": 60.44,
+   "prob": 0.997
+  },
+  {
+   "palabra": "¿La",
+   "inicio": 61.74,
+   "fin": 62.18,
+   "prob": 0.553
+  },
+  {
+   "palabra": "dirección?",
+   "inicio": 62.18,
+   "fin": 62.62,
+   "prob": 0.906
+  },
+  {
+   "palabra": "Avenida",
+   "inicio": 64.24,
+   "fin": 64.66,
+   "prob": 0.888
+  },
+  {
+   "palabra": "de",
+   "inicio": 64.66,
+   "fin": 64.78,
+   "prob": 0.338
+  },
+  {
+   "palabra": "Equipa",
+   "inicio": 64.78,
+   "fin": 65.22,
+   "prob": 0.905
+  },
+  {
+   "palabra": "4",
+   "inicio": 65.22,
+   "fin": 65.42,
+   "prob": 0.678
+  },
+  {
+   "palabra": ".120,",
+   "inicio": 65.42,
+   "fin": 66.54,
+   "prob": 0.68
+  },
+  {
+   "palabra": "oficina",
+   "inicio": 67.08,
+   "fin": 67.54,
+   "prob": 0.786
+  },
+  {
+   "palabra": "501,",
+   "inicio": 67.54,
+   "fin": 68.44,
+   "prob": 0.975
+  },
+  {
+   "palabra": "Miraflores.",
+   "inicio": 68.74,
+   "fin": 69.42,
+   "prob": 0.802
+  },
+  {
+   "palabra": "Hay",
+   "inicio": 69.78,
+   "fin": 69.9,
+   "prob": 0.957
+  },
+  {
+   "palabra": "que",
+   "inicio": 69.9,
+   "fin": 70.02,
+   "prob": 0.999
+  },
+  {
+   "palabra": "dejarlo",
+   "inicio": 70.02,
+   "fin": 70.44,
+   "prob": 0.975
+  },
+  {
+   "palabra": "en",
+   "inicio": 70.44,
+   "fin": 70.5,
+   "prob": 0.996
+  },
+  {
+   "palabra": "recepción",
+   "inicio": 70.5,
+   "fin": 71.1,
+   "prob": 0.929
+  },
+  {
+   "palabra": "en",
+   "inicio": 71.1,
+   "fin": 71.38,
+   "prob": 0.918
+  },
+  {
+   "palabra": "el",
+   "inicio": 71.38,
+   "fin": 71.52,
+   "prob": 0.989
+  },
+  {
+   "palabra": "primer",
+   "inicio": 71.52,
+   "fin": 71.74,
+   "prob": 0.987
+  },
+  {
+   "palabra": "piso.",
+   "inicio": 71.74,
+   "fin": 72.16,
+   "prob": 0.998
+  },
+  {
+   "palabra": "Avenida",
+   "inicio": 73.76,
+   "fin": 74.3,
+   "prob": 0.992
+  },
+  {
+   "palabra": "de",
+   "inicio": 74.3,
+   "fin": 74.52,
+   "prob": 0.998
+  },
+  {
+   "palabra": "Equipa",
+   "inicio": 74.52,
+   "fin": 75.02,
+   "prob": 0.999
+  },
+  {
+   "palabra": "4",
+   "inicio": 75.02,
+   "fin": 75.26,
+   "prob": 0.819
+  },
+  {
+   "palabra": ".120,",
+   "inicio": 75.26,
+   "fin": 76.82,
+   "prob": 0.988
+  },
+  {
+   "palabra": "oficina",
+   "inicio": 77.44,
+   "fin": 77.9,
+   "prob": 0.992
+  },
+  {
+   "palabra": "501,",
+   "inicio": 77.9,
+   "fin": 78.76,
+   "prob": 0.993
+  },
+  {
+   "palabra": "Miraflores.",
+   "inicio": 79.1,
+   "fin": 79.62,
+   "prob": 0.996
+  },
+  {
+   "palabra": "Se",
+   "inicio": 79.62,
+   "fin": 80.4,
+   "prob": 0.178
+  },
+  {
+   "palabra": "deja",
+   "inicio": 80.4,
+   "fin": 80.72,
+   "prob": 0.922
+  },
+  {
+   "palabra": "en",
+   "inicio": 80.72,
+   "fin": 80.88,
+   "prob": 0.985
+  },
+  {
+   "palabra": "recepción.",
+   "inicio": 80.88,
+   "fin": 81.54,
+   "prob": 0.918
+  },
+  {
+   "palabra": "¿Forma",
+   "inicio": 81.78,
+   "fin": 82.1,
+   "prob": 0.799
+  },
+  {
+   "palabra": "de",
+   "inicio": 82.1,
+   "fin": 82.24,
+   "prob": 0.995
+  },
+  {
+   "palabra": "pago?",
+   "inicio": 82.24,
+   "fin": 82.56,
+   "prob": 0.987
+  },
+  {
+   "palabra": "Contageta,",
+   "inicio": 83.34,
+   "fin": 84.02,
+   "prob": 0.818
+  },
+  {
+   "palabra": "por",
+   "inicio": 84.16,
+   "fin": 84.3,
+   "prob": 0.968
+  },
+  {
+   "palabra": "favor.",
+   "inicio": 84.3,
+   "fin": 84.6,
+   "prob": 0.993
+  },
+  {
+   "palabra": "Le",
+   "inicio": 85.82,
+   "fin": 86.36,
+   "prob": 0.894
+  },
+  {
+   "palabra": "confirmo.",
+   "inicio": 86.36,
+   "fin": 86.96,
+   "prob": 0.932
+  },
+  {
+   "palabra": "Chicharrón",
+   "inicio": 87.38,
+   "fin": 87.8,
+   "prob": 0.913
+  },
+  {
+   "palabra": "de",
+   "inicio": 87.8,
+   "fin": 87.94,
+   "prob": 0.997
+  },
+  {
+   "palabra": "pescado",
+   "inicio": 87.94,
+   "fin": 88.38,
+   "prob": 0.957
+  },
+  {
+   "palabra": "personal,",
+   "inicio": 88.38,
+   "fin": 89.02,
+   "prob": 0.976
+  },
+  {
+   "palabra": "29,",
+   "inicio": 89.4,
+   "fin": 89.92,
+   "prob": 0.918
+  },
+  {
+   "palabra": "cevichería",
+   "inicio": 90.36,
+   "fin": 90.96,
+   "prob": 0.784
+  },
+  {
+   "palabra": "clásico",
+   "inicio": 90.96,
+   "fin": 91.52,
+   "prob": 0.963
+  },
+  {
+   "palabra": "personal,",
+   "inicio": 91.52,
+   "fin": 92.0,
+   "prob": 0.877
+  },
+  {
+   "palabra": "28,",
+   "inicio": 92.28,
+   "fin": 92.86,
+   "prob": 0.994
+  },
+  {
+   "palabra": "cispiero",
+   "inicio": 93.22,
+   "fin": 93.58,
+   "prob": 0.005
+  },
+  {
+   "palabra": "alimeño,",
+   "inicio": 93.58,
+   "fin": 94.2,
+   "prob": 0.515
+  },
+  {
+   "palabra": "12,",
+   "inicio": 94.46,
+   "fin": 94.76,
+   "prob": 0.969
+  },
+  {
+   "palabra": "hinca",
+   "inicio": 95.64,
+   "fin": 95.94,
+   "prob": 0.473
+  },
+  {
+   "palabra": "cola",
+   "inicio": 95.94,
+   "fin": 96.22,
+   "prob": 0.93
+  },
+  {
+   "palabra": "de",
+   "inicio": 96.22,
+   "fin": 96.4,
+   "prob": 0.877
+  },
+  {
+   "palabra": "litro",
+   "inicio": 96.4,
+   "fin": 96.76,
+   "prob": 0.86
+  },
+  {
+   "palabra": "y",
+   "inicio": 96.76,
+   "fin": 96.9,
+   "prob": 0.994
+  },
+  {
+   "palabra": "medio,",
+   "inicio": 96.9,
+   "fin": 97.2,
+   "prob": 0.994
+  },
+  {
+   "palabra": "10.",
+   "inicio": 97.62,
+   "fin": 97.9,
+   "prob": 0.984
+  },
+  {
+   "palabra": "Su",
+   "inicio": 98.46,
+   "fin": 98.6,
+   "prob": 0.813
+  },
+  {
+   "palabra": "total",
+   "inicio": 98.6,
+   "fin": 98.78,
+   "prob": 0.989
+  },
+  {
+   "palabra": "es",
+   "inicio": 98.78,
+   "fin": 99.18,
+   "prob": 0.998
+  },
+  {
+   "palabra": "79",
+   "inicio": 99.18,
+   "fin": 100.14,
+   "prob": 0.893
+  },
+  {
+   "palabra": "soles.",
+   "inicio": 100.14,
+   "fin": 100.78,
+   "prob": 0.946
+  },
+  {
+   "palabra": "79,",
+   "inicio": 102.34,
+   "fin": 103.18,
+   "prob": 0.814
+  },
+  {
+   "palabra": "perfecto.",
+   "inicio": 103.18,
+   "fin": 104.02,
+   "prob": 0.951
+  },
+  {
+   "palabra": "Llega",
+   "inicio": 105.02,
+   "fin": 106.04,
+   "prob": 0.584
+  },
+  {
+   "palabra": "en",
+   "inicio": 106.04,
+   "fin": 106.18,
+   "prob": 0.952
+  },
+  {
+   "palabra": "30",
+   "inicio": 106.18,
+   "fin": 106.46,
+   "prob": 0.991
+  },
+  {
+   "palabra": "minutos",
+   "inicio": 106.46,
+   "fin": 106.94,
+   "prob": 0.959
+  },
+  {
+   "palabra": "aproximadamente.",
+   "inicio": 106.94,
+   "fin": 107.48,
+   "prob": 0.947
+  },
+  {
+   "palabra": "Gracias.",
+   "inicio": 108.26,
+   "fin": 108.64,
+   "prob": 0.759
+  },
+  {
+   "palabra": "Gracias",
+   "inicio": 109.4,
+   "fin": 110.12,
+   "prob": 0.882
+  },
+  {
+   "palabra": "Kevin.",
+   "inicio": 110.12,
+   "fin": 110.42,
+   "prob": 0.878
+  }
+ ],
+ "modelo": "Systran/faster-whisper-small",
+ "dispositivo": "cuda",
+ "precision": "float16",
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 160.0,
+ "vram_total_usada_mb": 1302.2,
+ "duracion_audio_s": 111.8,
+ "segundos_carga": 0.0,
+ "segundos_transcripcion": 3.1,
+ "segundos_por_minuto": 1.67,
+ "glosario_modo": "ninguno",
+ "clip": "L05",
+ "nivel": "L0"
+}

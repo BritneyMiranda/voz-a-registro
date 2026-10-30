@@ -34,7 +34,8 @@ for corrida in args.corridas:
         t0 = time.perf_counter()
         respuesta = preguntar(texto, cfg_llm[f"prompt_{esquema}"], cfg_llm)
         (destino / p.name).write_text(json.dumps(
-            {"clip": p.stem, "esquema": esquema, "modelo": cfg_llm["modelo"], "texto": texto,
+            {"clip": p.stem, "esquema": esquema, "modelo": cfg_llm["modelo"],
+             "version_prompt": cfg_llm.get("version_prompt", 1), "texto": texto,
              "respuesta": respuesta, "segundos": round(time.perf_counter() - t0, 1)},
             ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"{corrida}/{p.stem}: {time.perf_counter() - t0:.0f} s", flush=True)

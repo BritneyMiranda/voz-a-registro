@@ -1,0 +1,8 @@
+{
+ "clip": "L05",
+ "esquema": "pedido",
+ "modelo": "Qwen/Qwen2.5-3B-Instruct",
+ "texto": "Evitería, la hola, buenas tardes, habla Kevin. Hola Kevin, buenas tardes, es un pedido para una oficina. Claro, dígame. Un chicharrón de pescado personal y un ceviche clásico personal. Un chicharrón de pescado personal y un ceviche clásico personal, ¿algo más? Un suspiro de lingüe. Me comento que el suspiro está en 2x1, si pide 2, el segundo es gratis. No, gracias, estoy a dieta. Bueno, más o menos. Un suspiro bebida. Tengo cola de litro y medio para compartir con mi compañera. Perfecto. Y el descuento de 10 soles. Ese es para pedidos de 100 soles, y el suyo no ha llegado, así que esta vez no hay promoción. ¿La dirección? Avenida Arequipa 4120, oficina 501, Miraflores. Hay que dejarlo en recepción en el primer piso. Avenida Arequipa 4120, oficina 501, Miraflores. Se deja en la posesión. Forma de pago. Con tarjeta, por favor. Le confirmo. Chicharrón de pescado personal, 29. De bichería clásico personal, 28. Suspiro de lingüe, 12. En calcola de litro y medio, 10. Su total es 79 soles. ¿Ven a placer? 79. Perfecto. Llega en 30 minutos aproximadamente. Gracias. Gracias por ver el video.",
+ "respuesta": "{\n  \"items\": [\n    {\"producto\": \"chicharrón de pescado\", \"tamano\": \"personal\", \"cantidad\": 1},\n    {\"producto\": \"ceviche clásico\", \"tamano\": \"personal\", \"cantidad\": 1},\n    {\"producto\": \"suspiro de lingüe\", \"tamano\": null, \"cantidad\": 2},\n    {\"producto\": \"cola de litro y medio\", \"tamano\": null, \"cantidad\": 1}\n  ],\n  \"promocion\": \"10% de descuento\",\n  \"direccion_entrega\": \"Avenida Arequipa 4120, oficina 501, Miraflores\",\n  \"metodo_pago\": \"tarjeta\",\n  \"total_dicho\": 79\n}",
+ "segundos": 9.5
+}
