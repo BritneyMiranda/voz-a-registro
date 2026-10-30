@@ -105,8 +105,8 @@ def extraer_entrevista(transcripcion: str, cfg: dict):
             antes = " ".join(t[:ini].split()[-3:])
             if not ce["salario_min"] <= valor <= ce["salario_max"]:
                 continue
-            if re.search(r"\b(gano|ganando|ganaba)\b", antes) or re.search(r"\bentre \d+ y$", antes):
-                continue
+            if re.search(r"\b(gano|ganando|ganaba)\b", antes) or re.search(r"\bentre( \d+ y)?$", antes):
+                continue                                       # lo que gana hoy y los extremos de un rango
             if 1990 <= valor <= 2035 and re.search(r"\b(en|de|desde|del)$", antes):
                 continue
             despues = " ".join(t[ini:].split()[1:4])
@@ -119,7 +119,8 @@ def extraer_entrevista(transcripcion: str, cfg: dict):
     campos["disponibilidad"] = evid["disponibilidad"] = None
     patron_fecha = (r"\binmediat\w*|\bde inmediato\b|\b(?:\d{1,2}|primero) de (?:"
                     + "|".join(MESES) + r")\b|\ben \d+ (?:dias?|semanas?|mes|meses)\b")
-    for ini, _ in _ventanas_tras(t, r"\b(empezar|incorporarte|incorporarse|disponibilidad|comenzar)\b", 1):
+    inicios = [ini for ini, _ in _ventanas_tras(t, r"\b(empezar|incorporarte|incorporarse|disponibilidad|comenzar)\b", 1)]
+    for ini in inicios or [0]:                                 # si el ASR se comió la pregunta, todo el texto
         m = re.search(patron_fecha, t[ini:])
         if m:
             campos["disponibilidad"] = resolver_fecha(m.group(0), hoy)
@@ -233,10 +234,12 @@ def extraer_pedido(transcripcion: str, cfg: dict):
     if m:
         campos["metodo_pago"], evid["metodo_pago"] = alias_pago[m.group(1)], m.group(1)
 
-    # total: la última cifra que aparece hasta 8 palabras después de «total»
+    # total: la última cifra de la oración donde se dice «total» (hasta 8 palabras, sin pasar el punto);
+    # «sería de cincuenta, ciento doce» es quien habla corrigiéndose, y vale lo último (como en los platos),
+    # pero «…114 soles. En 35 a 40 minutos» ya es otra oración
     campos["total_dicho"] = evid["total_dicho"] = None
-    for m in re.finditer(r"\b" + _patron(cp["palabras_total"]) + r"\b((?:\s+\S+){0,8})", t):
+    for m in re.finditer(r"\b" + _patron(cp["palabras_total"]) + r"\b((?:[^\S\n]*[^\s.?!]+){0,8})", tp):
         cifras = re.findall(r"\b\d+(?:\.\d+)?\b", m.group(1))
         if cifras:
-            campos["total_dicho"], evid["total_dicho"] = float(cifras[0]), cifras[0]
+            campos["total_dicho"], evid["total_dicho"] = float(cifras[-1]), cifras[-1]
     return campos, evid

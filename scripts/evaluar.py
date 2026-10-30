@@ -158,20 +158,25 @@ macro = []
 for (corrida, metodo), g in reg[reg.campo == "nivel_ingles"].groupby(["corrida", "metodo"]):
     pred = [json.loads(v) for v in g.valor]
     macro.append({"corrida": corrida, "metodo": metodo,
-                  "macro_f1_ingles": macro_f1([verdad_e[c]["nivel_ingles"] for c in g.clip], pred)})
+                  "macro_f1_ingles": macro_f1([verdad_e[c]["nivel_ingles"] for c in g["clip"]], pred)})
 
 # atrapados vs. perdidos por nivel (solo reglas: es el camino por defecto del motor)
 atrapados = []
 for (corrida, metodo), g in val.groupby(["corrida", "metodo"]) if len(val) else []:
     plantados = g[g.total_erroneo_plantado]
-    limpios = g[~g.total_erroneo_plantado]
+    # roto = el total dicho está mal a propósito, o el ASR/la extracción dañó el registro
+    rotos = g[g.total_erroneo_plantado | ~g.registro_igual_a_verdad]
+    sanos = g[~g.total_erroneo_plantado & g.registro_igual_a_verdad]
     diag = g[g.diagnostico_correcto.notna()]
     atrapados.append({"corrida": corrida, "metodo": metodo,
                       "errores_plantados": len(plantados),
                       "atrapados": int((plantados.estado == "no_cuadra").sum()),
                       "perdidos": int((plantados.estado != "no_cuadra").sum()),
-                      "llamadas_limpias": len(limpios),
-                      "falsas_alarmas": int((limpios.estado == "no_cuadra").sum()),
+                      "registros_rotos": len(rotos),
+                      "rotos_atrapados": int((rotos.estado == "no_cuadra").sum()),
+                      "rotos_perdidos": int((rotos.estado != "no_cuadra").sum()),
+                      "registros_sanos": len(sanos),
+                      "falsas_alarmas": int((sanos.estado == "no_cuadra").sum()),
                       "diagnosticos_evaluables": len(diag),
                       "diagnosticos_correctos": int(diag.diagnostico_correcto.sum()) if len(diag) else 0})
 
