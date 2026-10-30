@@ -1,0 +1,20 @@
+Hola, Lucía, ¿qué tal? Soy Diego, de Pixel Norte. ¿Me escuchas?
+Hola, Diego, sí, te escucho bien.
+Te comento cómo va a ser: primero conversamos de tu experiencia y al final vemos condiciones. ¿Te parece?
+Sí, claro. Aunque, si no te molesta, prefiero aclarar algo de entrada para no hacerte perder el tiempo: como la vacante es para un cliente de Estados Unidos, mi expectativa está en dólares. Estoy pidiendo mil quinientos dólares al mes.
+Ah, perfecto, gracias por decirlo. Está en rango. Y siguiendo con eso, ¿cuándo podrías empezar?
+Estoy terminando un proyecto freelance que entrego a fin de mes, así que a partir del primero de diciembre.
+Bien. El cliente es de Estados Unidos, como dijiste. ¿Qué tal tu inglés?
+Ahí te soy sincera: es básico. Entiendo los textos de las herramientas y puedo seguir un brief escrito, pero en una llamada me pierdo. Estoy llevando clases los sábados.
+Ok. Las reuniones con el cliente las lleva la gerente de cuenta, así que no es un impedimento. Cuéntame de tus herramientas.
+Diseño todo en Figma; ahí hago los prototipos y el sistema de componentes. Para los talleres con el cliente uso Miro, y para las pruebas de usabilidad, Maze. Y sé lo básico de HTML y CSS, lo suficiente para conversar con los desarrolladores.
+¿Y en qué empresa estabas antes del freelance?
+En una startup de logística, Ruta Express. Entré como diseñadora UX. Bueno, en realidad mi último cargo ahí fue líder de diseño: me ascendieron los últimos ocho meses y tenía a dos diseñadores a cargo.
+¿Y en total cuántos años llevas en diseño de producto?
+Contando la startup y el freelance, tres años. Antes hice diseño gráfico, pero eso es otra cosa.
+¿Qué proyecto te gustaría mostrarnos en la siguiente etapa?
+El rediseño de la app de los repartidores de Ruta Express. Antes tenían que tocar seis pantallas para marcar una entrega, y lo dejamos en dos. Las quejas bajaron muchísimo.
+Perfecto, Lucía. ¿Alguna pregunta?
+¿El equipo de diseño es grande?
+Somos cinco, y uno se dedica solo a investigación. Te escribo por correo con la prueba práctica.
+Genial, gracias, Diego.
