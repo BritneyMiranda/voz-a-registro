@@ -1,0 +1,11 @@
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+numpy==2.5.4
+pandas==3.1.0
+jiwer==4.0.0
+PyYAML==6.0.3
+imageio-ffmpeg==0.6.0
+soundfile==0.14.0
+nvidia-ml-py==13.615.71
+streamlit==1.66.1
+altair==6.3.0

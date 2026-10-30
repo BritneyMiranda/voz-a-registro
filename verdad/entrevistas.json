@@ -1,0 +1,46 @@
+{
+  "fecha_escena": "2026-10-29",
+  "clips": {
+    "E01": {
+      "anios_experiencia": 4,
+      "ultimo_puesto": "analista de datos senior",
+      "tecnologias": ["SQL", "Python", "pandas", "scikit-learn", "Power BI", "Airflow"],
+      "pretension_salarial": {"monto": 6500, "moneda": "PEN"},
+      "disponibilidad": "2026-11-13",
+      "nivel_ingles": "intermedio"
+    },
+    "E02": {
+      "anios_experiencia": 6.5,
+      "ultimo_puesto": "desarrollador backend",
+      "tecnologias": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes"],
+      "pretension_salarial": {"monto": 7200, "moneda": "PEN"},
+      "disponibilidad": "inmediata",
+      "nivel_ingles": "avanzado",
+      "nota": "Go se menciona pero el candidato lo descarta; no forma parte de la verdad."
+    },
+    "E03": {
+      "anios_experiencia": 3,
+      "ultimo_puesto": "líder de diseño",
+      "tecnologias": ["Figma", "Miro", "Maze", "HTML", "CSS"],
+      "pretension_salarial": {"monto": 1500, "moneda": "USD"},
+      "disponibilidad": "2026-12-01",
+      "nivel_ingles": "básico"
+    },
+    "E04": {
+      "anios_experiencia": 8,
+      "ultimo_puesto": "jefe de ingeniería de datos",
+      "tecnologias": ["PySpark", "Databricks", "AWS", "S3", "Glue", "Snowflake", "dbt"],
+      "pretension_salarial": {"monto": 9500, "moneda": "PEN"},
+      "disponibilidad": "2026-11-29",
+      "nivel_ingles": "avanzado"
+    },
+    "E05": {
+      "anios_experiencia": 1.5,
+      "ultimo_puesto": "asistente de inteligencia comercial",
+      "tecnologias": ["Excel", "Power Query", "Power BI", "SQL", "Tableau"],
+      "pretension_salarial": {"monto": 3800, "moneda": "PEN"},
+      "disponibilidad": "2026-11-12",
+      "nivel_ingles": "básico"
+    }
+  }
+}

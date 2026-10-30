@@ -1,0 +1,6 @@
+# Lo mínimo para recalcular métricas desde la caché en GitHub Actions (sin GPU, sin modelos).
+numpy==2.5.4
+pandas==3.1.0
+jiwer==4.0.0
+PyYAML==6.0.3
+imageio-ffmpeg==0.6.0

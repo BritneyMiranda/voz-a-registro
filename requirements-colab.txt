@@ -1,0 +1,9 @@
+# Colab ya trae torch, numpy y pandas; aquí solo lo que falta, con versión fija.
+faster-whisper==1.2.1
+jiwer==4.0.0
+PyYAML==6.0.3
+imageio-ffmpeg==0.6.0
+soundfile==0.14.0
+nvidia-ml-py==13.615.71
+transformers==4.57.3
+accelerate==1.12.0

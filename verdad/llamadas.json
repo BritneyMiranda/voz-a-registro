@@ -1,0 +1,76 @@
+{
+  "dominio": "restaurante",
+  "clips": {
+    "L01": {
+      "items": [
+        {"producto": "lomo saltado", "tamano": "personal", "cantidad": 2, "precio_unitario": 32},
+        {"producto": "ceviche clásico", "tamano": "fuente", "cantidad": 1, "precio_unitario": 52},
+        {"producto": "chicha morada", "tamano": "jarra", "cantidad": 1, "precio_unitario": 16}
+      ],
+      "promocion": {"descripcion": "10 soles de descuento desde 100 soles", "descuento": 10},
+      "direccion_entrega": "Jirón Huamachuco 1450, departamento 302, Jesús María",
+      "metodo_pago": "yape",
+      "total_dicho": 112,
+      "total_correcto": 122,
+      "trampas": {"correccion": true, "total_erroneo": true, "direccion_con_digitos": true},
+      "causa_error": "error del hablante: resta mal el descuento"
+    },
+    "L02": {
+      "items": [
+        {"producto": "arroz con mariscos", "tamano": "fuente", "cantidad": 1, "precio_unitario": 56},
+        {"producto": "chicharrón de pescado", "tamano": "personal", "cantidad": 2, "precio_unitario": 29},
+        {"producto": "inca kola", "tamano": "1.5 L", "cantidad": 1, "precio_unitario": 10}
+      ],
+      "promocion": {"descripcion": "10 soles de descuento desde 100 soles", "descuento": 10},
+      "direccion_entrega": "Avenida Brasil 2875, Pueblo Libre",
+      "metodo_pago": "tarjeta",
+      "total_dicho": 114,
+      "total_correcto": 114,
+      "trampas": {"correccion": true, "total_erroneo": false, "direccion_con_digitos": true},
+      "causa_error": null
+    },
+    "L03": {
+      "items": [
+        {"producto": "ají de gallina", "tamano": "personal", "cantidad": 3, "precio_unitario": 24},
+        {"producto": "suspiro limeño", "tamano": "unidad", "cantidad": 2, "precio_unitario": 12},
+        {"producto": "chicha morada", "tamano": "vaso", "cantidad": 3, "precio_unitario": 6}
+      ],
+      "promocion": {"descripcion": "suspiro limeño 2x1", "descuento": 12},
+      "direccion_entrega": "Calle Los Pinos 340, Miraflores",
+      "metodo_pago": "efectivo",
+      "total_dicho": 92,
+      "total_correcto": 102,
+      "trampas": {"correccion": false, "total_erroneo": true, "direccion_con_digitos": true},
+      "causa_error": "error del hablante: aplica dos promociones no acumulables"
+    },
+    "L04": {
+      "items": [
+        {"producto": "ceviche clásico", "tamano": "fuente", "cantidad": 2, "precio_unitario": 52},
+        {"producto": "chicha morada", "tamano": "jarra", "cantidad": 1, "precio_unitario": 16},
+        {"producto": "lomo saltado", "tamano": "personal", "cantidad": 1, "precio_unitario": 32}
+      ],
+      "promocion": {"descripcion": "jarra de chicha morada gratis con dos fuentes", "descuento": 16},
+      "direccion_entrega": "Manzana F, lote 12, urbanización San Antonio, Carabayllo",
+      "metodo_pago": "plin",
+      "total_dicho": 152,
+      "total_correcto": 136,
+      "trampas": {"correccion": true, "total_erroneo": true, "direccion_con_digitos": true},
+      "causa_error": "error del hablante: olvida descontar la jarra gratis"
+    },
+    "L05": {
+      "items": [
+        {"producto": "chicharrón de pescado", "tamano": "personal", "cantidad": 1, "precio_unitario": 29},
+        {"producto": "ceviche clásico", "tamano": "personal", "cantidad": 1, "precio_unitario": 28},
+        {"producto": "suspiro limeño", "tamano": "unidad", "cantidad": 1, "precio_unitario": 12},
+        {"producto": "inca kola", "tamano": "1.5 L", "cantidad": 1, "precio_unitario": 10}
+      ],
+      "promocion": null,
+      "direccion_entrega": "Avenida Arequipa 4120, oficina 501, Miraflores",
+      "metodo_pago": "tarjeta",
+      "total_dicho": 79,
+      "total_correcto": 79,
+      "trampas": {"correccion": false, "total_erroneo": false, "direccion_con_digitos": true},
+      "causa_error": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# audios: no se versionan (ver README, «Audios»)
+audio/
+audio_degradado/
+*.mp3
+*.m4a
+*.wav
+*.ogg
+*.opus
+# credenciales
+.env
+.streamlit/secrets.toml
+# otros
+__pycache__/
+*.zip
+.venv/

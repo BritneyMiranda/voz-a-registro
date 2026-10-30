@@ -1,0 +1,207 @@
+# Toda la configuración del proyecto. El código no tiene rutas, modelos, umbrales ni prompts escritos a mano.
+
+rutas:
+  audio: audio                    # no se versiona: ver README, «Audios»
+  audio_degradado: audio_degradado
+  cache: cache                    # transcripciones y extracciones precalculadas (sí se versiona)
+  verdad: verdad
+  guiones: guiones
+  resultados: resultados
+  cache_modelos: E:/hf_cache      # HF_HOME; los modelos pesan ~4 GB y no caben en C:
+
+fecha_escena: "2026-10-29"        # las fechas relativas («en dos semanas») se resuelven desde aquí
+
+asr:
+  modelo: mobiuslabsgmbh/faster-whisper-large-v3-turbo
+  dispositivo: auto               # auto | cuda | cpu (el dispositivo real se lee de la librería)
+  precision: int8                 # int8 | float16 | float32 | int8_float16
+  idioma: es
+  beam_size: 5
+  vad: true
+  glosario_modo: ninguno          # ninguno | hotwords | initial_prompt
+  # comparaciones de la fase 2 (las corre el notebook de Colab)
+  modelos_comparacion:
+    small: Systran/faster-whisper-small
+    large-v3-turbo: mobiuslabsgmbh/faster-whisper-large-v3-turbo
+  precisiones_comparacion: [float16, int8]
+
+glosario:
+  entrevista: >-
+    SQL, Python, pandas, scikit-learn, Power BI, Power Query, Airflow, Java, Spring Boot,
+    PostgreSQL, Docker, Kubernetes, Figma, Miro, Maze, HTML, CSS, PySpark, Databricks,
+    AWS, S3, Glue, Snowflake, dbt, Excel, Tableau, backend, pricing, retail, freelance
+  pedido: >-
+    Cevichería La Ola, ceviche clásico, arroz con mariscos, lomo saltado, ají de gallina,
+    chicharrón de pescado, chicha morada, Inca Kola, suspiro limeño, Yape, Plin, POS,
+    Huamachuco, Jesús María, Pueblo Libre, Miraflores, Carabayllo, motorizado
+
+extraccion:
+  metodo: reglas                  # reglas | llm
+  ventana_palabras: 60            # cuántas palabras mirar después de la pregunta que introduce un campo
+  llm:
+    modelo: Qwen/Qwen2.5-3B-Instruct
+    max_tokens_nuevos: 700
+    temperatura: 0.0
+    prompt_entrevista: |
+      Eres un asistente de selección de personal. Lee la transcripción de una entrevista de trabajo
+      (A entrevista, B es la persona candidata; los turnos no están marcados) y devuelve SOLO un objeto JSON
+      con estas claves. Para cada campo devuelve un objeto {"valor": ..., "cita": "..."}, donde "cita" es el
+      fragmento EXACTO de la transcripción del que sale el valor, copiado letra por letra. Si un dato no se dice,
+      usa {"valor": null, "cita": null}. No corrijas lo que dice la transcripción.
+      - anios_experiencia: número (años, admite 0.5)
+      - ultimo_puesto: texto, el cargo más reciente de la persona candidata
+      - tecnologias: lista de herramientas que la persona dice dominar
+      - pretension_salarial: {"monto": número, "moneda": "PEN" o "USD"} (lo que pide, no lo que gana hoy)
+      - disponibilidad: "inmediata" o la expresión de cuándo puede empezar, tal como se dice
+      - nivel_ingles: "básico", "intermedio" o "avanzado"
+    prompt_pedido: |
+      Eres un asistente de un restaurante. Lee la transcripción de una llamada (A vende, B es el cliente;
+      los turnos no están marcados) y devuelve SOLO un objeto JSON. El pedido es el FINAL: si el cliente se
+      corrige, vale la corrección. Para cada campo devuelve {"valor": ..., "cita": "..."} con la cita EXACTA
+      de la transcripción. Si un dato no se dice, usa {"valor": null, "cita": null}. No corrijas la transcripción
+      ni hagas cuentas: copia lo que se dijo.
+      - items: lista de {"producto", "tamano", "cantidad"}; en este campo "cita" puede ser una lista de citas
+      - promocion: texto de la promoción aplicada, o null
+      - direccion_entrega: texto
+      - metodo_pago: "efectivo", "tarjeta", "yape" o "plin"
+      - total_dicho: número, el total que dice el vendedor en voz alta
+
+entrevista:
+  niveles_ingles:
+    básico: ['basico', 'basica', 'a1', 'a2', 'elemental']
+    intermedio: ['intermedio', 'intermedia', 'b1', 'b2']
+    avanzado: ['avanzado', 'avanzada', 'fluido', 'c1', 'c2', 'nativo', 'bilingue']
+  palabras_cargo: [analista, desarrollador, desarrolladora, ingeniero, ingeniera, disenador, disenadora,
+                   lider, jefe, jefa, asistente, gerente, coordinador, coordinadora, especialista,
+                   consultor, consultora, programador, programadora, director, directora, practicante]
+  marcas_cargo_actual: ['ultimo puesto', 'ultimo cargo', 'cargo es', 'cargo seguia siendo', 'soy',
+                        'formalmente', 'puesto hoy']
+  salario_min: 500
+  salario_max: 50000
+  # alias → nombre canónico; los alias se buscan en el texto normalizado (minúsculas, sin tildes)
+  tecnologias:
+    SQL: ['sql']
+    Python: ['python', 'paiton', 'phyton']
+    pandas: ['pandas']
+    scikit-learn: ['scikit learn', 'scikit-learn', 'sci kit learn', 'sky kit learn']
+    Power BI: ['power bi', 'power b i', 'powerbi']
+    Power Query: ['power query', 'power queri']
+    Airflow: ['airflow', 'air flow']
+    Java: ['java']
+    Spring Boot: ['spring boot', 'springboot']
+    PostgreSQL: ['postgresql', 'postgres', 'postgre sql', 'postgre']
+    Docker: ['docker', 'doker']
+    Kubernetes: ['kubernetes', 'kubernete', 'cubernetes']
+    Go: ['go', 'golang']
+    Figma: ['figma']
+    Miro: ['miro']
+    Maze: ['maze', 'meis', 'meiz']
+    HTML: ['html', 'h t m l']
+    CSS: ['css', 'c s s']
+    PySpark: ['pyspark', 'py spark', 'pai spark', 'paispark']
+    Databricks: ['databricks', 'data bricks', 'datab ricks']
+    AWS: ['aws', 'a w s', 'amazon web services']
+    S3: ['s3', 's 3', 'ese 3', 'ese tres']
+    Glue: ['glue', 'glu']
+    Snowflake: ['snowflake', 'snow flake']
+    dbt: ['dbt', 'd b t', 'de be te']
+    Excel: ['excel']
+    Tableau: ['tableau', 'tablo', 'tableu']
+
+pedido:
+  carta:                          # producto → tamaño → precio en soles
+    ceviche clásico: {personal: 28, fuente: 52}
+    arroz con mariscos: {personal: 30, fuente: 56}
+    lomo saltado: {personal: 32, fuente: 60}
+    ají de gallina: {personal: 24}
+    chicharrón de pescado: {personal: 29}
+    chicha morada: {vaso: 6, jarra: 16}
+    inca kola: {"1.5 L": 10}
+    suspiro limeño: {unidad: 12}
+  alias_productos:                # se buscan en texto normalizado; el singular y el plural
+    ceviche clásico: ['ceviches? clasicos?', 'ceviches?', 'cebiches?']
+    arroz con mariscos: ['arroz con mariscos', 'arroces con mariscos']
+    lomo saltado: ['lomos? saltados?', 'lomos?']
+    ají de gallina: ['ajies de gallina', 'aji de gallina', 'ajis de gallina']
+    chicharrón de pescado: ['chicharron(es)? de pescado', 'chicharron(es)?']
+    chicha morada: ['chichas? moradas?', 'chichas?']
+    inca kola: ['inca ?kolas?', 'inca ?colas?', 'incakolas?']
+    suspiro limeño: ['suspiros? limenos?', 'suspiros?']
+  alias_tamanos:
+    personal: ['personal', 'personales']
+    fuente: ['fuente', 'fuentes', 'de fuente']
+    vaso: ['vasos?']
+    jarra: ['jarras?']
+  tamano_por_defecto:             # si no se dice el tamaño
+    ceviche clásico: personal
+    arroz con mariscos: personal
+    lomo saltado: personal
+    ají de gallina: personal
+    chicharrón de pescado: personal
+    chicha morada: vaso
+    inca kola: "1.5 L"
+    suspiro limeño: unidad
+  cantidad_maxima: 20             # «personal 29» es un precio, no 29 platos
+  marcas_quitar: ['quit\w*', 'saca\w*', 'cancel\w*', 'sin']
+  marcas_cambiar: ['cambialo', 'cambiamelo', 'cambiele', 'mejor no', 'en vez de', 'en lugar de']
+  promociones:
+    descuento_100:
+      descripcion: 10 soles de descuento desde 100 soles
+      patron: 'descuento de 10'
+      tipo: fijo
+      monto: 10
+      minimo: 100
+    suspiro_2x1:
+      descripcion: suspiro limeño 2x1
+      patron: '2 por 1|2x1'
+      tipo: dos_por_uno
+      producto: suspiro limeño
+    jarra_gratis:
+      descripcion: jarra de chicha morada gratis con dos fuentes
+      patron: 'jarra[\w\s]{0,30}gratis|gratis[\w\s]{0,30}jarra'
+      tipo: gratis
+      producto: chicha morada
+      tamano: jarra
+  marcas_sin_promocion: ['no hay promocion', 'sin promocion', 'no aplica']
+  marcas_promocion_elegida: ['le dejo (el|la)', 'le aplicamos (el|la)']
+  inicio_direccion: ['jiron', 'jr', 'avenida', 'av', 'calle', 'pasaje', 'manzana', 'mz', 'urbanizacion']
+  pagos:
+    yape: ['yape', 'yapeo', 'yapear', 'yapeas']
+    plin: ['plin', 'plineo']
+    tarjeta: ['tarjeta', 'pos', 'visa', 'mastercard']
+    efectivo: ['efectivo', 'billete', 'vuelto', 'cash']
+  palabras_total: ['total']
+
+validacion:
+  tolerancia_soles: 0.5
+  confianza_minima_numero: 0.70   # probabilidad de palabra de Whisper; debajo de esto, el número es dudoso
+
+escalera:
+  semilla: 27
+  L1:
+    simula: nota de voz de WhatsApp
+    codec: libopus
+    bitrate: 16k
+    canales: 1
+  L2:
+    simula: llamada telefónica
+    paso_banda_hz: [300, 3400]
+    frecuencia_muestreo: 8000
+  L3:
+    simula: ambiente ruidoso (L1 + ruido de conversaciones)
+    base: L1
+    snr_db: 5
+    ruido: murmullo             # murmullo hecho con 6 clips del propio corpus, invertidos y superpuestos
+    voces_murmullo: 6
+
+metricas:
+  bootstrap_repeticiones: 2000
+  nivel_confianza: 0.95
+
+calidad:                          # puerta de calidad de GitHub Actions (scripts/puerta_calidad.py)
+  corrida: L0_large-v3-turbo_float16_cuda_glosario-ninguno
+  corrida_respaldo: L0_large-v3-turbo_int8_cpu_glosario-ninguno
+  wer_maximo: 0.20
+  exactitud_minima_entrevista: 0.70
+  exactitud_minima_pedido: 0.70
+  errores_plantados_atrapados_min: 3
