@@ -36,7 +36,7 @@ Grabado en parejas por llamada de Discord y exportado a MP3. L05 dura 1:52, un p
 **De dónde sale la verdad de campo y por qué no costó nada:** los guiones se escribieron antes de grabar, así que los
 valores correctos de cada campo se conocían de antemano. La transcripción de referencia empezó siendo el guion
 ([scripts/referencias_desde_guiones.py](scripts/referencias_desde_guiones.py)) y luego la autora la corrigió escuchando
-cada lugar donde lo grabado se apartó del guion ([scripts/revisar_referencias.py](scripts/revisar_referencias.py),
+cada lugar donde lo grabado se apartó del guion (47 líneas cambiadas en los 10 clips) ([scripts/revisar_referencias.py](scripts/revisar_referencias.py),
 lista en [verdad/REVISAR.md](verdad/REVISAR.md)). Nunca se copió la salida de Whisper como referencia: eso sería medir
 al modelo contra sí mismo.
 
@@ -157,14 +157,47 @@ e `initial_prompt` lo olvida después de los primeros 30 segundos. Por eso se mi
 
 ## Resultados
 
-Todas las tablas se generan con `python scripts/evaluar.py && python scripts/tablas_readme.py`.
+Todas las tablas se generan con `python scripts/evaluar.py && python scripts/tablas_readme.py`. La GPU es una
+Tesla T4 de Colab (15 GB); la CPU de la laptop, un Intel Core i7-1165G7.
+
+### Lo que dicen los números
+
+- **Modelo y precisión.** large-v3-turbo baja el WER de 9,1 % (small) a 4,0 %. int8 ocupa 1 236 MB de VRAM contra
+  1 940 MB de float16, pero no es gratis: cambió el texto en 8 de 10 clips y subió el WER a 5,2 %, con intervalos que
+  se solapan. Más rápido y un poco peor; para este corpus se queda float16 en GPU.
+- **CPU contra GPU, en la misma máquina de Colab:** E01 tardó 221 s en CPU y 7 s en la T4 (≈ 30 veces), y el texto
+  cambió en 1 de los 2 clips comparados.
+- **Glosario.** `initial_prompt` no cambia nada (Δ WER +0,0004, IC que incluye el cero). `hotwords` sí corrige nombres
+  propios (por fin escribe «Inca Kola»), pero **empeora el WER de 4,0 % a 22,4 %**: con el glosario repetido en cada
+  ventana, Whisper entra en bucles («el arroz con arroz con arroz con…» en L02) y se salta frases enteras (74 palabras
+  borradas en E04). Más contexto no es mejor contexto.
+- **¿Se puede saber si el registro sirve mirando solo el WER? No.** Con el mismo modelo (small, audio original),
+  **L03 tiene WER de 12,2 % y sus 5 campos correctos**, y **L02 tiene WER de 7,9 % y solo 2 de 5**: sus pocos errores
+  caen en «Inca Kola», en un plato y en la dirección. En las 100 combinaciones clip × corrida, la correlación entre
+  WER y exactitud del registro es −0,63: el WER ayuda, pero no alcanza. Quien reporta solo WER está reportando cuántas
+  palabras se oyeron mal, no si los datos que importan están bien.
+- **Asimetría entre tipos de campo.** El inglés (3 clases) sale bien en todos los niveles menos L3: le basta con oír
+  una de pocas palabras. Las cifras y los nombres propios son lo primero que se rompe («dos ceviches» → «12 biches»,
+  «Jirón» → «Irón»), y un número con un dígito mal es un registro equivocado, no uno aproximado.
+- **La referencia importa.** Antes de corregir la referencia escuchando, el WER era 6,0 %; después, 4,0 %. Un tercio
+  de lo que parecía error del ASR eran palabras que sí se dijeron pero no estaban en el guion.
 
 ### Capa 1 · Transcripción
 
 <!-- TRANSCRIPCION -->
 | Corrida | Clips | WER | IC 95 % | CER | s / min de audio | VRAM pico (MB) | Dispositivo (leído) | GPU |
 |---|---|---|---|---|---|---|---|---|
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | 10 | 0.071 | [0.059, 0.082] | 0.040 | 142.1 | — | cpu | — |
+| L0_large-v3-turbo_float16_cuda_glosario-hotwords | 10 | 0.224 | [0.157, 0.303] | 0.182 | 3.2 | 2518 | cuda | Tesla T4 |
+| L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | 10 | 0.040 | [0.024, 0.059] | 0.025 | 2.5 | 2486 | cuda | Tesla T4 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | 10 | 0.040 | [0.028, 0.054] | 0.017 | 2.2 | 2518 | cuda | Tesla T4 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | 10 | 0.047 | [0.033, 0.060] | 0.023 | 142.1 | — | cpu | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab | 2 | 0.028 | [0.017, 0.040] | 0.012 | 65.2 | 450 | cpu | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | 10 | 0.052 | [0.033, 0.072] | 0.030 | 2.5 | 1686 | cuda | Tesla T4 |
+| L0_small_float16_cuda_glosario-ninguno | 10 | 0.091 | [0.068, 0.114] | 0.033 | 1.6 | 1302 | cuda | Tesla T4 |
+| L0_small_int8_cuda_glosario-ninguno | 10 | 0.092 | [0.070, 0.113] | 0.031 | 1.7 | 1046 | cuda | Tesla T4 |
+| L1_large-v3-turbo_float16_cuda_glosario-ninguno | 10 | 0.049 | [0.035, 0.062] | 0.028 | 2.9 | 2518 | cuda | Tesla T4 |
+| L2_large-v3-turbo_float16_cuda_glosario-ninguno | 10 | 0.054 | [0.042, 0.065] | 0.032 | 2.8 | 2518 | cuda | Tesla T4 |
+| L3_large-v3-turbo_float16_cuda_glosario-ninguno | 10 | 0.212 | [0.165, 0.270] | 0.129 | 2.9 | 2550 | cuda | Tesla T4 |
 <!-- /TRANSCRIPCION -->
 
 **Evidencia de que se usó la GPU:** la columna «Dispositivo (leído)» viene de `modelo.model.device` de ctranslate2 en
@@ -174,13 +207,26 @@ corrida que hubiera caído a CPU mostraría `cpu`, sin VRAM y ~40 veces más len
 **¿Cambió el texto?** (pares de corridas que difieren en una sola cosa)
 
 <!-- CAMBIOS -->
-_Pendiente: requiere las corridas de Colab._
+| A | B | Clips | Clips con texto distinto | WER entre A y B |
+|---|---|---|---|---|
+| L0_large-v3-turbo_float16_cuda_glosario-hotwords | L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | 10 | 10 | 0.199 |
+| L0_large-v3-turbo_float16_cuda_glosario-hotwords | L0_large-v3-turbo_float16_cuda_glosario-ninguno | 10 | 10 | 0.203 |
+| L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | L0_large-v3-turbo_float16_cuda_glosario-ninguno | 10 | 10 | 0.028 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | L0_large-v3-turbo_int8_cuda_glosario-ninguno | 10 | 8 | 0.017 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | L0_small_float16_cuda_glosario-ninguno | 10 | 10 | 0.080 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | L0_large-v3-turbo_int8_cuda_glosario-ninguno | 10 | 9 | 0.016 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab | L0_large-v3-turbo_int8_cuda_glosario-ninguno | 2 | 1 | 0.011 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | L0_small_int8_cuda_glosario-ninguno | 10 | 10 | 0.086 |
+| L0_small_float16_cuda_glosario-ninguno | L0_small_int8_cuda_glosario-ninguno | 10 | 10 | 0.027 |
 <!-- /CAMBIOS -->
 
 **Glosario** (diferencia pareada de WER por clip; negativo = mejora)
 
 <!-- GLOSARIO -->
-_Pendiente: requiere las corridas de Colab._
+| Sin glosario | Con glosario | Clips | Δ WER (con − sin) | IC 95 % (bootstrap pareado) |
+|---|---|---|---|---|
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | L0_large-v3-turbo_float16_cuda_glosario-hotwords | 10 | +0.184 | [0.120, 0.261] |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | 10 | +0.000 | [-0.010, 0.009] |
 <!-- /GLOSARIO -->
 
 ### Capa 2 · Registro
@@ -190,6 +236,17 @@ Exactitud por campo con intervalo de Wilson al 95 % y proporción de campos veri
 <!-- REGISTRO -->
 | Corrida | Tarea | Campo | Exactitud reglas | Verificados reglas | Error abs. reglas |
 |---|---|---|---|---|---|
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | anios_experiencia | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | disponibilidad | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | nivel_ingles | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | pretension_salarial | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | tecnologias | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | ultimo_puesto | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | direccion_entrega | 0.80 [0.38, 0.96] | 0.80 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | items | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | promocion | 1.00 [0.57, 1.00] | 0.80 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | anios_experiencia | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | disponibilidad | 1.00 [0.57, 1.00] | 1.00 | — |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | nivel_ingles | 1.00 [0.57, 1.00] | 1.00 | — |
@@ -201,10 +258,31 @@ Exactitud por campo con intervalo de Wilson al 95 % y proporción de campos veri
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | promocion | 1.00 [0.57, 1.00] | 0.80 | — |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | anios_experiencia | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | disponibilidad | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | nivel_ingles | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | pretension_salarial | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | tecnologias | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | ultimo_puesto | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | direccion_entrega | 0.80 [0.38, 0.96] | 0.80 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | items | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | promocion | 1.00 [0.57, 1.00] | 0.80 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
 
 | corrida | metodo | macro_f1_ingles |
 |---|---|---|
+| L0_large-v3-turbo_float16_cuda_glosario-hotwords | reglas | 0.889 |
+| L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | reglas | 1.0 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 1.0 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | reglas | 1.0 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab | reglas | 1.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | reglas | 1.0 |
+| L0_small_float16_cuda_glosario-ninguno | reglas | 1.0 |
+| L0_small_int8_cuda_glosario-ninguno | reglas | 1.0 |
+| L1_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 1.0 |
+| L2_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 1.0 |
+| L3_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 0.889 |
 <!-- /REGISTRO -->
 
 ### Tarea 2 · Escalera de degradación
@@ -216,7 +294,12 @@ eligieron 5 dB porque es el ruido de un restaurante o una calle con gente hablan
 propio corpus invertidos en el tiempo, para que suene a voces sin dar palabras que el ASR pueda copiar.
 
 <!-- ESCALERA -->
-_Pendiente: requiere las corridas L1–L3 de Colab._
+| nivel | WER entrevista | WER pedido | campos entrevista (reglas) | campos pedido (reglas) |
+|---|---|---|---|---|
+| L0 | 0.028 | 0.052 | 0.9 | 0.84 |
+| L1 | 0.034 | 0.063 | 0.9 | 0.92 |
+| L2 | 0.042 | 0.065 | 0.9 | 0.84 |
+| L3 | 0.156 | 0.269 | 0.6 | 0.6 |
 <!-- /ESCALERA -->
 
 ### Tarea 2 · Validación aritmética: atrapados contra perdidos
@@ -226,7 +309,17 @@ Un registro está «roto» si el total dicho está mal a propósito o si el ASR 
 <!-- VALIDACION -->
 | corrida | metodo | errores_plantados | atrapados | perdidos | registros_rotos | rotos_atrapados | rotos_perdidos | registros_sanos | falsas_alarmas | diagnosticos_evaluables | diagnosticos_correctos |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| L0_large-v3-turbo_float16_cuda_glosario-hotwords | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
+| L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab | reglas | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
+| L0_small_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
+| L0_small_int8_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 4 | 4 | 0 | 1 | 0 | 4 | 4 |
+| L1_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 4 | 4 | 0 | 1 | 0 | 4 | 3 |
+| L2_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
+| L3_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
 <!-- /VALIDACION -->
 
 **Regla de diagnóstico.** Si el total no cuadra: (1) si el total dicho coincide exactamente con un error de cuenta
@@ -236,11 +329,19 @@ típico (olvidar la promoción, aplicar dos promociones no acumulables, desconta
 ## Limitaciones: lo que esta muestra no permite afirmar
 
 - **Diez clips.** Cinco entrevistas × seis campos = 30 observaciones; cinco llamadas × cinco campos = 25. Alcanza para
-  ver efectos grandes (que un WER de 7 % conviva con pedidos rotos) y no para estimar con precisión: los intervalos de
+  ver efectos grandes (que un WER de 4 % conviva con pedidos rotos) y no para estimar con precisión: los intervalos de
   confianza son anchos y están en las tablas.
 - **Dos voces, un acento, un micrófono.** Todo lo grabó la misma pareja por Discord. No dice nada de otros acentos,
   de ruido real ni de llamadas telefónicas reales: L2 y L3 son simulaciones.
 - **El LLM corrió una vez, con temperatura 0.** No se midió su variación entre corridas.
+- **El primer prompt de Qwen falló.** Con el prompt v1 (claves descritas, sin plantilla), Qwen 2.5 3B devolvió una
+  lista sin claves en las 20 respuestas de entrevistas y en 1 de 20 pedidos: el registro quedó vacío. Esas respuestas
+  están en [cache/extracciones_llm_v1/](cache/extracciones_llm_v1/). La comparación reglas contra LLM usa el prompt v2,
+  que da la plantilla JSON exacta. Aun en v1 se ve el riesgo que la verificación atrapa: el modelo puso disponibilidad
+  «inmediata» citando una frase que dice «desde el viernes 13 de noviembre», y 4 años de experiencia citando
+  «son cuatro analistas».
+- **La referencia se revisó escuchando los lugares donde Whisper y el guion diferían** (135, con prioridad en los 32
+  que tocan números o campos). Si Whisper y el guion coincidían en algo que no se dijo, ese error no se detectó.
 - **El diagnóstico se equivoca cuando un error del ASR vale lo mismo que la promoción** (en L02, la Inca Kola perdida
   y el descuento valen 10 soles).
 - **Las reglas tienen falsos positivos conocidos:** cualquier tecnología mencionada entra en la lista, aunque la persona

@@ -59,12 +59,16 @@ macro = md(pd.DataFrame(res["macro_f1"]).round(3)) if res["macro_f1"] else ""
 v = pd.DataFrame(res["validacion"])
 validacion = md(v) if len(v) else "_Pendiente._"
 
-esc = r[r.corrida.str.contains("float16_cuda_glosario-ninguno")].assign(nivel=lambda d: d.corrida.str[:2])
+BASE = "large-v3-turbo_float16_cuda_glosario-ninguno"
+esc = r[r.corrida.str.endswith(BASE)].assign(nivel=lambda d: d.corrida.str[:2])
 if len(esc):
-    w = t[t.corrida.str.contains("float16_cuda_glosario-ninguno")].assign(nivel=lambda d: d.corrida.str[:2])
-    curva = esc.groupby(["nivel", "metodo"]).apply(lambda g: (g.exactitud * g.n).sum() / g.n.sum()).unstack()
-    curva = curva.join(w.set_index("nivel")[["wer"]]).reset_index()
-    escalera = md(curva.round(3))
+    por_clip = pd.read_csv(RAIZ / cfg["rutas"]["resultados"] / "transcripcion_por_clip.csv")
+    w = por_clip[por_clip.corrida.str.endswith(BASE)].assign(nivel=lambda d: d.corrida.str[:2])
+    wer = w.groupby(["nivel", "tarea"]).wer.mean().unstack().add_prefix("WER ")
+    exact = esc.groupby(["nivel", "tarea", "metodo"]).apply(lambda g: (g.exactitud * g.n).sum() / g.n.sum())
+    exact = exact.unstack(["tarea", "metodo"])
+    exact.columns = [f"campos {t} ({m})" for t, m in exact.columns]
+    escalera = md(wer.join(exact).round(3).reset_index())
 else:
     escalera = "_Pendiente: requiere las corridas L1–L3 de Colab._"
 

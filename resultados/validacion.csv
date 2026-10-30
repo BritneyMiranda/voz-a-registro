@@ -1,6 +1,52 @@
 corrida,metodo,clip,total_erroneo_plantado,registro_igual_a_verdad,estado,total_calculado,total_dicho,diagnostico,motivo,causa_real,diagnostico_correcto
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L02,False,False,no_cuadra,114.0,35.0,posible_error_asr,una cifra tiene probabilidad 0.02 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L04,True,False,no_cuadra,156.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.00 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L05,False,False,no_cuadra,79.0,30.0,posible_error_asr,una cifra tiene probabilidad 0.39 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L02,False,False,no_cuadra,114.0,35.0,posible_error_asr,una cifra tiene probabilidad 0.02 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.03 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L05,False,False,no_cuadra,79.0,30.0,posible_error_asr,una cifra tiene probabilidad 0.39 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,104.0,114.0,error_hablante,olvidó aplicar la promoción,posible_error_asr,False
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.27 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,False,False,no_cuadra,69.0,79.0,posible_error_asr,una cifra tiene probabilidad 0.47 en Whisper,posible_error_asr,True
 L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
 L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L02,False,False,no_cuadra,104.0,114.0,error_hablante,olvidó aplicar la promoción,posible_error_asr,False
 L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
 L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.31 en Whisper,posible_error_asr,True
 L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L05,False,False,no_cuadra,69.0,79.0,posible_error_asr,una cifra tiene probabilidad 0.00 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,104.0,114.0,error_hablante,olvidó aplicar la promoción,posible_error_asr,False
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.25 en Whisper,posible_error_asr,True
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L05,False,False,no_cuadra,69.0,79.0,posible_error_asr,una cifra tiene probabilidad 0.46 en Whisper,posible_error_asr,True
+L0_small_float16_cuda_glosario-ninguno,reglas,L01,True,False,no_cuadra,122.0,512.0,posible_error_asr,una cifra tiene probabilidad 0.08 en Whisper,posible_error_asr,True
+L0_small_float16_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,100.0,35.0,posible_error_asr,una cifra tiene probabilidad 0.26 en Whisper,posible_error_asr,True
+L0_small_float16_cuda_glosario-ninguno,reglas,L03,True,False,no_cuadra,30.0,92.0,posible_error_asr,una cifra tiene probabilidad 0.03 en Whisper,posible_error_asr,True
+L0_small_float16_cuda_glosario-ninguno,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.29 en Whisper,posible_error_asr,True
+L0_small_float16_cuda_glosario-ninguno,reglas,L05,False,False,no_cuadra,57.0,79.0,posible_error_asr,una cifra tiene probabilidad 0.19 en Whisper,posible_error_asr,True
+L0_small_int8_cuda_glosario-ninguno,reglas,L01,True,False,no_cuadra,122.0,512.0,posible_error_asr,una cifra tiene probabilidad 0.08 en Whisper,posible_error_asr,True
+L0_small_int8_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,100.0,114.0,posible_error_asr,una cifra tiene probabilidad 0.26 en Whisper,posible_error_asr,True
+L0_small_int8_cuda_glosario-ninguno,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L0_small_int8_cuda_glosario-ninguno,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.39 en Whisper,posible_error_asr,True
+L0_small_int8_cuda_glosario-ninguno,reglas,L05,False,True,cuadra,79.0,79.0,,,,
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,104.0,114.0,error_hablante,olvidó aplicar la promoción,posible_error_asr,False
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,True,True,no_cuadra,136.0,152.0,error_hablante,olvidó aplicar la promoción,error_hablante,True
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,False,True,cuadra,79.0,79.0,,,,
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,104.0,114.0,error_hablante,olvidó aplicar la promoción,posible_error_asr,False
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,True,True,no_cuadra,102.0,92.0,error_hablante,aplicó dos promociones no acumulables,error_hablante,True
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,True,False,no_cuadra,32.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.19 en Whisper,posible_error_asr,True
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,False,False,no_cuadra,69.0,79.0,posible_error_asr,una cifra tiene probabilidad 0.01 en Whisper,posible_error_asr,True
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,True,True,no_cuadra,122.0,112.0,error_hablante,descontó la promoción dos veces,error_hablante,True
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,False,False,no_cuadra,100.0,114.0,posible_error_asr,una cifra tiene probabilidad 0.00 en Whisper,posible_error_asr,True
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,True,False,no_cuadra,30.0,90.0,posible_error_asr,una cifra tiene probabilidad 0.03 en Whisper,posible_error_asr,True
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,True,False,no_cuadra,48.0,152.0,posible_error_asr,una cifra tiene probabilidad 0.12 en Whisper,posible_error_asr,True
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,False,False,no_cuadra,69.0,79.0,posible_error_asr,una cifra tiene probabilidad 0.43 en Whisper,posible_error_asr,True
