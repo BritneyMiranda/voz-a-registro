@@ -651,6 +651,160 @@
   },
   {
    "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "anios_experiencia",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": 0.3
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "disponibilidad",
+   "n": 5,
+   "exactitud": 0.2,
+   "ic95": [
+    0.03622316096978745,
+    0.6244717358814613
+   ],
+   "verificados": 0.2,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "nivel_ingles",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "pretension_salarial",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "tecnologias",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "ultimo_puesto",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "direccion_entrega",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "items",
+   "n": 5,
+   "exactitud": 0.2,
+   "ic95": [
+    0.03622316096978745,
+    0.6244717358814613
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "metodo_pago",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "promocion",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.2,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "total_dicho",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
    "tarea": "entrevista",
    "campo": "anios_experiencia",
@@ -1575,6 +1729,160 @@
   },
   {
    "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "anios_experiencia",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": 0.3
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "disponibilidad",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "nivel_ingles",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "pretension_salarial",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "tecnologias",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "ultimo_puesto",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "direccion_entrega",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "items",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "metodo_pago",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "promocion",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "total_dicho",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
    "tarea": "entrevista",
    "campo": "anios_experiencia",
@@ -1716,6 +2024,160 @@
   {
    "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
+   "tarea": "pedido",
+   "campo": "total_dicho",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "anios_experiencia",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": 0.3
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "disponibilidad",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "nivel_ingles",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "pretension_salarial",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "tecnologias",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "ultimo_puesto",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "direccion_entrega",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 0.8,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "items",
+   "n": 5,
+   "exactitud": 0.2,
+   "ic95": [
+    0.03622316096978745,
+    0.6244717358814613
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "metodo_pago",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "promocion",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.2,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
    "tarea": "pedido",
    "campo": "total_dicho",
    "n": 5,
@@ -1880,6 +2342,160 @@
    ],
    "verificados": 1.0,
    "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "anios_experiencia",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": 0.2
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "disponibilidad",
+   "n": 5,
+   "exactitud": 0.2,
+   "ic95": [
+    0.03622316096978745,
+    0.6244717358814613
+   ],
+   "verificados": 0.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "nivel_ingles",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "pretension_salarial",
+   "n": 5,
+   "exactitud": 1.0,
+   "ic95": [
+    0.5655085052479191,
+    1.0
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.0
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "tecnologias",
+   "n": 5,
+   "exactitud": 0.0,
+   "ic95": [
+    0.0,
+    0.43449149475208104
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "entrevista",
+   "campo": "ultimo_puesto",
+   "n": 5,
+   "exactitud": 0.4,
+   "ic95": [
+    0.1176182311592533,
+    0.769280067791163
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "direccion_entrega",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "items",
+   "n": 5,
+   "exactitud": 0.2,
+   "ic95": [
+    0.03622316096978745,
+    0.6244717358814613
+   ],
+   "verificados": 0.4,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "metodo_pago",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 0.6,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "promocion",
+   "n": 5,
+   "exactitud": 0.6,
+   "ic95": [
+    0.23071993220883708,
+    0.8823817688407467
+   ],
+   "verificados": 0.2,
+   "error_abs_medio": null
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "tarea": "pedido",
+   "campo": "total_dicho",
+   "n": 5,
+   "exactitud": 0.8,
+   "ic95": [
+    0.3755282641185388,
+    0.9637768390302125
+   ],
+   "verificados": 1.0,
+   "error_abs_medio": 0.4
   },
   {
    "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
@@ -2049,6 +2665,11 @@
   },
   {
    "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "macro_f1_ingles": 0.7777777777777777
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
    "macro_f1_ingles": 1.0
   },
@@ -2079,13 +2700,28 @@
   },
   {
    "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "macro_f1_ingles": 0.7777777777777777
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
    "macro_f1_ingles": 1.0
   },
   {
    "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "macro_f1_ingles": 0.7777777777777777
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
    "macro_f1_ingles": 1.0
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "macro_f1_ingles": 0.8222222222222223
   },
   {
    "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
@@ -2121,6 +2757,20 @@
    "falsas_alarmas": 0,
    "diagnosticos_evaluables": 5,
    "diagnosticos_correctos": 5
+  },
+  {
+   "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "errores_plantados": 3,
+   "atrapados": 2,
+   "perdidos": 1,
+   "registros_rotos": 5,
+   "rotos_atrapados": 3,
+   "rotos_perdidos": 2,
+   "registros_sanos": 0,
+   "falsas_alarmas": 0,
+   "diagnosticos_evaluables": 3,
+   "diagnosticos_correctos": 3
   },
   {
    "corrida": "L0_large-v3-turbo_float16_cuda_glosario-ninguno",
@@ -2208,6 +2858,20 @@
   },
   {
    "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "errores_plantados": 3,
+   "atrapados": 2,
+   "perdidos": 1,
+   "registros_rotos": 4,
+   "rotos_atrapados": 2,
+   "rotos_perdidos": 2,
+   "registros_sanos": 1,
+   "falsas_alarmas": 0,
+   "diagnosticos_evaluables": 2,
+   "diagnosticos_correctos": 2
+  },
+  {
+   "corrida": "L1_large-v3-turbo_float16_cuda_glosario-ninguno",
    "metodo": "reglas",
    "errores_plantados": 3,
    "atrapados": 3,
@@ -2218,6 +2882,20 @@
    "registros_sanos": 1,
    "falsas_alarmas": 0,
    "diagnosticos_evaluables": 4,
+   "diagnosticos_correctos": 3
+  },
+  {
+   "corrida": "L2_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "errores_plantados": 3,
+   "atrapados": 2,
+   "perdidos": 1,
+   "registros_rotos": 5,
+   "rotos_atrapados": 3,
+   "rotos_perdidos": 2,
+   "registros_sanos": 0,
+   "falsas_alarmas": 0,
+   "diagnosticos_evaluables": 3,
    "diagnosticos_correctos": 3
   },
   {
@@ -2233,6 +2911,20 @@
    "falsas_alarmas": 0,
    "diagnosticos_evaluables": 5,
    "diagnosticos_correctos": 4
+  },
+  {
+   "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",
+   "metodo": "llm",
+   "errores_plantados": 3,
+   "atrapados": 3,
+   "perdidos": 0,
+   "registros_rotos": 5,
+   "rotos_atrapados": 4,
+   "rotos_perdidos": 1,
+   "registros_sanos": 0,
+   "falsas_alarmas": 0,
+   "diagnosticos_evaluables": 4,
+   "diagnosticos_correctos": 3
   },
   {
    "corrida": "L3_large-v3-turbo_float16_cuda_glosario-ninguno",

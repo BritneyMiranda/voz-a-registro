@@ -180,6 +180,16 @@ Tesla T4 de Colab (15 GB); la CPU de la laptop, un Intel Core i7-1165G7.
 - **Asimetría entre tipos de campo.** El inglés (3 clases) sale bien en todos los niveles menos L3: le basta con oír
   una de pocas palabras. Las cifras y los nombres propios son lo primero que se rompe («dos ceviches» → «12 biches»,
   «Jirón» → «Irón»), y un número con un dígito mal es un registro equivocado, no uno aproximado.
+- **Reglas contra Qwen 2.5 3B (prompt v2), audio original.** Las reglas ganan en casi todo: años 100 % contra 40 %
+  (Qwen inventa medios años: 4,5 donde se dijo «cuatro»), disponibilidad 100 % contra 20 % (pone «inmediata» citando
+  «desde el viernes 13 de noviembre»), inglés F1 macro 1,00 contra 0,78, ítems del pedido 40 % contra 20 %. Qwen gana
+  en tecnologías (60 % contra 40 %) porque entiende que Go «no lo pondría como fortaleza» y que el Excel de E01 era de
+  pasada, justo donde las reglas fallan por diseño.
+- **La verificación hace su trabajo.** De los 17 campos que Qwen sacó mal en L0, **13 quedaron `sin_verificar`**: su
+  cita no estaba en la transcripción o no respaldaba el valor. Se escaparon 4, cuya cita sí estaba (por ejemplo
+  «Piespark», como Whisper oyó «PySpark»). El costo: 7 campos correctos de Qwen también quedaron sin verificar,
+  porque citó parafraseando. Un campo verificado no es un campo correcto, pero un campo sin verificar es una alarma
+  que se puede atender.
 - **La referencia importa.** Antes de corregir la referencia escuchando, el WER era 6,0 %; después, 4,0 %. Un tercio
   de lo que parecía error del ASR eran palabras que sí se dijeron pero no estaban en el guion.
 
@@ -235,54 +245,58 @@ corrida que hubiera caído a CPU mostraría `cpu`, sin VRAM y ~40 veces más len
 Exactitud por campo con intervalo de Wilson al 95 % y proporción de campos verificados.
 
 <!-- REGISTRO -->
-| Corrida | Tarea | Campo | Exactitud reglas | Verificados reglas | Error abs. reglas |
-|---|---|---|---|---|---|
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | anios_experiencia | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | disponibilidad | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | nivel_ingles | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | pretension_salarial | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | tecnologias | 0.40 [0.12, 0.77] | 1.00 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | ultimo_puesto | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | direccion_entrega | 0.80 [0.38, 0.96] | 0.80 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | items | 0.40 [0.12, 0.77] | 1.00 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | promocion | 1.00 [0.57, 1.00] | 0.80 | — |
-| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | anios_experiencia | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | disponibilidad | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | nivel_ingles | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | pretension_salarial | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | tecnologias | 0.40 [0.12, 0.77] | 1.00 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | ultimo_puesto | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | direccion_entrega | 0.80 [0.38, 0.96] | 0.80 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | items | 0.40 [0.12, 0.77] | 1.00 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | promocion | 1.00 [0.57, 1.00] | 0.80 | — |
-| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | anios_experiencia | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | disponibilidad | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | nivel_ingles | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | pretension_salarial | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | tecnologias | 0.40 [0.12, 0.77] | 1.00 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | ultimo_puesto | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | direccion_entrega | 0.80 [0.38, 0.96] | 0.80 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | items | 0.40 [0.12, 0.77] | 1.00 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | promocion | 1.00 [0.57, 1.00] | 0.80 | — |
-| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| Corrida | Tarea | Campo | Exactitud llm | Verificados llm | Error abs. llm | Exactitud reglas | Verificados reglas | Error abs. reglas |
+|---|---|---|---|---|---|---|---|---|
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | anios_experiencia | 0.40 [0.12, 0.77] | 0.40 | 0.3 | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | disponibilidad | 0.20 [0.04, 0.62] | 0.20 | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | nivel_ingles | 0.80 [0.38, 0.96] | 0.60 | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | pretension_salarial | 1.00 [0.57, 1.00] | 1.00 | 0.0 | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | tecnologias | 0.60 [0.23, 0.88] | 0.80 | — | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | entrevista | ultimo_puesto | 0.80 [0.38, 0.96] | 1.00 | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | direccion_entrega | 1.00 [0.57, 1.00] | 0.60 | — | 0.80 [0.38, 0.96] | 0.80 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | items | 0.20 [0.04, 0.62] | 0.40 | — | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | metodo_pago | 1.00 [0.57, 1.00] | 1.00 | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | promocion | 0.60 [0.23, 0.88] | 0.20 | — | 1.00 [0.57, 1.00] | 0.80 | — |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | pedido | total_dicho | 1.00 [0.57, 1.00] | 0.80 | 0.0 | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | anios_experiencia | — | — | — | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | disponibilidad | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | nivel_ingles | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | pretension_salarial | — | — | — | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | tecnologias | — | — | — | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | entrevista | ultimo_puesto | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | direccion_entrega | — | — | — | 0.80 [0.38, 0.96] | 0.80 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | items | — | — | — | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | metodo_pago | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | promocion | — | — | — | 1.00 [0.57, 1.00] | 0.80 | — |
+| L0_large-v3-turbo_int8_cpu_glosario-ninguno | pedido | total_dicho | — | — | — | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | anios_experiencia | — | — | — | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | disponibilidad | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | nivel_ingles | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | pretension_salarial | — | — | — | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | tecnologias | — | — | — | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | entrevista | ultimo_puesto | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | direccion_entrega | — | — | — | 0.80 [0.38, 0.96] | 0.80 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | items | — | — | — | 0.40 [0.12, 0.77] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | metodo_pago | — | — | — | 1.00 [0.57, 1.00] | 1.00 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | promocion | — | — | — | 1.00 [0.57, 1.00] | 0.80 | — |
+| L0_large-v3-turbo_int8_cuda_glosario-ninguno | pedido | total_dicho | — | — | — | 1.00 [0.57, 1.00] | 1.00 | 0.0 |
 
 | corrida | metodo | macro_f1_ingles |
 |---|---|---|
 | L0_large-v3-turbo_float16_cuda_glosario-hotwords | reglas | 0.889 |
 | L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | reglas | 1.0 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 0.778 |
 | L0_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 1.0 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | reglas | 1.0 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab | reglas | 1.0 |
 | L0_large-v3-turbo_int8_cuda_glosario-ninguno | reglas | 1.0 |
 | L0_small_float16_cuda_glosario-ninguno | reglas | 1.0 |
 | L0_small_int8_cuda_glosario-ninguno | reglas | 1.0 |
+| L1_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 0.778 |
 | L1_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 1.0 |
+| L2_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 0.778 |
 | L2_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 1.0 |
+| L3_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 0.822 |
 | L3_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 0.889 |
 <!-- /REGISTRO -->
 
@@ -295,12 +309,12 @@ eligieron 5 dB porque es el ruido de un restaurante o una calle con gente hablan
 propio corpus invertidos en el tiempo, para que suene a voces sin dar palabras que el ASR pueda copiar.
 
 <!-- ESCALERA -->
-| nivel | WER entrevista | WER pedido | campos entrevista (reglas) | campos pedido (reglas) |
-|---|---|---|---|---|
-| L0 | 0.028 | 0.052 | 0.9 | 0.84 |
-| L1 | 0.034 | 0.063 | 0.9 | 0.92 |
-| L2 | 0.042 | 0.065 | 0.9 | 0.84 |
-| L3 | 0.156 | 0.269 | 0.6 | 0.6 |
+| nivel | WER entrevista | WER pedido | campos entrevista (llm) | campos entrevista (reglas) | campos pedido (llm) | campos pedido (reglas) |
+|---|---|---|---|---|---|---|
+| L0 | 0.028 | 0.052 | 0.633 | 0.9 | 0.76 | 0.84 |
+| L1 | 0.034 | 0.063 | 0.633 | 0.9 | 0.8 | 0.92 |
+| L2 | 0.042 | 0.065 | 0.667 | 0.9 | 0.76 | 0.84 |
+| L3 | 0.156 | 0.269 | 0.5 | 0.6 | 0.64 | 0.6 |
 <!-- /ESCALERA -->
 
 ### Tarea 2 · Validación aritmética: atrapados contra perdidos
@@ -312,14 +326,18 @@ Un registro está «roto» si el total dicho está mal a propósito o si el ASR 
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | L0_large-v3-turbo_float16_cuda_glosario-hotwords | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
 | L0_large-v3-turbo_float16_cuda_glosario-initial_prompt | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
+| L0_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 3 | 2 | 1 | 5 | 3 | 2 | 0 | 0 | 3 | 3 |
 | L0_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
 | L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab | reglas | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
 | L0_large-v3-turbo_int8_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
 | L0_small_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
 | L0_small_int8_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 4 | 4 | 0 | 1 | 0 | 4 | 4 |
+| L1_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 3 | 2 | 1 | 4 | 2 | 2 | 1 | 0 | 2 | 2 |
 | L1_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 4 | 4 | 0 | 1 | 0 | 4 | 3 |
+| L2_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 3 | 2 | 1 | 5 | 3 | 2 | 0 | 0 | 3 | 3 |
 | L2_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 4 |
+| L3_large-v3-turbo_float16_cuda_glosario-ninguno | llm | 3 | 3 | 0 | 5 | 4 | 1 | 0 | 0 | 4 | 3 |
 | L3_large-v3-turbo_float16_cuda_glosario-ninguno | reglas | 3 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 5 | 5 |
 <!-- /VALIDACION -->
 
