@@ -1,0 +1,18 @@
+Hola, Ana, buenas tardes. Te habla Luis, de Mercados Qhapaq. ¿Todo bien con el audio?
+Hola, Luis, sí, todo bien.
+Te cuento rápido: en el aviso pusimos inglés avanzado como requisito, pero para el puesto junior somos flexibles. ¿Cómo estás tú con el inglés?
+Básico, la verdad. Estoy en el nivel cuatro de un instituto, voy los martes y jueves en la noche.
+Ok, no hay problema. Y si avanzamos, ¿en cuánto tiempo podrías incorporarte?
+En dos semanas. Tengo que avisar en mi trabajo actual.
+¿Dónde estás ahora?
+En una distribuidora de útiles escolares. Mi cargo es asistente de inteligencia comercial. Armo los reportes de ventas por zona para los supervisores.
+¿Y cuánto tiempo llevas ahí?
+Un año y medio. Es mi primer trabajo después de la universidad; antes solo hice prácticas de seis meses en un banco.
+Bien. ¿Qué herramientas manejas?
+Excel avanzado, tablas dinámicas, Power Query. Este año pasamos los reportes a Power BI. SQL lo uso para sacar la data del sistema, consultas sencillas. Y en la universidad aprendí Tableau, aunque en el trabajo no lo usamos.
+Perfecto. Cuéntame de una situación difícil con un supervisor.
+Una vez un supervisor decía que mi reporte estaba mal porque sus ventas salían más bajas. Lo revisamos juntos y era que él contaba los pedidos y yo las facturas, y había devoluciones. Desde entonces pongo una nota en cada reporte que explica qué se está contando.
+Muy bien. Por último, ¿cuál es tu pretensión salarial?
+Ahora gano tres mil doscientos. Estaría buscando tres mil ochocientos soles.
+Ok, Ana. Te escribimos el lunes.
+Muchas gracias, Luis.
