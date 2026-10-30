@@ -1,0 +1,182 @@
+>>> --modelo large-v3-turbo --precision float16 --dispositivo cuda
+L0_large-v3-turbo_float16_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 7 s, dispositivo=cuda, vram_pico=1940.0 MB
+  E02: 187 s de audio, 5 s, dispositivo=cuda, vram_pico=96.0 MB
+  E03: 174 s de audio, 5 s, dispositivo=cuda, vram_pico=96.0 MB
+  E04: 166 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  E05: 141 s de audio, 10 s, dispositivo=cuda, vram_pico=256.0 MB
+  L01: 143 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L02: 133 s de audio, 4 s, dispositivo=cuda, vram_pico=96.0 MB
+  L03: 128 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L04: 121 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L05: 112 s de audio, 4 s, dispositivo=cuda, vram_pico=96.0 MB
+
+
+>>> --modelo large-v3-turbo --precision int8 --dispositivo cuda
+L0_large-v3-turbo_int8_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 12 s, dispositivo=cuda, vram_pico=1236.0 MB
+  E02: 187 s de audio, 6 s, dispositivo=cuda, vram_pico=128.0 MB
+  E03: 174 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  E04: 166 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  E05: 141 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L01: 143 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L02: 133 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  L03: 128 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  L04: 121 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L05: 112 s de audio, 11 s, dispositivo=cuda, vram_pico=224.0 MB
+
+
+>>> --modelo small --precision float16 --dispositivo cuda
+L0_small_float16_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 6 s, dispositivo=cuda, vram_pico=852.0 MB
+  E02: 187 s de audio, 5 s, dispositivo=cuda, vram_pico=160.0 MB
+  E03: 174 s de audio, 5 s, dispositivo=cuda, vram_pico=160.0 MB
+  E04: 166 s de audio, 5 s, dispositivo=cuda, vram_pico=160.0 MB
+  E05: 141 s de audio, 4 s, dispositivo=cuda, vram_pico=160.0 MB
+  L01: 143 s de audio, 4 s, dispositivo=cuda, vram_pico=160.0 MB
+  L02: 133 s de audio, 3 s, dispositivo=cuda, vram_pico=160.0 MB
+  L03: 128 s de audio, 3 s, dispositivo=cuda, vram_pico=160.0 MB
+  L04: 121 s de audio, 3 s, dispositivo=cuda, vram_pico=160.0 MB
+  L05: 112 s de audio, 3 s, dispositivo=cuda, vram_pico=160.0 MB
+
+
+>>> --modelo small --precision int8 --dispositivo cuda
+L0_small_int8_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 6 s, dispositivo=cuda, vram_pico=596.0 MB
+  E02: 187 s de audio, 5 s, dispositivo=cuda, vram_pico=192.0 MB
+  E03: 174 s de audio, 5 s, dispositivo=cuda, vram_pico=192.0 MB
+  E04: 166 s de audio, 5 s, dispositivo=cuda, vram_pico=192.0 MB
+  E05: 141 s de audio, 4 s, dispositivo=cuda, vram_pico=192.0 MB
+  L01: 143 s de audio, 4 s, dispositivo=cuda, vram_pico=192.0 MB
+  L02: 133 s de audio, 4 s, dispositivo=cuda, vram_pico=192.0 MB
+  L03: 128 s de audio, 4 s, dispositivo=cuda, vram_pico=192.0 MB
+  L04: 121 s de audio, 3 s, dispositivo=cuda, vram_pico=192.0 MB
+  L05: 112 s de audio, 3 s, dispositivo=cuda, vram_pico=192.0 MB
+
+
+>>> --modelo large-v3-turbo --precision float16 --dispositivo cuda --glosario hotwords
+L0_large-v3-turbo_float16_cuda_glosario-hotwords: 10 clips
+  E01: 204 s de audio, 13 s, dispositivo=cuda, vram_pico=2068.0 MB
+  E02: 187 s de audio, 16 s, dispositivo=cuda, vram_pico=256.0 MB
+  E03: 174 s de audio, 8 s, dispositivo=cuda, vram_pico=224.0 MB
+  E04: 166 s de audio, 11 s, dispositivo=cuda, vram_pico=256.0 MB
+  E05: 141 s de audio, 6 s, dispositivo=cuda, vram_pico=256.0 MB
+  L01: 143 s de audio, 5 s, dispositivo=cuda, vram_pico=160.0 MB
+  L02: 133 s de audio, 7 s, dispositivo=cuda, vram_pico=224.0 MB
+  L03: 128 s de audio, 5 s, dispositivo=cuda, vram_pico=224.0 MB
+  L04: 121 s de audio, 4 s, dispositivo=cuda, vram_pico=192.0 MB
+  L05: 112 s de audio, 9 s, dispositivo=cuda, vram_pico=256.0 MB
+
+
+>>> --modelo large-v3-turbo --precision float16 --dispositivo cuda --glosario initial_prompt
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt: 10 clips
+  E01: 204 s de audio, 7 s, dispositivo=cuda, vram_pico=1940.0 MB
+  E02: 187 s de audio, 7 s, dispositivo=cuda, vram_pico=96.0 MB
+  E03: 174 s de audio, 5 s, dispositivo=cuda, vram_pico=96.0 MB
+  E04: 166 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  E05: 141 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L01: 143 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  L02: 133 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  L03: 128 s de audio, 8 s, dispositivo=cuda, vram_pico=224.0 MB
+  L04: 121 s de audio, 6 s, dispositivo=cuda, vram_pico=192.0 MB
+  L05: 112 s de audio, 7 s, dispositivo=cuda, vram_pico=192.0 MB
+
+
+>>> --modelo large-v3-turbo --precision float16 --dispositivo cuda --nivel L1
+L1_large-v3-turbo_float16_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 7 s, dispositivo=cuda, vram_pico=1940.0 MB
+  E02: 187 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  E03: 174 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  E04: 166 s de audio, 10 s, dispositivo=cuda, vram_pico=224.0 MB
+  E05: 141 s de audio, 10 s, dispositivo=cuda, vram_pico=256.0 MB
+  L01: 143 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  L02: 133 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  L03: 128 s de audio, 11 s, dispositivo=cuda, vram_pico=256.0 MB
+  L04: 121 s de audio, 4 s, dispositivo=cuda, vram_pico=96.0 MB
+  L05: 112 s de audio, 6 s, dispositivo=cuda, vram_pico=192.0 MB
+
+
+>>> --modelo large-v3-turbo --precision float16 --dispositivo cuda --nivel L2
+L2_large-v3-turbo_float16_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 9 s, dispositivo=cuda, vram_pico=2036.0 MB
+  E02: 187 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  E03: 174 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  E04: 166 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  E05: 141 s de audio, 11 s, dispositivo=cuda, vram_pico=256.0 MB
+  L01: 143 s de audio, 5 s, dispositivo=cuda, vram_pico=96.0 MB
+  L02: 133 s de audio, 5 s, dispositivo=cuda, vram_pico=96.0 MB
+  L03: 128 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  L04: 121 s de audio, 4 s, dispositivo=cuda, vram_pico=128.0 MB
+  L05: 112 s de audio, 11 s, dispositivo=cuda, vram_pico=224.0 MB
+
+
+>>> --modelo large-v3-turbo --precision float16 --dispositivo cuda --nivel L3
+L3_large-v3-turbo_float16_cuda_glosario-ninguno: 10 clips
+  E01: 204 s de audio, 10 s, dispositivo=cuda, vram_pico=2068.0 MB
+  E02: 187 s de audio, 11 s, dispositivo=cuda, vram_pico=256.0 MB
+  E03: 174 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  E04: 166 s de audio, 6 s, dispositivo=cuda, vram_pico=96.0 MB
+  E05: 141 s de audio, 5 s, dispositivo=cuda, vram_pico=96.0 MB
+  L01: 143 s de audio, 5 s, dispositivo=cuda, vram_pico=128.0 MB
+  L02: 133 s de audio, 10 s, dispositivo=cuda, vram_pico=192.0 MB
+  L03: 128 s de audio, 6 s, dispositivo=cuda, vram_pico=192.0 MB
+  L04: 121 s de audio, 4 s, dispositivo=cuda, vram_pico=96.0 MB
+  L05: 112 s de audio, 9 s, dispositivo=cuda, vram_pico=288.0 MB
+
+
+>>> --modelo large-v3-turbo --precision int8 --dispositivo cpu --clips E01 L01
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab: 2 clips
+  E01: 204 s de audio, 221 s, dispositivo=cpu, vram_pico=0.0 MB
+  L01: 143 s de audio, 156 s, dispositivo=cpu, vram_pico=0.0 MB
+
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793339345.939353   15111 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793339348.501761   15111 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:58<00:58, 58.70s/it]Fetching 2 files: 100%|██████████| 2/2 [00:58<00:00, 29.35s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:15<00:15, 15.99s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.72s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.36s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/E01: 128 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/E02: 14 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/E03: 11 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/E04: 17 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/E05: 20 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/L01: 9 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/L02: 8 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/L03: 8 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/L04: 9 s
+L0_large-v3-turbo_float16_cuda_glosario-ninguno/L05: 10 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/E01: 23 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/E02: 14 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/E03: 20 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/E04: 19 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/E05: 14 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/L01: 9 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/L02: 8 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/L03: 8 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/L04: 10 s
+L1_large-v3-turbo_float16_cuda_glosario-ninguno/L05: 10 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/E01: 20 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/E02: 14 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/E03: 13 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/E04: 17 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/E05: 9 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/L01: 9 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/L02: 8 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/L03: 8 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/L04: 9 s
+L2_large-v3-turbo_float16_cuda_glosario-ninguno/L05: 10 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/E01: 19 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/E02: 11 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/E03: 16 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/E04: 20 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/E05: 12 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/L01: 8 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/L02: 8 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/L03: 9 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/L04: 10 s
+L3_large-v3-turbo_float16_cuda_glosario-ninguno/L05: 10 s

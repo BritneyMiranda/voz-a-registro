@@ -1,0 +1,2749 @@
+{
+ "texto": "Buenos días, gracias por conectarte. Soy Carla del equipo de selección de Lume Retail. ¿Me escuchas bien? Sí, perfecto. Buenos días. Gracias por la invitación. Para empezar, cuéntame un poco de ti, de lo que haces hoy. Claro, actualmente estoy en distribuidora en Lina, una empresa de consumo masivo. Entré como analista de datos y desde marzo soy analista de autosenio. Veo todo lo que es referencia de ventas para el canal moderno, o sea, supermercados. Y también armo los modelos de pronóstico de demanda. ¿Y qué herramientas usas en el día a día? Mi base es SQL. Eso es lo que más uso. Hago consultas casi todo el día. Para el análisis y los modelos, utilizo FireDog con Pandas y PsychiLearn. Los tableros los hacemos en Power BI. Y el año pasado libramos las cargas a Iron Cloud, que lo programo yo con otra compañera. Interesante. ¿Y cuánto tiempo llevas trabajando con datos? Empecé como practicante en 2021, pero eso no lo cuento mucho porque era más Excel que otra cosa. Ya como una lista contratada para cuatro años. Perfecto. Te cuento que el puesto es para área de pricing. Trabajarías con el equipo comercial y con finanzas. ¿Qué te llama la atención de Detroit? Trabajarías con la atención de Detroit? Detroit es algo que he tocado de costado con las conclusiones y me gustaría ir más afuera. Además, me interesa que sea Retainer porque es el único tipo de autor que ya conoce. Bien. Sobre los tiempos. ¿Si avanzamos, ¿desde cuándo podrías incorporarte? En mi contrato tengo que dar 15 días de previo aviso, así que si firmo esta semana, podré empezar desde el viernes 13 de noviembre. Anotado. Y en cuanto a lo económico, ¿cuál es tu expectativa? Estuve revisando el mercado y estaba pensando en 6.500 soles mensuales brutos. Ok, ¿está atento al rango que manejamos? Una última cosa, parte del equipo regional está en Chile y en Estados Unidos, y algunas reuniones son inglés. ¿Cómo andas en ese aspecto? La documentación técnica ha sido un problema, y es que yo conozco bien. Hablar en una reunión larga en realidad me cuesta un poco más, me pongo nerviosa. Pero yo diría que tengo un nivel de intermédio. Es honesto, gracias. ¿Tienes alguna pregunta para nadie? ¿Cuántas personas son en el equipo de pricing y a quién reportarían? Son cuatro analistas. ¿Y reportarías al gerente de pricing, que también estaría en la segunda entrevista? ¿Describimos el mes con los siguientes pasos? Perfecto, muchas gracias Carla, que tengas un buen día.",
+ "segmentos": [
+  {
+   "inicio": 0.79,
+   "fin": 7.35,
+   "texto": "Buenos días, gracias por conectarte. Soy Carla del equipo de selección de Lume Retail. ¿Me escuchas bien?"
+  },
+  {
+   "inicio": 8.69,
+   "fin": 11.73,
+   "texto": "Sí, perfecto. Buenos días. Gracias por la invitación."
+  },
+  {
+   "inicio": 13.41,
+   "fin": 18.65,
+   "texto": "Para empezar, cuéntame un poco de ti, de lo que haces hoy."
+  },
+  {
+   "inicio": 19.87,
+   "fin": 24.91,
+   "texto": "Claro, actualmente estoy en distribuidora en Lina, una empresa de consumo masivo."
+  },
+  {
+   "inicio": 24.91,
+   "fin": 29.63,
+   "texto": "Entré como analista de datos y desde marzo soy analista de autosenio."
+  },
+  {
+   "inicio": 30.35,
+   "fin": 35.25,
+   "texto": "Veo todo lo que es referencia de ventas para el canal moderno, o sea, supermercados."
+  },
+  {
+   "inicio": 35.43,
+   "fin": 38.37,
+   "texto": "Y también armo los modelos de pronóstico de demanda."
+  },
+  {
+   "inicio": 40.81,
+   "fin": 43.41,
+   "texto": "¿Y qué herramientas usas en el día a día?"
+  },
+  {
+   "inicio": 46.83,
+   "fin": 52.47,
+   "texto": "Mi base es SQL. Eso es lo que más uso. Hago consultas casi todo el día."
+  },
+  {
+   "inicio": 52.47,
+   "fin": 58.11,
+   "texto": "Para el análisis y los modelos, utilizo FireDog con Pandas y PsychiLearn."
+  },
+  {
+   "inicio": 58.33,
+   "fin": 61.31,
+   "texto": "Los tableros los hacemos en Power BI."
+  },
+  {
+   "inicio": 62.03,
+   "fin": 68.03,
+   "texto": "Y el año pasado libramos las cargas a Iron Cloud, que lo programo yo con otra compañera."
+  },
+  {
+   "inicio": 70.33,
+   "fin": 73.55,
+   "texto": "Interesante. ¿Y cuánto tiempo llevas trabajando con datos?"
+  },
+  {
+   "inicio": 75.61,
+   "fin": 82.57,
+   "texto": "Empecé como practicante en 2021, pero eso no lo cuento mucho porque era más Excel que otra cosa."
+  },
+  {
+   "inicio": 83.31,
+   "fin": 86.21,
+   "texto": "Ya como una lista contratada para cuatro años."
+  },
+  {
+   "inicio": 88.05,
+   "fin": 92.07,
+   "texto": "Perfecto. Te cuento que el puesto es para área de pricing."
+  },
+  {
+   "inicio": 93.31,
+   "fin": 95.97,
+   "texto": "Trabajarías con el equipo comercial y con finanzas."
+  },
+  {
+   "inicio": 96.27,
+   "fin": 97.97,
+   "texto": "¿Qué te llama la atención de Detroit?"
+  },
+  {
+   "inicio": 98.89,
+   "fin": 99.61,
+   "texto": "Trabajarías con la atención de Detroit?"
+  },
+  {
+   "inicio": 99.61,
+   "fin": 105.45,
+   "texto": "Detroit es algo que he tocado de costado con las conclusiones y me gustaría ir más afuera."
+  },
+  {
+   "inicio": 106.05,
+   "fin": 111.47,
+   "texto": "Además, me interesa que sea Retainer porque es el único tipo de autor que ya conoce."
+  },
+  {
+   "inicio": 113.35,
+   "fin": 115.29,
+   "texto": "Bien. Sobre los tiempos."
+  },
+  {
+   "inicio": 115.53,
+   "fin": 118.53,
+   "texto": "¿Si avanzamos, ¿desde cuándo podrías incorporarte?"
+  },
+  {
+   "inicio": 118.53,
+   "fin": 128.95,
+   "texto": "En mi contrato tengo que dar 15 días de previo aviso, así que si firmo esta semana, podré empezar desde el viernes 13 de noviembre."
+  },
+  {
+   "inicio": 130.75,
+   "fin": 136.11,
+   "texto": "Anotado. Y en cuanto a lo económico, ¿cuál es tu expectativa?"
+  },
+  {
+   "inicio": 137.15,
+   "fin": 142.57,
+   "texto": "Estuve revisando el mercado y estaba pensando en 6.500 soles mensuales brutos."
+  },
+  {
+   "inicio": 145.53,
+   "fin": 148.45,
+   "texto": "Ok, ¿está atento al rango que manejamos?"
+  },
+  {
+   "inicio": 148.75,
+   "fin": 158.45,
+   "texto": "Una última cosa, parte del equipo regional está en Chile y en Estados Unidos, y algunas reuniones son inglés. ¿Cómo andas en ese aspecto?"
+  },
+  {
+   "inicio": 159.31,
+   "fin": 163.69,
+   "texto": "La documentación técnica ha sido un problema, y es que yo conozco bien."
+  },
+  {
+   "inicio": 164.37,
+   "fin": 169.65,
+   "texto": "Hablar en una reunión larga en realidad me cuesta un poco más, me pongo nerviosa."
+  },
+  {
+   "inicio": 169.65,
+   "fin": 172.79,
+   "texto": "Pero yo diría que tengo un nivel de intermédio."
+  },
+  {
+   "inicio": 174.83,
+   "fin": 178.77,
+   "texto": "Es honesto, gracias. ¿Tienes alguna pregunta para nadie?"
+  },
+  {
+   "inicio": 180.67,
+   "fin": 185.27,
+   "texto": "¿Cuántas personas son en el equipo de pricing y a quién reportarían?"
+  },
+  {
+   "inicio": 187.29,
+   "fin": 188.99,
+   "texto": "Son cuatro analistas."
+  },
+  {
+   "inicio": 189.29,
+   "fin": 194.23,
+   "texto": "¿Y reportarías al gerente de pricing, que también estaría en la segunda entrevista?"
+  },
+  {
+   "inicio": 195.15,
+   "fin": 197.65,
+   "texto": "¿Describimos el mes con los siguientes pasos?"
+  },
+  {
+   "inicio": 199.59,
+   "fin": 202.33,
+   "texto": "Perfecto, muchas gracias Carla, que tengas un buen día."
+  }
+ ],
+ "palabras": [
+  {
+   "palabra": "Buenos",
+   "inicio": 0.79,
+   "fin": 1.39,
+   "prob": 0.819
+  },
+  {
+   "palabra": "días,",
+   "inicio": 1.39,
+   "fin": 1.71,
+   "prob": 0.989
+  },
+  {
+   "palabra": "gracias",
+   "inicio": 1.93,
+   "fin": 2.13,
+   "prob": 0.994
+  },
+  {
+   "palabra": "por",
+   "inicio": 2.13,
+   "fin": 2.37,
+   "prob": 1.0
+  },
+  {
+   "palabra": "conectarte.",
+   "inicio": 2.37,
+   "fin": 3.01,
+   "prob": 0.985
+  },
+  {
+   "palabra": "Soy",
+   "inicio": 3.21,
+   "fin": 3.39,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Carla",
+   "inicio": 3.39,
+   "fin": 3.75,
+   "prob": 0.777
+  },
+  {
+   "palabra": "del",
+   "inicio": 3.75,
+   "fin": 3.95,
+   "prob": 0.748
+  },
+  {
+   "palabra": "equipo",
+   "inicio": 3.95,
+   "fin": 4.29,
+   "prob": 0.998
+  },
+  {
+   "palabra": "de",
+   "inicio": 4.29,
+   "fin": 4.47,
+   "prob": 0.999
+  },
+  {
+   "palabra": "selección",
+   "inicio": 4.47,
+   "fin": 4.99,
+   "prob": 0.998
+  },
+  {
+   "palabra": "de",
+   "inicio": 4.99,
+   "fin": 5.27,
+   "prob": 0.997
+  },
+  {
+   "palabra": "Lume",
+   "inicio": 5.27,
+   "fin": 5.83,
+   "prob": 0.721
+  },
+  {
+   "palabra": "Retail.",
+   "inicio": 5.83,
+   "fin": 6.51,
+   "prob": 0.82
+  },
+  {
+   "palabra": "¿Me",
+   "inicio": 6.73,
+   "fin": 6.81,
+   "prob": 0.998
+  },
+  {
+   "palabra": "escuchas",
+   "inicio": 6.81,
+   "fin": 7.15,
+   "prob": 0.995
+  },
+  {
+   "palabra": "bien?",
+   "inicio": 7.15,
+   "fin": 7.35,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Sí,",
+   "inicio": 8.69,
+   "fin": 9.09,
+   "prob": 0.945
+  },
+  {
+   "palabra": "perfecto.",
+   "inicio": 9.21,
+   "fin": 9.69,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Buenos",
+   "inicio": 9.81,
+   "fin": 10.01,
+   "prob": 0.996
+  },
+  {
+   "palabra": "días.",
+   "inicio": 10.01,
+   "fin": 10.33,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Gracias",
+   "inicio": 10.61,
+   "fin": 10.91,
+   "prob": 0.957
+  },
+  {
+   "palabra": "por",
+   "inicio": 10.91,
+   "fin": 11.19,
+   "prob": 0.995
+  },
+  {
+   "palabra": "la",
+   "inicio": 11.19,
+   "fin": 11.29,
+   "prob": 0.969
+  },
+  {
+   "palabra": "invitación.",
+   "inicio": 11.29,
+   "fin": 11.73,
+   "prob": 0.997
+  },
+  {
+   "palabra": "Para",
+   "inicio": 13.41,
+   "fin": 14.01,
+   "prob": 0.992
+  },
+  {
+   "palabra": "empezar,",
+   "inicio": 14.01,
+   "fin": 14.31,
+   "prob": 1.0
+  },
+  {
+   "palabra": "cuéntame",
+   "inicio": 14.61,
+   "fin": 14.95,
+   "prob": 1.0
+  },
+  {
+   "palabra": "un",
+   "inicio": 14.95,
+   "fin": 15.11,
+   "prob": 1.0
+  },
+  {
+   "palabra": "poco",
+   "inicio": 15.11,
+   "fin": 15.39,
+   "prob": 1.0
+  },
+  {
+   "palabra": "de",
+   "inicio": 15.39,
+   "fin": 15.75,
+   "prob": 0.999
+  },
+  {
+   "palabra": "ti,",
+   "inicio": 15.75,
+   "fin": 16.05,
+   "prob": 0.508
+  },
+  {
+   "palabra": "de",
+   "inicio": 16.23,
+   "fin": 17.65,
+   "prob": 0.914
+  },
+  {
+   "palabra": "lo",
+   "inicio": 17.65,
+   "fin": 18.01,
+   "prob": 1.0
+  },
+  {
+   "palabra": "que",
+   "inicio": 18.01,
+   "fin": 18.13,
+   "prob": 1.0
+  },
+  {
+   "palabra": "haces",
+   "inicio": 18.13,
+   "fin": 18.37,
+   "prob": 0.994
+  },
+  {
+   "palabra": "hoy.",
+   "inicio": 18.37,
+   "fin": 18.65,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Claro,",
+   "inicio": 19.87,
+   "fin": 20.47,
+   "prob": 0.982
+  },
+  {
+   "palabra": "actualmente",
+   "inicio": 20.47,
+   "fin": 21.07,
+   "prob": 1.0
+  },
+  {
+   "palabra": "estoy",
+   "inicio": 21.07,
+   "fin": 21.47,
+   "prob": 0.999
+  },
+  {
+   "palabra": "en",
+   "inicio": 21.47,
+   "fin": 21.85,
+   "prob": 0.965
+  },
+  {
+   "palabra": "distribuidora",
+   "inicio": 21.85,
+   "fin": 22.67,
+   "prob": 0.877
+  },
+  {
+   "palabra": "en",
+   "inicio": 22.67,
+   "fin": 22.85,
+   "prob": 0.769
+  },
+  {
+   "palabra": "Lina,",
+   "inicio": 22.85,
+   "fin": 23.15,
+   "prob": 0.619
+  },
+  {
+   "palabra": "una",
+   "inicio": 23.31,
+   "fin": 23.53,
+   "prob": 0.953
+  },
+  {
+   "palabra": "empresa",
+   "inicio": 23.53,
+   "fin": 23.89,
+   "prob": 1.0
+  },
+  {
+   "palabra": "de",
+   "inicio": 23.89,
+   "fin": 24.09,
+   "prob": 0.998
+  },
+  {
+   "palabra": "consumo",
+   "inicio": 24.09,
+   "fin": 24.37,
+   "prob": 0.159
+  },
+  {
+   "palabra": "masivo.",
+   "inicio": 24.37,
+   "fin": 24.91,
+   "prob": 0.688
+  },
+  {
+   "palabra": "Entré",
+   "inicio": 24.91,
+   "fin": 25.57,
+   "prob": 0.848
+  },
+  {
+   "palabra": "como",
+   "inicio": 25.57,
+   "fin": 25.91,
+   "prob": 0.998
+  },
+  {
+   "palabra": "analista",
+   "inicio": 25.91,
+   "fin": 26.45,
+   "prob": 0.998
+  },
+  {
+   "palabra": "de",
+   "inicio": 26.45,
+   "fin": 26.59,
+   "prob": 1.0
+  },
+  {
+   "palabra": "datos",
+   "inicio": 26.59,
+   "fin": 26.95,
+   "prob": 1.0
+  },
+  {
+   "palabra": "y",
+   "inicio": 26.95,
+   "fin": 27.31,
+   "prob": 0.932
+  },
+  {
+   "palabra": "desde",
+   "inicio": 27.31,
+   "fin": 27.57,
+   "prob": 0.9
+  },
+  {
+   "palabra": "marzo",
+   "inicio": 27.57,
+   "fin": 27.91,
+   "prob": 0.935
+  },
+  {
+   "palabra": "soy",
+   "inicio": 27.91,
+   "fin": 28.17,
+   "prob": 0.968
+  },
+  {
+   "palabra": "analista",
+   "inicio": 28.17,
+   "fin": 28.81,
+   "prob": 0.997
+  },
+  {
+   "palabra": "de",
+   "inicio": 28.81,
+   "fin": 28.99,
+   "prob": 0.997
+  },
+  {
+   "palabra": "autosenio.",
+   "inicio": 28.99,
+   "fin": 29.63,
+   "prob": 0.484
+  },
+  {
+   "palabra": "Veo",
+   "inicio": 30.35,
+   "fin": 30.53,
+   "prob": 0.877
+  },
+  {
+   "palabra": "todo",
+   "inicio": 30.53,
+   "fin": 30.71,
+   "prob": 0.999
+  },
+  {
+   "palabra": "lo",
+   "inicio": 30.71,
+   "fin": 30.89,
+   "prob": 1.0
+  },
+  {
+   "palabra": "que",
+   "inicio": 30.89,
+   "fin": 31.01,
+   "prob": 1.0
+  },
+  {
+   "palabra": "es",
+   "inicio": 31.01,
+   "fin": 31.11,
+   "prob": 1.0
+  },
+  {
+   "palabra": "referencia",
+   "inicio": 31.11,
+   "fin": 31.69,
+   "prob": 0.513
+  },
+  {
+   "palabra": "de",
+   "inicio": 31.69,
+   "fin": 31.93,
+   "prob": 0.909
+  },
+  {
+   "palabra": "ventas",
+   "inicio": 31.93,
+   "fin": 32.63,
+   "prob": 0.998
+  },
+  {
+   "palabra": "para",
+   "inicio": 32.63,
+   "fin": 32.93,
+   "prob": 0.991
+  },
+  {
+   "palabra": "el",
+   "inicio": 32.93,
+   "fin": 33.05,
+   "prob": 1.0
+  },
+  {
+   "palabra": "canal",
+   "inicio": 33.05,
+   "fin": 33.31,
+   "prob": 0.995
+  },
+  {
+   "palabra": "moderno,",
+   "inicio": 33.31,
+   "fin": 33.91,
+   "prob": 0.92
+  },
+  {
+   "palabra": "o",
+   "inicio": 34.11,
+   "fin": 34.21,
+   "prob": 0.994
+  },
+  {
+   "palabra": "sea,",
+   "inicio": 34.21,
+   "fin": 34.39,
+   "prob": 1.0
+  },
+  {
+   "palabra": "supermercados.",
+   "inicio": 34.39,
+   "fin": 35.25,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Y",
+   "inicio": 35.43,
+   "fin": 35.51,
+   "prob": 0.994
+  },
+  {
+   "palabra": "también",
+   "inicio": 35.51,
+   "fin": 35.73,
+   "prob": 0.999
+  },
+  {
+   "palabra": "armo",
+   "inicio": 35.73,
+   "fin": 36.07,
+   "prob": 0.964
+  },
+  {
+   "palabra": "los",
+   "inicio": 36.07,
+   "fin": 36.29,
+   "prob": 0.991
+  },
+  {
+   "palabra": "modelos",
+   "inicio": 36.29,
+   "fin": 36.75,
+   "prob": 1.0
+  },
+  {
+   "palabra": "de",
+   "inicio": 36.75,
+   "fin": 36.95,
+   "prob": 0.983
+  },
+  {
+   "palabra": "pronóstico",
+   "inicio": 36.95,
+   "fin": 37.65,
+   "prob": 0.86
+  },
+  {
+   "palabra": "de",
+   "inicio": 37.65,
+   "fin": 37.87,
+   "prob": 0.972
+  },
+  {
+   "palabra": "demanda.",
+   "inicio": 37.87,
+   "fin": 38.37,
+   "prob": 0.988
+  },
+  {
+   "palabra": "¿Y",
+   "inicio": 40.81,
+   "fin": 41.33,
+   "prob": 0.972
+  },
+  {
+   "palabra": "qué",
+   "inicio": 41.33,
+   "fin": 41.53,
+   "prob": 1.0
+  },
+  {
+   "palabra": "herramientas",
+   "inicio": 41.53,
+   "fin": 42.03,
+   "prob": 1.0
+  },
+  {
+   "palabra": "usas",
+   "inicio": 42.03,
+   "fin": 42.45,
+   "prob": 0.985
+  },
+  {
+   "palabra": "en",
+   "inicio": 42.45,
+   "fin": 42.73,
+   "prob": 1.0
+  },
+  {
+   "palabra": "el",
+   "inicio": 42.73,
+   "fin": 42.91,
+   "prob": 0.999
+  },
+  {
+   "palabra": "día",
+   "inicio": 42.91,
+   "fin": 43.11,
+   "prob": 0.909
+  },
+  {
+   "palabra": "a",
+   "inicio": 43.11,
+   "fin": 43.27,
+   "prob": 0.994
+  },
+  {
+   "palabra": "día?",
+   "inicio": 43.27,
+   "fin": 43.41,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Mi",
+   "inicio": 46.83,
+   "fin": 47.35,
+   "prob": 0.984
+  },
+  {
+   "palabra": "base",
+   "inicio": 47.35,
+   "fin": 47.61,
+   "prob": 0.999
+  },
+  {
+   "palabra": "es",
+   "inicio": 47.61,
+   "fin": 47.85,
+   "prob": 0.998
+  },
+  {
+   "palabra": "SQL.",
+   "inicio": 47.85,
+   "fin": 48.35,
+   "prob": 0.894
+  },
+  {
+   "palabra": "Eso",
+   "inicio": 48.81,
+   "fin": 49.25,
+   "prob": 0.972
+  },
+  {
+   "palabra": "es",
+   "inicio": 49.25,
+   "fin": 49.31,
+   "prob": 1.0
+  },
+  {
+   "palabra": "lo",
+   "inicio": 49.31,
+   "fin": 49.43,
+   "prob": 1.0
+  },
+  {
+   "palabra": "que",
+   "inicio": 49.43,
+   "fin": 49.55,
+   "prob": 1.0
+  },
+  {
+   "palabra": "más",
+   "inicio": 49.55,
+   "fin": 49.73,
+   "prob": 1.0
+  },
+  {
+   "palabra": "uso.",
+   "inicio": 49.73,
+   "fin": 50.15,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Hago",
+   "inicio": 50.37,
+   "fin": 50.71,
+   "prob": 0.999
+  },
+  {
+   "palabra": "consultas",
+   "inicio": 50.71,
+   "fin": 51.51,
+   "prob": 1.0
+  },
+  {
+   "palabra": "casi",
+   "inicio": 51.51,
+   "fin": 51.81,
+   "prob": 1.0
+  },
+  {
+   "palabra": "todo",
+   "inicio": 51.81,
+   "fin": 52.07,
+   "prob": 0.999
+  },
+  {
+   "palabra": "el",
+   "inicio": 52.07,
+   "fin": 52.19,
+   "prob": 1.0
+  },
+  {
+   "palabra": "día.",
+   "inicio": 52.19,
+   "fin": 52.47,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Para",
+   "inicio": 52.47,
+   "fin": 53.25,
+   "prob": 0.859
+  },
+  {
+   "palabra": "el",
+   "inicio": 53.25,
+   "fin": 53.39,
+   "prob": 0.992
+  },
+  {
+   "palabra": "análisis",
+   "inicio": 53.39,
+   "fin": 53.87,
+   "prob": 0.995
+  },
+  {
+   "palabra": "y",
+   "inicio": 53.87,
+   "fin": 54.05,
+   "prob": 0.95
+  },
+  {
+   "palabra": "los",
+   "inicio": 54.05,
+   "fin": 54.19,
+   "prob": 0.994
+  },
+  {
+   "palabra": "modelos,",
+   "inicio": 54.19,
+   "fin": 54.87,
+   "prob": 0.997
+  },
+  {
+   "palabra": "utilizo",
+   "inicio": 54.93,
+   "fin": 55.25,
+   "prob": 0.582
+  },
+  {
+   "palabra": "FireDog",
+   "inicio": 55.25,
+   "fin": 55.91,
+   "prob": 0.456
+  },
+  {
+   "palabra": "con",
+   "inicio": 55.91,
+   "fin": 56.41,
+   "prob": 0.45
+  },
+  {
+   "palabra": "Pandas",
+   "inicio": 56.41,
+   "fin": 56.87,
+   "prob": 0.606
+  },
+  {
+   "palabra": "y",
+   "inicio": 56.87,
+   "fin": 57.29,
+   "prob": 0.996
+  },
+  {
+   "palabra": "PsychiLearn.",
+   "inicio": 57.29,
+   "fin": 58.11,
+   "prob": 0.526
+  },
+  {
+   "palabra": "Los",
+   "inicio": 58.33,
+   "fin": 59.05,
+   "prob": 0.997
+  },
+  {
+   "palabra": "tableros",
+   "inicio": 59.05,
+   "fin": 59.57,
+   "prob": 0.986
+  },
+  {
+   "palabra": "los",
+   "inicio": 59.57,
+   "fin": 59.75,
+   "prob": 0.984
+  },
+  {
+   "palabra": "hacemos",
+   "inicio": 59.75,
+   "fin": 60.09,
+   "prob": 0.835
+  },
+  {
+   "palabra": "en",
+   "inicio": 60.09,
+   "fin": 60.65,
+   "prob": 0.962
+  },
+  {
+   "palabra": "Power",
+   "inicio": 60.65,
+   "fin": 61.05,
+   "prob": 0.844
+  },
+  {
+   "palabra": "BI.",
+   "inicio": 61.05,
+   "fin": 61.31,
+   "prob": 0.888
+  },
+  {
+   "palabra": "Y",
+   "inicio": 62.03,
+   "fin": 62.13,
+   "prob": 0.863
+  },
+  {
+   "palabra": "el",
+   "inicio": 62.13,
+   "fin": 62.37,
+   "prob": 0.999
+  },
+  {
+   "palabra": "año",
+   "inicio": 62.37,
+   "fin": 62.51,
+   "prob": 1.0
+  },
+  {
+   "palabra": "pasado",
+   "inicio": 62.51,
+   "fin": 62.99,
+   "prob": 1.0
+  },
+  {
+   "palabra": "libramos",
+   "inicio": 62.99,
+   "fin": 63.57,
+   "prob": 0.676
+  },
+  {
+   "palabra": "las",
+   "inicio": 63.57,
+   "fin": 63.81,
+   "prob": 0.997
+  },
+  {
+   "palabra": "cargas",
+   "inicio": 63.81,
+   "fin": 64.21,
+   "prob": 1.0
+  },
+  {
+   "palabra": "a",
+   "inicio": 64.21,
+   "fin": 64.55,
+   "prob": 0.995
+  },
+  {
+   "palabra": "Iron",
+   "inicio": 64.55,
+   "fin": 64.83,
+   "prob": 0.489
+  },
+  {
+   "palabra": "Cloud,",
+   "inicio": 64.83,
+   "fin": 65.11,
+   "prob": 0.384
+  },
+  {
+   "palabra": "que",
+   "inicio": 65.35,
+   "fin": 65.99,
+   "prob": 1.0
+  },
+  {
+   "palabra": "lo",
+   "inicio": 65.99,
+   "fin": 66.27,
+   "prob": 0.988
+  },
+  {
+   "palabra": "programo",
+   "inicio": 66.27,
+   "fin": 66.73,
+   "prob": 0.982
+  },
+  {
+   "palabra": "yo",
+   "inicio": 66.73,
+   "fin": 66.89,
+   "prob": 1.0
+  },
+  {
+   "palabra": "con",
+   "inicio": 66.89,
+   "fin": 67.25,
+   "prob": 0.854
+  },
+  {
+   "palabra": "otra",
+   "inicio": 67.25,
+   "fin": 67.49,
+   "prob": 0.936
+  },
+  {
+   "palabra": "compañera.",
+   "inicio": 67.49,
+   "fin": 68.03,
+   "prob": 0.991
+  },
+  {
+   "palabra": "Interesante.",
+   "inicio": 70.33,
+   "fin": 71.05,
+   "prob": 0.979
+  },
+  {
+   "palabra": "¿Y",
+   "inicio": 71.21,
+   "fin": 71.39,
+   "prob": 0.994
+  },
+  {
+   "palabra": "cuánto",
+   "inicio": 71.39,
+   "fin": 71.75,
+   "prob": 1.0
+  },
+  {
+   "palabra": "tiempo",
+   "inicio": 71.75,
+   "fin": 72.03,
+   "prob": 1.0
+  },
+  {
+   "palabra": "llevas",
+   "inicio": 72.03,
+   "fin": 72.51,
+   "prob": 0.999
+  },
+  {
+   "palabra": "trabajando",
+   "inicio": 72.51,
+   "fin": 72.99,
+   "prob": 1.0
+  },
+  {
+   "palabra": "con",
+   "inicio": 72.99,
+   "fin": 73.27,
+   "prob": 1.0
+  },
+  {
+   "palabra": "datos?",
+   "inicio": 73.27,
+   "fin": 73.55,
+   "prob": 0.969
+  },
+  {
+   "palabra": "Empecé",
+   "inicio": 75.61,
+   "fin": 76.25,
+   "prob": 0.836
+  },
+  {
+   "palabra": "como",
+   "inicio": 76.25,
+   "fin": 76.45,
+   "prob": 0.983
+  },
+  {
+   "palabra": "practicante",
+   "inicio": 76.45,
+   "fin": 77.25,
+   "prob": 0.992
+  },
+  {
+   "palabra": "en",
+   "inicio": 77.25,
+   "fin": 77.57,
+   "prob": 0.983
+  },
+  {
+   "palabra": "2021,",
+   "inicio": 77.57,
+   "fin": 78.47,
+   "prob": 0.92
+  },
+  {
+   "palabra": "pero",
+   "inicio": 78.95,
+   "fin": 79.13,
+   "prob": 0.999
+  },
+  {
+   "palabra": "eso",
+   "inicio": 79.13,
+   "fin": 79.51,
+   "prob": 0.906
+  },
+  {
+   "palabra": "no",
+   "inicio": 79.51,
+   "fin": 79.65,
+   "prob": 0.999
+  },
+  {
+   "palabra": "lo",
+   "inicio": 79.65,
+   "fin": 79.81,
+   "prob": 0.998
+  },
+  {
+   "palabra": "cuento",
+   "inicio": 79.81,
+   "fin": 80.05,
+   "prob": 0.996
+  },
+  {
+   "palabra": "mucho",
+   "inicio": 80.05,
+   "fin": 80.43,
+   "prob": 0.996
+  },
+  {
+   "palabra": "porque",
+   "inicio": 80.43,
+   "fin": 80.71,
+   "prob": 0.958
+  },
+  {
+   "palabra": "era",
+   "inicio": 80.71,
+   "fin": 81.09,
+   "prob": 0.995
+  },
+  {
+   "palabra": "más",
+   "inicio": 81.09,
+   "fin": 81.49,
+   "prob": 0.982
+  },
+  {
+   "palabra": "Excel",
+   "inicio": 81.49,
+   "fin": 81.91,
+   "prob": 0.356
+  },
+  {
+   "palabra": "que",
+   "inicio": 81.91,
+   "fin": 82.09,
+   "prob": 0.998
+  },
+  {
+   "palabra": "otra",
+   "inicio": 82.09,
+   "fin": 82.21,
+   "prob": 0.993
+  },
+  {
+   "palabra": "cosa.",
+   "inicio": 82.21,
+   "fin": 82.57,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Ya",
+   "inicio": 83.31,
+   "fin": 83.43,
+   "prob": 0.995
+  },
+  {
+   "palabra": "como",
+   "inicio": 83.43,
+   "fin": 83.65,
+   "prob": 0.985
+  },
+  {
+   "palabra": "una",
+   "inicio": 83.65,
+   "fin": 83.83,
+   "prob": 0.998
+  },
+  {
+   "palabra": "lista",
+   "inicio": 83.83,
+   "fin": 84.15,
+   "prob": 0.999
+  },
+  {
+   "palabra": "contratada",
+   "inicio": 84.15,
+   "fin": 85.05,
+   "prob": 0.999
+  },
+  {
+   "palabra": "para",
+   "inicio": 85.05,
+   "fin": 85.43,
+   "prob": 0.718
+  },
+  {
+   "palabra": "cuatro",
+   "inicio": 85.43,
+   "fin": 85.89,
+   "prob": 0.685
+  },
+  {
+   "palabra": "años.",
+   "inicio": 85.89,
+   "fin": 86.21,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Perfecto.",
+   "inicio": 88.05,
+   "fin": 88.69,
+   "prob": 0.981
+  },
+  {
+   "palabra": "Te",
+   "inicio": 88.85,
+   "fin": 88.97,
+   "prob": 0.991
+  },
+  {
+   "palabra": "cuento",
+   "inicio": 88.97,
+   "fin": 89.23,
+   "prob": 1.0
+  },
+  {
+   "palabra": "que",
+   "inicio": 89.23,
+   "fin": 89.39,
+   "prob": 1.0
+  },
+  {
+   "palabra": "el",
+   "inicio": 89.39,
+   "fin": 89.51,
+   "prob": 1.0
+  },
+  {
+   "palabra": "puesto",
+   "inicio": 89.51,
+   "fin": 89.85,
+   "prob": 0.999
+  },
+  {
+   "palabra": "es",
+   "inicio": 89.85,
+   "fin": 90.47,
+   "prob": 0.999
+  },
+  {
+   "palabra": "para",
+   "inicio": 90.47,
+   "fin": 90.85,
+   "prob": 0.999
+  },
+  {
+   "palabra": "área",
+   "inicio": 90.85,
+   "fin": 91.43,
+   "prob": 0.939
+  },
+  {
+   "palabra": "de",
+   "inicio": 91.43,
+   "fin": 91.65,
+   "prob": 0.997
+  },
+  {
+   "palabra": "pricing.",
+   "inicio": 91.65,
+   "fin": 92.07,
+   "prob": 0.93
+  },
+  {
+   "palabra": "Trabajarías",
+   "inicio": 93.31,
+   "fin": 93.95,
+   "prob": 0.991
+  },
+  {
+   "palabra": "con",
+   "inicio": 93.95,
+   "fin": 94.15,
+   "prob": 0.995
+  },
+  {
+   "palabra": "el",
+   "inicio": 94.15,
+   "fin": 94.27,
+   "prob": 0.997
+  },
+  {
+   "palabra": "equipo",
+   "inicio": 94.27,
+   "fin": 94.51,
+   "prob": 0.999
+  },
+  {
+   "palabra": "comercial",
+   "inicio": 94.51,
+   "fin": 94.97,
+   "prob": 1.0
+  },
+  {
+   "palabra": "y",
+   "inicio": 94.97,
+   "fin": 95.33,
+   "prob": 1.0
+  },
+  {
+   "palabra": "con",
+   "inicio": 95.33,
+   "fin": 95.53,
+   "prob": 0.999
+  },
+  {
+   "palabra": "finanzas.",
+   "inicio": 95.53,
+   "fin": 95.97,
+   "prob": 0.997
+  },
+  {
+   "palabra": "¿Qué",
+   "inicio": 96.27,
+   "fin": 96.39,
+   "prob": 0.999
+  },
+  {
+   "palabra": "te",
+   "inicio": 96.39,
+   "fin": 96.51,
+   "prob": 1.0
+  },
+  {
+   "palabra": "llama",
+   "inicio": 96.51,
+   "fin": 96.77,
+   "prob": 0.999
+  },
+  {
+   "palabra": "la",
+   "inicio": 96.77,
+   "fin": 96.97,
+   "prob": 1.0
+  },
+  {
+   "palabra": "atención",
+   "inicio": 96.97,
+   "fin": 97.37,
+   "prob": 1.0
+  },
+  {
+   "palabra": "de",
+   "inicio": 97.37,
+   "fin": 97.67,
+   "prob": 0.808
+  },
+  {
+   "palabra": "Detroit?",
+   "inicio": 97.67,
+   "fin": 97.97,
+   "prob": 0.819
+  },
+  {
+   "palabra": "Trabajarías",
+   "inicio": 98.89,
+   "fin": 99.51,
+   "prob": 0.18
+  },
+  {
+   "palabra": "con",
+   "inicio": 99.51,
+   "fin": 99.51,
+   "prob": 0.022
+  },
+  {
+   "palabra": "la",
+   "inicio": 99.51,
+   "fin": 99.51,
+   "prob": 0.05
+  },
+  {
+   "palabra": "atención",
+   "inicio": 99.51,
+   "fin": 99.51,
+   "prob": 0.003
+  },
+  {
+   "palabra": "de",
+   "inicio": 99.51,
+   "fin": 99.61,
+   "prob": 0.079
+  },
+  {
+   "palabra": "Detroit?",
+   "inicio": 99.61,
+   "fin": 99.61,
+   "prob": 0.0
+  },
+  {
+   "palabra": "Detroit",
+   "inicio": 99.61,
+   "fin": 100.21,
+   "prob": 0.0
+  },
+  {
+   "palabra": "es",
+   "inicio": 100.21,
+   "fin": 100.63,
+   "prob": 0.048
+  },
+  {
+   "palabra": "algo",
+   "inicio": 100.63,
+   "fin": 101.15,
+   "prob": 0.933
+  },
+  {
+   "palabra": "que",
+   "inicio": 101.15,
+   "fin": 101.41,
+   "prob": 0.975
+  },
+  {
+   "palabra": "he",
+   "inicio": 101.41,
+   "fin": 101.67,
+   "prob": 0.916
+  },
+  {
+   "palabra": "tocado",
+   "inicio": 101.67,
+   "fin": 102.11,
+   "prob": 0.963
+  },
+  {
+   "palabra": "de",
+   "inicio": 102.11,
+   "fin": 102.29,
+   "prob": 0.617
+  },
+  {
+   "palabra": "costado",
+   "inicio": 102.29,
+   "fin": 102.75,
+   "prob": 0.893
+  },
+  {
+   "palabra": "con",
+   "inicio": 102.75,
+   "fin": 102.99,
+   "prob": 0.871
+  },
+  {
+   "palabra": "las",
+   "inicio": 102.99,
+   "fin": 103.15,
+   "prob": 0.412
+  },
+  {
+   "palabra": "conclusiones",
+   "inicio": 103.15,
+   "fin": 103.71,
+   "prob": 0.552
+  },
+  {
+   "palabra": "y",
+   "inicio": 103.71,
+   "fin": 104.07,
+   "prob": 0.808
+  },
+  {
+   "palabra": "me",
+   "inicio": 104.07,
+   "fin": 104.23,
+   "prob": 0.982
+  },
+  {
+   "palabra": "gustaría",
+   "inicio": 104.23,
+   "fin": 104.57,
+   "prob": 0.97
+  },
+  {
+   "palabra": "ir",
+   "inicio": 104.57,
+   "fin": 104.85,
+   "prob": 0.987
+  },
+  {
+   "palabra": "más",
+   "inicio": 104.85,
+   "fin": 105.15,
+   "prob": 0.94
+  },
+  {
+   "palabra": "afuera.",
+   "inicio": 105.15,
+   "fin": 105.45,
+   "prob": 0.401
+  },
+  {
+   "palabra": "Además,",
+   "inicio": 106.05,
+   "fin": 106.67,
+   "prob": 0.942
+  },
+  {
+   "palabra": "me",
+   "inicio": 106.81,
+   "fin": 106.87,
+   "prob": 0.996
+  },
+  {
+   "palabra": "interesa",
+   "inicio": 106.87,
+   "fin": 107.31,
+   "prob": 0.995
+  },
+  {
+   "palabra": "que",
+   "inicio": 107.31,
+   "fin": 107.57,
+   "prob": 0.984
+  },
+  {
+   "palabra": "sea",
+   "inicio": 107.57,
+   "fin": 108.07,
+   "prob": 0.813
+  },
+  {
+   "palabra": "Retainer",
+   "inicio": 108.07,
+   "fin": 108.81,
+   "prob": 0.442
+  },
+  {
+   "palabra": "porque",
+   "inicio": 108.81,
+   "fin": 109.15,
+   "prob": 0.44
+  },
+  {
+   "palabra": "es",
+   "inicio": 109.15,
+   "fin": 109.39,
+   "prob": 0.715
+  },
+  {
+   "palabra": "el",
+   "inicio": 109.39,
+   "fin": 109.49,
+   "prob": 0.986
+  },
+  {
+   "palabra": "único",
+   "inicio": 109.49,
+   "fin": 109.71,
+   "prob": 0.987
+  },
+  {
+   "palabra": "tipo",
+   "inicio": 109.71,
+   "fin": 110.03,
+   "prob": 0.989
+  },
+  {
+   "palabra": "de",
+   "inicio": 110.03,
+   "fin": 110.17,
+   "prob": 0.997
+  },
+  {
+   "palabra": "autor",
+   "inicio": 110.17,
+   "fin": 110.43,
+   "prob": 0.416
+  },
+  {
+   "palabra": "que",
+   "inicio": 110.43,
+   "fin": 110.71,
+   "prob": 0.993
+  },
+  {
+   "palabra": "ya",
+   "inicio": 110.71,
+   "fin": 110.99,
+   "prob": 0.972
+  },
+  {
+   "palabra": "conoce.",
+   "inicio": 110.99,
+   "fin": 111.47,
+   "prob": 0.759
+  },
+  {
+   "palabra": "Bien.",
+   "inicio": 113.35,
+   "fin": 113.97,
+   "prob": 0.911
+  },
+  {
+   "palabra": "Sobre",
+   "inicio": 114.25,
+   "fin": 114.51,
+   "prob": 0.875
+  },
+  {
+   "palabra": "los",
+   "inicio": 114.51,
+   "fin": 114.71,
+   "prob": 0.986
+  },
+  {
+   "palabra": "tiempos.",
+   "inicio": 114.71,
+   "fin": 115.29,
+   "prob": 0.999
+  },
+  {
+   "palabra": "¿Si",
+   "inicio": 115.53,
+   "fin": 115.61,
+   "prob": 0.557
+  },
+  {
+   "palabra": "avanzamos,",
+   "inicio": 115.61,
+   "fin": 116.13,
+   "prob": 0.982
+  },
+  {
+   "palabra": "¿desde",
+   "inicio": 116.29,
+   "fin": 116.63,
+   "prob": 0.656
+  },
+  {
+   "palabra": "cuándo",
+   "inicio": 116.63,
+   "fin": 117.27,
+   "prob": 0.993
+  },
+  {
+   "palabra": "podrías",
+   "inicio": 117.27,
+   "fin": 117.73,
+   "prob": 0.993
+  },
+  {
+   "palabra": "incorporarte?",
+   "inicio": 117.73,
+   "fin": 118.53,
+   "prob": 0.995
+  },
+  {
+   "palabra": "En",
+   "inicio": 118.53,
+   "fin": 119.89,
+   "prob": 0.952
+  },
+  {
+   "palabra": "mi",
+   "inicio": 119.89,
+   "fin": 120.05,
+   "prob": 0.993
+  },
+  {
+   "palabra": "contrato",
+   "inicio": 120.05,
+   "fin": 120.43,
+   "prob": 0.998
+  },
+  {
+   "palabra": "tengo",
+   "inicio": 120.43,
+   "fin": 120.77,
+   "prob": 0.917
+  },
+  {
+   "palabra": "que",
+   "inicio": 120.77,
+   "fin": 120.95,
+   "prob": 0.999
+  },
+  {
+   "palabra": "dar",
+   "inicio": 120.95,
+   "fin": 121.19,
+   "prob": 0.999
+  },
+  {
+   "palabra": "15",
+   "inicio": 121.19,
+   "fin": 121.51,
+   "prob": 0.985
+  },
+  {
+   "palabra": "días",
+   "inicio": 121.51,
+   "fin": 121.83,
+   "prob": 0.997
+  },
+  {
+   "palabra": "de",
+   "inicio": 121.83,
+   "fin": 122.09,
+   "prob": 0.992
+  },
+  {
+   "palabra": "previo",
+   "inicio": 122.09,
+   "fin": 122.55,
+   "prob": 0.865
+  },
+  {
+   "palabra": "aviso,",
+   "inicio": 122.55,
+   "fin": 122.87,
+   "prob": 0.995
+  },
+  {
+   "palabra": "así",
+   "inicio": 123.49,
+   "fin": 123.79,
+   "prob": 1.0
+  },
+  {
+   "palabra": "que",
+   "inicio": 123.79,
+   "fin": 124.41,
+   "prob": 1.0
+  },
+  {
+   "palabra": "si",
+   "inicio": 124.41,
+   "fin": 124.83,
+   "prob": 0.987
+  },
+  {
+   "palabra": "firmo",
+   "inicio": 124.83,
+   "fin": 125.13,
+   "prob": 0.992
+  },
+  {
+   "palabra": "esta",
+   "inicio": 125.13,
+   "fin": 125.31,
+   "prob": 0.999
+  },
+  {
+   "palabra": "semana,",
+   "inicio": 125.31,
+   "fin": 125.79,
+   "prob": 1.0
+  },
+  {
+   "palabra": "podré",
+   "inicio": 126.01,
+   "fin": 126.17,
+   "prob": 0.82
+  },
+  {
+   "palabra": "empezar",
+   "inicio": 126.17,
+   "fin": 126.61,
+   "prob": 0.999
+  },
+  {
+   "palabra": "desde",
+   "inicio": 126.61,
+   "fin": 127.07,
+   "prob": 0.998
+  },
+  {
+   "palabra": "el",
+   "inicio": 127.07,
+   "fin": 127.51,
+   "prob": 0.999
+  },
+  {
+   "palabra": "viernes",
+   "inicio": 127.51,
+   "fin": 127.89,
+   "prob": 1.0
+  },
+  {
+   "palabra": "13",
+   "inicio": 127.89,
+   "fin": 128.33,
+   "prob": 0.694
+  },
+  {
+   "palabra": "de",
+   "inicio": 128.33,
+   "fin": 128.49,
+   "prob": 1.0
+  },
+  {
+   "palabra": "noviembre.",
+   "inicio": 128.49,
+   "fin": 128.95,
+   "prob": 0.8
+  },
+  {
+   "palabra": "Anotado.",
+   "inicio": 130.75,
+   "fin": 131.51,
+   "prob": 0.948
+  },
+  {
+   "palabra": "Y",
+   "inicio": 131.77,
+   "fin": 131.83,
+   "prob": 0.619
+  },
+  {
+   "palabra": "en",
+   "inicio": 131.83,
+   "fin": 131.97,
+   "prob": 0.997
+  },
+  {
+   "palabra": "cuanto",
+   "inicio": 131.97,
+   "fin": 132.33,
+   "prob": 0.999
+  },
+  {
+   "palabra": "a",
+   "inicio": 132.33,
+   "fin": 132.75,
+   "prob": 0.557
+  },
+  {
+   "palabra": "lo",
+   "inicio": 132.75,
+   "fin": 132.91,
+   "prob": 0.479
+  },
+  {
+   "palabra": "económico,",
+   "inicio": 132.91,
+   "fin": 133.71,
+   "prob": 0.967
+  },
+  {
+   "palabra": "¿cuál",
+   "inicio": 134.09,
+   "fin": 134.41,
+   "prob": 0.998
+  },
+  {
+   "palabra": "es",
+   "inicio": 134.41,
+   "fin": 134.67,
+   "prob": 1.0
+  },
+  {
+   "palabra": "tu",
+   "inicio": 134.67,
+   "fin": 135.47,
+   "prob": 0.997
+  },
+  {
+   "palabra": "expectativa?",
+   "inicio": 135.47,
+   "fin": 136.11,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Estuve",
+   "inicio": 137.15,
+   "fin": 137.77,
+   "prob": 0.99
+  },
+  {
+   "palabra": "revisando",
+   "inicio": 137.77,
+   "fin": 138.21,
+   "prob": 1.0
+  },
+  {
+   "palabra": "el",
+   "inicio": 138.21,
+   "fin": 138.33,
+   "prob": 1.0
+  },
+  {
+   "palabra": "mercado",
+   "inicio": 138.33,
+   "fin": 138.71,
+   "prob": 0.999
+  },
+  {
+   "palabra": "y",
+   "inicio": 138.71,
+   "fin": 139.01,
+   "prob": 0.999
+  },
+  {
+   "palabra": "estaba",
+   "inicio": 139.01,
+   "fin": 139.33,
+   "prob": 0.999
+  },
+  {
+   "palabra": "pensando",
+   "inicio": 139.33,
+   "fin": 139.91,
+   "prob": 1.0
+  },
+  {
+   "palabra": "en",
+   "inicio": 139.91,
+   "fin": 140.17,
+   "prob": 1.0
+  },
+  {
+   "palabra": "6",
+   "inicio": 140.17,
+   "fin": 140.51,
+   "prob": 0.993
+  },
+  {
+   "palabra": ".500",
+   "inicio": 140.51,
+   "fin": 140.99,
+   "prob": 0.93
+  },
+  {
+   "palabra": "soles",
+   "inicio": 140.99,
+   "fin": 141.35,
+   "prob": 0.989
+  },
+  {
+   "palabra": "mensuales",
+   "inicio": 141.35,
+   "fin": 142.03,
+   "prob": 0.998
+  },
+  {
+   "palabra": "brutos.",
+   "inicio": 142.03,
+   "fin": 142.57,
+   "prob": 0.821
+  },
+  {
+   "palabra": "Ok,",
+   "inicio": 145.53,
+   "fin": 146.17,
+   "prob": 0.095
+  },
+  {
+   "palabra": "¿está",
+   "inicio": 146.41,
+   "fin": 146.73,
+   "prob": 0.719
+  },
+  {
+   "palabra": "atento",
+   "inicio": 146.73,
+   "fin": 147.03,
+   "prob": 0.472
+  },
+  {
+   "palabra": "al",
+   "inicio": 147.03,
+   "fin": 147.21,
+   "prob": 0.71
+  },
+  {
+   "palabra": "rango",
+   "inicio": 147.21,
+   "fin": 147.55,
+   "prob": 0.998
+  },
+  {
+   "palabra": "que",
+   "inicio": 147.55,
+   "fin": 147.79,
+   "prob": 0.98
+  },
+  {
+   "palabra": "manejamos?",
+   "inicio": 147.79,
+   "fin": 148.45,
+   "prob": 0.994
+  },
+  {
+   "palabra": "Una",
+   "inicio": 148.75,
+   "fin": 149.27,
+   "prob": 0.978
+  },
+  {
+   "palabra": "última",
+   "inicio": 149.27,
+   "fin": 149.55,
+   "prob": 0.995
+  },
+  {
+   "palabra": "cosa,",
+   "inicio": 149.55,
+   "fin": 149.99,
+   "prob": 0.999
+  },
+  {
+   "palabra": "parte",
+   "inicio": 150.21,
+   "fin": 150.49,
+   "prob": 0.912
+  },
+  {
+   "palabra": "del",
+   "inicio": 150.49,
+   "fin": 150.71,
+   "prob": 0.999
+  },
+  {
+   "palabra": "equipo",
+   "inicio": 150.71,
+   "fin": 150.99,
+   "prob": 0.999
+  },
+  {
+   "palabra": "regional",
+   "inicio": 150.99,
+   "fin": 151.53,
+   "prob": 0.987
+  },
+  {
+   "palabra": "está",
+   "inicio": 151.53,
+   "fin": 151.89,
+   "prob": 0.355
+  },
+  {
+   "palabra": "en",
+   "inicio": 151.89,
+   "fin": 152.15,
+   "prob": 0.995
+  },
+  {
+   "palabra": "Chile",
+   "inicio": 152.15,
+   "fin": 152.41,
+   "prob": 0.998
+  },
+  {
+   "palabra": "y",
+   "inicio": 152.41,
+   "fin": 152.73,
+   "prob": 0.972
+  },
+  {
+   "palabra": "en",
+   "inicio": 152.73,
+   "fin": 152.83,
+   "prob": 0.653
+  },
+  {
+   "palabra": "Estados",
+   "inicio": 152.83,
+   "fin": 153.15,
+   "prob": 0.72
+  },
+  {
+   "palabra": "Unidos,",
+   "inicio": 153.15,
+   "fin": 153.71,
+   "prob": 0.999
+  },
+  {
+   "palabra": "y",
+   "inicio": 154.11,
+   "fin": 154.23,
+   "prob": 0.908
+  },
+  {
+   "palabra": "algunas",
+   "inicio": 154.23,
+   "fin": 154.79,
+   "prob": 0.831
+  },
+  {
+   "palabra": "reuniones",
+   "inicio": 154.79,
+   "fin": 155.41,
+   "prob": 0.991
+  },
+  {
+   "palabra": "son",
+   "inicio": 155.41,
+   "fin": 155.77,
+   "prob": 0.968
+  },
+  {
+   "palabra": "inglés.",
+   "inicio": 155.77,
+   "fin": 156.15,
+   "prob": 0.394
+  },
+  {
+   "palabra": "¿Cómo",
+   "inicio": 156.47,
+   "fin": 156.59,
+   "prob": 0.997
+  },
+  {
+   "palabra": "andas",
+   "inicio": 156.59,
+   "fin": 157.05,
+   "prob": 0.773
+  },
+  {
+   "palabra": "en",
+   "inicio": 157.05,
+   "fin": 157.77,
+   "prob": 0.868
+  },
+  {
+   "palabra": "ese",
+   "inicio": 157.77,
+   "fin": 157.97,
+   "prob": 0.75
+  },
+  {
+   "palabra": "aspecto?",
+   "inicio": 157.97,
+   "fin": 158.45,
+   "prob": 0.997
+  },
+  {
+   "palabra": "La",
+   "inicio": 159.31,
+   "fin": 159.95,
+   "prob": 0.377
+  },
+  {
+   "palabra": "documentación",
+   "inicio": 159.95,
+   "fin": 160.59,
+   "prob": 0.994
+  },
+  {
+   "palabra": "técnica",
+   "inicio": 160.59,
+   "fin": 161.11,
+   "prob": 1.0
+  },
+  {
+   "palabra": "ha",
+   "inicio": 161.11,
+   "fin": 161.45,
+   "prob": 0.409
+  },
+  {
+   "palabra": "sido",
+   "inicio": 161.45,
+   "fin": 161.51,
+   "prob": 0.988
+  },
+  {
+   "palabra": "un",
+   "inicio": 161.51,
+   "fin": 161.71,
+   "prob": 0.75
+  },
+  {
+   "palabra": "problema,",
+   "inicio": 161.71,
+   "fin": 162.17,
+   "prob": 0.998
+  },
+  {
+   "palabra": "y",
+   "inicio": 162.39,
+   "fin": 162.65,
+   "prob": 0.955
+  },
+  {
+   "palabra": "es",
+   "inicio": 162.65,
+   "fin": 162.89,
+   "prob": 0.908
+  },
+  {
+   "palabra": "que",
+   "inicio": 162.89,
+   "fin": 162.97,
+   "prob": 0.958
+  },
+  {
+   "palabra": "yo",
+   "inicio": 162.97,
+   "fin": 163.09,
+   "prob": 0.411
+  },
+  {
+   "palabra": "conozco",
+   "inicio": 163.09,
+   "fin": 163.41,
+   "prob": 0.874
+  },
+  {
+   "palabra": "bien.",
+   "inicio": 163.41,
+   "fin": 163.69,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Hablar",
+   "inicio": 164.37,
+   "fin": 164.73,
+   "prob": 0.993
+  },
+  {
+   "palabra": "en",
+   "inicio": 164.73,
+   "fin": 164.91,
+   "prob": 0.98
+  },
+  {
+   "palabra": "una",
+   "inicio": 164.91,
+   "fin": 165.09,
+   "prob": 0.971
+  },
+  {
+   "palabra": "reunión",
+   "inicio": 165.09,
+   "fin": 165.61,
+   "prob": 0.995
+  },
+  {
+   "palabra": "larga",
+   "inicio": 165.61,
+   "fin": 166.41,
+   "prob": 0.999
+  },
+  {
+   "palabra": "en",
+   "inicio": 166.41,
+   "fin": 166.81,
+   "prob": 0.696
+  },
+  {
+   "palabra": "realidad",
+   "inicio": 166.81,
+   "fin": 167.11,
+   "prob": 1.0
+  },
+  {
+   "palabra": "me",
+   "inicio": 167.11,
+   "fin": 167.33,
+   "prob": 0.997
+  },
+  {
+   "palabra": "cuesta",
+   "inicio": 167.33,
+   "fin": 167.59,
+   "prob": 0.994
+  },
+  {
+   "palabra": "un",
+   "inicio": 167.59,
+   "fin": 167.71,
+   "prob": 1.0
+  },
+  {
+   "palabra": "poco",
+   "inicio": 167.71,
+   "fin": 167.89,
+   "prob": 1.0
+  },
+  {
+   "palabra": "más,",
+   "inicio": 167.89,
+   "fin": 168.31,
+   "prob": 1.0
+  },
+  {
+   "palabra": "me",
+   "inicio": 168.63,
+   "fin": 168.83,
+   "prob": 0.795
+  },
+  {
+   "palabra": "pongo",
+   "inicio": 168.83,
+   "fin": 169.09,
+   "prob": 0.99
+  },
+  {
+   "palabra": "nerviosa.",
+   "inicio": 169.09,
+   "fin": 169.65,
+   "prob": 0.999
+  },
+  {
+   "palabra": "Pero",
+   "inicio": 169.65,
+   "fin": 170.59,
+   "prob": 0.539
+  },
+  {
+   "palabra": "yo",
+   "inicio": 170.59,
+   "fin": 170.91,
+   "prob": 0.993
+  },
+  {
+   "palabra": "diría",
+   "inicio": 170.91,
+   "fin": 171.19,
+   "prob": 0.997
+  },
+  {
+   "palabra": "que",
+   "inicio": 171.19,
+   "fin": 171.37,
+   "prob": 0.999
+  },
+  {
+   "palabra": "tengo",
+   "inicio": 171.37,
+   "fin": 171.71,
+   "prob": 0.993
+  },
+  {
+   "palabra": "un",
+   "inicio": 171.71,
+   "fin": 171.91,
+   "prob": 0.972
+  },
+  {
+   "palabra": "nivel",
+   "inicio": 171.91,
+   "fin": 172.15,
+   "prob": 0.996
+  },
+  {
+   "palabra": "de",
+   "inicio": 172.15,
+   "fin": 172.35,
+   "prob": 0.34
+  },
+  {
+   "palabra": "intermédio.",
+   "inicio": 172.35,
+   "fin": 172.79,
+   "prob": 0.305
+  },
+  {
+   "palabra": "Es",
+   "inicio": 174.83,
+   "fin": 175.49,
+   "prob": 0.53
+  },
+  {
+   "palabra": "honesto,",
+   "inicio": 175.49,
+   "fin": 176.01,
+   "prob": 0.995
+  },
+  {
+   "palabra": "gracias.",
+   "inicio": 176.13,
+   "fin": 176.45,
+   "prob": 0.967
+  },
+  {
+   "palabra": "¿Tienes",
+   "inicio": 176.85,
+   "fin": 177.17,
+   "prob": 0.966
+  },
+  {
+   "palabra": "alguna",
+   "inicio": 177.17,
+   "fin": 177.43,
+   "prob": 0.992
+  },
+  {
+   "palabra": "pregunta",
+   "inicio": 177.43,
+   "fin": 177.95,
+   "prob": 0.996
+  },
+  {
+   "palabra": "para",
+   "inicio": 177.95,
+   "fin": 178.49,
+   "prob": 0.982
+  },
+  {
+   "palabra": "nadie?",
+   "inicio": 178.49,
+   "fin": 178.77,
+   "prob": 0.242
+  },
+  {
+   "palabra": "¿Cuántas",
+   "inicio": 180.67,
+   "fin": 181.35,
+   "prob": 0.846
+  },
+  {
+   "palabra": "personas",
+   "inicio": 181.35,
+   "fin": 181.77,
+   "prob": 1.0
+  },
+  {
+   "palabra": "son",
+   "inicio": 181.77,
+   "fin": 182.35,
+   "prob": 0.995
+  },
+  {
+   "palabra": "en",
+   "inicio": 182.35,
+   "fin": 182.63,
+   "prob": 0.785
+  },
+  {
+   "palabra": "el",
+   "inicio": 182.63,
+   "fin": 182.71,
+   "prob": 0.999
+  },
+  {
+   "palabra": "equipo",
+   "inicio": 182.71,
+   "fin": 182.99,
+   "prob": 0.997
+  },
+  {
+   "palabra": "de",
+   "inicio": 182.99,
+   "fin": 183.17,
+   "prob": 0.939
+  },
+  {
+   "palabra": "pricing",
+   "inicio": 183.17,
+   "fin": 183.51,
+   "prob": 0.687
+  },
+  {
+   "palabra": "y",
+   "inicio": 183.51,
+   "fin": 183.95,
+   "prob": 0.923
+  },
+  {
+   "palabra": "a",
+   "inicio": 183.95,
+   "fin": 184.21,
+   "prob": 0.999
+  },
+  {
+   "palabra": "quién",
+   "inicio": 184.21,
+   "fin": 184.35,
+   "prob": 0.994
+  },
+  {
+   "palabra": "reportarían?",
+   "inicio": 184.35,
+   "fin": 185.27,
+   "prob": 0.771
+  },
+  {
+   "palabra": "Son",
+   "inicio": 187.29,
+   "fin": 187.97,
+   "prob": 0.975
+  },
+  {
+   "palabra": "cuatro",
+   "inicio": 187.97,
+   "fin": 188.31,
+   "prob": 0.917
+  },
+  {
+   "palabra": "analistas.",
+   "inicio": 188.31,
+   "fin": 188.99,
+   "prob": 0.997
+  },
+  {
+   "palabra": "¿Y",
+   "inicio": 189.29,
+   "fin": 189.35,
+   "prob": 0.743
+  },
+  {
+   "palabra": "reportarías",
+   "inicio": 189.35,
+   "fin": 190.23,
+   "prob": 0.98
+  },
+  {
+   "palabra": "al",
+   "inicio": 190.23,
+   "fin": 190.41,
+   "prob": 0.999
+  },
+  {
+   "palabra": "gerente",
+   "inicio": 190.41,
+   "fin": 190.85,
+   "prob": 0.999
+  },
+  {
+   "palabra": "de",
+   "inicio": 190.85,
+   "fin": 191.03,
+   "prob": 0.903
+  },
+  {
+   "palabra": "pricing,",
+   "inicio": 191.03,
+   "fin": 191.43,
+   "prob": 0.999
+  },
+  {
+   "palabra": "que",
+   "inicio": 191.71,
+   "fin": 191.79,
+   "prob": 1.0
+  },
+  {
+   "palabra": "también",
+   "inicio": 191.79,
+   "fin": 192.13,
+   "prob": 1.0
+  },
+  {
+   "palabra": "estaría",
+   "inicio": 192.13,
+   "fin": 192.81,
+   "prob": 0.999
+  },
+  {
+   "palabra": "en",
+   "inicio": 192.81,
+   "fin": 193.11,
+   "prob": 1.0
+  },
+  {
+   "palabra": "la",
+   "inicio": 193.11,
+   "fin": 193.29,
+   "prob": 0.952
+  },
+  {
+   "palabra": "segunda",
+   "inicio": 193.29,
+   "fin": 193.59,
+   "prob": 0.529
+  },
+  {
+   "palabra": "entrevista?",
+   "inicio": 193.59,
+   "fin": 194.23,
+   "prob": 0.993
+  },
+  {
+   "palabra": "¿Describimos",
+   "inicio": 195.15,
+   "fin": 195.83,
+   "prob": 0.784
+  },
+  {
+   "palabra": "el",
+   "inicio": 195.83,
+   "fin": 196.01,
+   "prob": 0.633
+  },
+  {
+   "palabra": "mes",
+   "inicio": 196.01,
+   "fin": 196.23,
+   "prob": 0.096
+  },
+  {
+   "palabra": "con",
+   "inicio": 196.23,
+   "fin": 196.67,
+   "prob": 0.997
+  },
+  {
+   "palabra": "los",
+   "inicio": 196.67,
+   "fin": 196.83,
+   "prob": 0.999
+  },
+  {
+   "palabra": "siguientes",
+   "inicio": 196.83,
+   "fin": 197.25,
+   "prob": 1.0
+  },
+  {
+   "palabra": "pasos?",
+   "inicio": 197.25,
+   "fin": 197.65,
+   "prob": 0.991
+  },
+  {
+   "palabra": "Perfecto,",
+   "inicio": 199.59,
+   "fin": 200.11,
+   "prob": 0.573
+  },
+  {
+   "palabra": "muchas",
+   "inicio": 200.17,
+   "fin": 200.51,
+   "prob": 0.999
+  },
+  {
+   "palabra": "gracias",
+   "inicio": 200.51,
+   "fin": 200.93,
+   "prob": 1.0
+  },
+  {
+   "palabra": "Carla,",
+   "inicio": 200.93,
+   "fin": 201.29,
+   "prob": 0.588
+  },
+  {
+   "palabra": "que",
+   "inicio": 201.55,
+   "fin": 201.65,
+   "prob": 0.999
+  },
+  {
+   "palabra": "tengas",
+   "inicio": 201.65,
+   "fin": 201.91,
+   "prob": 0.979
+  },
+  {
+   "palabra": "un",
+   "inicio": 201.91,
+   "fin": 201.99,
+   "prob": 0.409
+  },
+  {
+   "palabra": "buen",
+   "inicio": 201.99,
+   "fin": 202.13,
+   "prob": 1.0
+  },
+  {
+   "palabra": "día.",
+   "inicio": 202.13,
+   "fin": 202.33,
+   "prob": 1.0
+  }
+ ],
+ "modelo": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+ "dispositivo": "cuda",
+ "precision": "float16",
+ "gpu": "Tesla T4",
+ "vram_pico_mb": 2068.0,
+ "vram_total_usada_mb": 2518.2,
+ "duracion_audio_s": 204.44,
+ "segundos_carga": 2.13,
+ "segundos_transcripcion": 9.92,
+ "segundos_por_minuto": 2.91,
+ "glosario_modo": "ninguno",
+ "clip": "E01",
+ "nivel": "L3"
+}

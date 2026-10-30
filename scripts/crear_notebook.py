@@ -63,12 +63,30 @@ celdas = [
              "!cp cache_colab.zip /content/drive/MyDrive/voz_a_registro_audio/\n"
              "from google.colab import files\nfiles.download('cache_colab.zip')"),
 ]
-nb = {"nbformat": 4, "nbformat_minor": 5,
-      "metadata": {"accelerator": "GPU", "colab": {"gpuType": "T4"},
-                   "kernelspec": {"name": "python3", "display_name": "Python 3"}},
-      "cells": [{"cell_type": "markdown" if t == "md" else "code", "metadata": {}, "source": s,
-                 **({"outputs": [], "execution_count": None} if t == "code" else {})} for t, s in celdas]}
-destino = Path(__file__).resolve().parent.parent / "notebooks" / "colab_gpu.ipynb"
-destino.parent.mkdir(exist_ok=True)
-destino.write_text(json.dumps(nb, ensure_ascii=False, indent=1), encoding="utf-8")
-print(destino)
+CORRIDAS_LLM = " ".join(f"L{n}_large-v3-turbo_float16_cuda_glosario-ninguno" for n in range(4))
+celdas_llm = [
+    ("md", "# Solo extracción con Qwen · Voz a registro\n\nUsa las transcripciones que ya están en `cache/` del "
+           "repositorio: no transcribe nada. GPU T4 → «Ejecutar todas». Tarda unos 15 minutos."),
+    ("code", "!nvidia-smi --query-gpu=name,memory.total --format=csv"),
+    ("code", f"!git clone -q {REPO} 2>/dev/null || (cd voz-a-registro && git pull -q)\n"
+             "%cd /content/voz-a-registro\n!pip install -q -r requirements-colab.txt"),
+    ("code", f"!python scripts/extraer_llm.py --corridas {CORRIDAS_LLM}"),
+    ("code", "!zip -qr extracciones_llm.zip cache/extracciones_llm\n"
+             "from google.colab import files\nfiles.download('extracciones_llm.zip')"),
+]
+
+
+def guardar(celdas, nombre):
+    nb = {"nbformat": 4, "nbformat_minor": 5,
+          "metadata": {"accelerator": "GPU", "colab": {"gpuType": "T4"},
+                       "kernelspec": {"name": "python3", "display_name": "Python 3"}},
+          "cells": [{"cell_type": "markdown" if t == "md" else "code", "metadata": {}, "source": s,
+                     **({"outputs": [], "execution_count": None} if t == "code" else {})} for t, s in celdas]}
+    destino = Path(__file__).resolve().parent.parent / "notebooks" / nombre
+    destino.parent.mkdir(exist_ok=True)
+    destino.write_text(json.dumps(nb, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(destino)
+
+
+guardar(celdas, "colab_gpu.ipynb")
+guardar(celdas_llm, "colab_llm.ipynb")

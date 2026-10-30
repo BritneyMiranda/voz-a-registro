@@ -56,29 +56,46 @@ print(f"{total} diferencias → {destino}")
 import html  # noqa: E402
 import re  # noqa: E402
 
+PALABRAS_CAMPO = [normalizar(p) for p in list(cfg["pedido"]["carta"]) + list(cfg["entrevista"]["tecnologias"])] + [
+    "ceviche", "lomo", "chicha", "kola", "cola", "suspiro", "aji", "chicharron", "arroz", "jarra", "vaso", "fuente",
+    "personal", "jiron", "avenida", "calle", "manzana", "lote", "yape", "plin", "tarjeta", "efectivo", "total",
+    "descuento", "promocion", "gratis", "soles", "dolares", "anos", "semanas", "mes", "inmediata", "ingles",
+    "basico", "intermedio", "avanzado", "analista", "desarrollador", "lider", "jefe", "asistente", "disenadora", "cargo",
+    "puesto", "quit", "cambia", "corrijo", "no tres", "mejor"]
 filas, clip = [], None
 for linea in salida:
     if linea.startswith("\n## "):
-        clip = linea.strip("\n# ").strip()
-        filas.append(f"<h2>{clip}</h2><audio id='{clip}' src='../audio/{clip}.mp3' preload='none'></audio>"
+        clip = linea.strip().split("\n")[0].lstrip("# ").strip()   # la línea trae también la cabecera de la tabla
+        ruta_audio = (RAIZ / cfg["rutas"]["audio"] / f"{clip}.mp3").as_uri()
+        filas.append(f"<h2>{clip}</h2><audio id='{clip}' src='{ruta_audio}' preload='metadata' controls></audio>"
                      "<table><tr><th></th><th>Minuto</th><th>El guion dice</th><th>Whisper oyó</th><th>Se dijo…</th></tr>")
     elif linea.startswith("| ") and clip and not linea.startswith("| Minuto"):
         minuto, guion, oido = [c.strip() for c in linea.strip("|").split("|")]
         m, s = map(int, minuto.split(":"))
         seg = max(0, m * 60 + s - 2)
         b = lambda x: re.sub(r"\*\*(.*?)\*\*", r"<b>\1</b>", html.escape(x))
-        filas.append(f"<tr><td><button onclick=\"oir('{clip}',{seg})\">▶</button></td><td>{minuto}</td>"
+        # prioritaria: lo que difiere toca un número o una palabra de los campos del registro
+        dif = " ".join(re.findall(r"\*\*(.*?)\*\*", guion + " " + oido))
+        prioritaria = bool(re.search(r"\d|" + "|".join(PALABRAS_CAMPO), dif))
+        filas.append(f"<tr class='{'prio' if prioritaria else 'resto'}'><td><button onclick=\"oir('{clip}',{seg})\">▶</button></td><td>{minuto}</td>"
                      f"<td>{b(guion)}</td><td>{b(oido)}</td><td><select><option></option><option>el guion</option>"
                      "<option>lo de Whisper</option><option>otra cosa</option></select></td></tr>")
 pagina = ("<!doctype html><meta charset='utf-8'><title>Revisar referencias</title><style>"
           "body{font:15px system-ui;max-width:1000px;margin:24px auto;padding:0 16px}"
           "table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #ddd;padding:6px;text-align:left}"
-          "button{font-size:16px;cursor:pointer}</style><h1>Revisar referencias</h1>"
+          "button{font-size:16px;cursor:pointer}tr.prio{background:#fff4c2}"
+          "body.solo tr.resto{display:none}</style><h1>Revisar referencias</h1>"
+          "<p><label><input type='checkbox' checked onchange=\"document.body.classList.toggle('solo',this.checked)\"> "
+          "Mostrar solo las prioritarias (en amarillo: tocan números o datos del registro)</label></p>"
           "<p>▶ reproduce 8 segundos desde un poco antes de la diferencia. Si se dijo lo que oyó Whisper (u otra cosa), "
           "corrige <code>verdad/referencias/&lt;clip&gt;.txt</code>. Si se dijo el guion, no cambies nada.</p>"
           + "".join(f + ("</table>" if f.startswith("<tr>") and (i + 1 == len(filas) or filas[i + 1].startswith("<h2>")) else "")
                     for i, f in enumerate(filas))
-          + "<script>let t;function oir(c,s){document.querySelectorAll('audio').forEach(a=>a.pause());"
-            "const a=document.getElementById(c);a.currentTime=s;a.play();clearTimeout(t);t=setTimeout(()=>a.pause(),8000)}"
+          + "<script>document.body.classList.add('solo');let t;function oir(c,s){"
+            "document.querySelectorAll('audio').forEach(a=>a.pause());const a=document.getElementById(c);"
+            # hay que esperar a que el audio cargue antes de saltar al segundo pedido
+            "const ir=()=>{a.currentTime=s;a.play().catch(e=>alert('No se pudo reproducir: '+e.message));"
+            "clearTimeout(t);t=setTimeout(()=>a.pause(),8000)};"
+            "if(a.readyState>=1)ir();else{a.addEventListener('loadedmetadata',ir,{once:true});a.load()}}"
             "</script>")
 (RAIZ / "verdad" / "revisar.html").write_text(pagina, encoding="utf-8")

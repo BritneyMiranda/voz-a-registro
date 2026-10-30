@@ -33,8 +33,16 @@ def preguntar(transcripcion: str, prompt: str, cfg_llm: dict) -> str:
 
 
 def leer_json(respuesta: str) -> dict:
-    m = re.search(r"\{.*\}", respuesta, re.S)
-    return json.loads(m.group(0)) if m else {}
+    """Primer objeto JSON de la respuesta; si el modelo agrega texto o un segundo objeto después, se ignora.
+    Una respuesta sin JSON válido devuelve {} y todos los campos quedan vacíos (se cuenta como fallo del LLM)."""
+    inicio = respuesta.find("{")
+    if inicio < 0:
+        return {}
+    try:
+        objeto, _ = json.JSONDecoder().raw_decode(respuesta[inicio:])
+    except json.JSONDecodeError:
+        return {}
+    return objeto if isinstance(objeto, dict) else {}
 
 
 def _par(d, clave):

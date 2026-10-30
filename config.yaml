@@ -42,29 +42,34 @@ extraccion:
     modelo: Qwen/Qwen2.5-3B-Instruct
     max_tokens_nuevos: 700
     temperatura: 0.0
+    # v2: la v1 describía las claves sin mostrar la plantilla y Qwen 3B devolvió una lista sin claves en las
+    # 20 entrevistas (y en 1 de 20 pedidos). La v2 da la plantilla exacta que hay que llenar.
+    version_prompt: 2
     prompt_entrevista: |
       Eres un asistente de selección de personal. Lee la transcripción de una entrevista de trabajo
-      (A entrevista, B es la persona candidata; los turnos no están marcados) y devuelve SOLO un objeto JSON
-      con estas claves. Para cada campo devuelve un objeto {"valor": ..., "cita": "..."}, donde "cita" es el
-      fragmento EXACTO de la transcripción del que sale el valor, copiado letra por letra. Si un dato no se dice,
-      usa {"valor": null, "cita": null}. No corrijas lo que dice la transcripción.
-      - anios_experiencia: número (años, admite 0.5)
-      - ultimo_puesto: texto, el cargo más reciente de la persona candidata
-      - tecnologias: lista de herramientas que la persona dice dominar
-      - pretension_salarial: {"monto": número, "moneda": "PEN" o "USD"} (lo que pide, no lo que gana hoy)
-      - disponibilidad: "inmediata" o la expresión de cuándo puede empezar, tal como se dice
-      - nivel_ingles: "básico", "intermedio" o "avanzado"
+      (A entrevista, B es la persona candidata; los turnos no están marcados).
+      Responde SOLO con este objeto JSON, con exactamente estas seis claves, llenando "valor" y "cita":
+      {"anios_experiencia": {"valor": <número, admite 0.5>, "cita": "<texto>"},
+       "ultimo_puesto": {"valor": "<cargo más reciente de la persona candidata, no la empresa>", "cita": "<texto>"},
+       "tecnologias": {"valor": ["<herramienta>", "..."], "cita": "<texto>"},
+       "pretension_salarial": {"valor": {"monto": <número>, "moneda": "PEN" o "USD"}, "cita": "<texto>"},
+       "disponibilidad": {"valor": "<inmediata, o cuándo puede empezar tal como lo dice>", "cita": "<texto>"},
+       "nivel_ingles": {"valor": "básico" o "intermedio" o "avanzado", "cita": "<texto>"}}
+      Reglas: "cita" es el fragmento EXACTO de la transcripción del que sale el valor, copiado letra por letra.
+      La pretensión salarial es lo que pide, no lo que gana hoy. Tecnologías: solo las que dice dominar.
+      Si un dato no se dice, usa {"valor": null, "cita": null}. No corrijas lo que dice la transcripción.
     prompt_pedido: |
       Eres un asistente de un restaurante. Lee la transcripción de una llamada (A vende, B es el cliente;
-      los turnos no están marcados) y devuelve SOLO un objeto JSON. El pedido es el FINAL: si el cliente se
-      corrige, vale la corrección. Para cada campo devuelve {"valor": ..., "cita": "..."} con la cita EXACTA
-      de la transcripción. Si un dato no se dice, usa {"valor": null, "cita": null}. No corrijas la transcripción
-      ni hagas cuentas: copia lo que se dijo.
-      - items: lista de {"producto", "tamano", "cantidad"}; en este campo "cita" puede ser una lista de citas
-      - promocion: texto de la promoción aplicada, o null
-      - direccion_entrega: texto
-      - metodo_pago: "efectivo", "tarjeta", "yape" o "plin"
-      - total_dicho: número, el total que dice el vendedor en voz alta
+      los turnos no están marcados). El pedido es el FINAL: si el cliente se corrige, vale la corrección.
+      Responde SOLO con este objeto JSON, con exactamente estas cinco claves, llenando "valor" y "cita":
+      {"items": {"valor": [{"producto": "<plato o bebida>", "tamano": "<personal, fuente, vaso, jarra o null>",
+                            "cantidad": <número>}], "cita": ["<texto de cada ítem>"]},
+       "promocion": {"valor": "<promoción aplicada>" o null, "cita": "<texto>" o null},
+       "direccion_entrega": {"valor": "<dirección>", "cita": "<texto>"},
+       "metodo_pago": {"valor": "efectivo" o "tarjeta" o "yape" o "plin", "cita": "<texto>"},
+       "total_dicho": {"valor": <número que dice el vendedor como total>, "cita": "<texto>"}}
+      Reglas: "cita" es el fragmento EXACTO de la transcripción, copiado letra por letra. No hagas cuentas:
+      copia el total que se dijo aunque te parezca mal. Si un dato no se dice, usa {"valor": null, "cita": null}.
 
 entrevista:
   niveles_ingles:
