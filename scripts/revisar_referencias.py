@@ -65,8 +65,9 @@ PALABRAS_CAMPO = [normalizar(p) for p in list(cfg["pedido"]["carta"]) + list(cfg
 filas, clip = [], None
 for linea in salida:
     if linea.startswith("\n## "):
-        clip = linea.strip("\n# ").strip()
-        filas.append(f"<h2>{clip}</h2><audio id='{clip}' src='../audio/{clip}.mp3' preload='none'></audio>"
+        clip = linea.strip().split("\n")[0].lstrip("# ").strip()   # la línea trae también la cabecera de la tabla
+        ruta_audio = (RAIZ / cfg["rutas"]["audio"] / f"{clip}.mp3").as_uri()
+        filas.append(f"<h2>{clip}</h2><audio id='{clip}' src='{ruta_audio}' preload='metadata' controls></audio>"
                      "<table><tr><th></th><th>Minuto</th><th>El guion dice</th><th>Whisper oyó</th><th>Se dijo…</th></tr>")
     elif linea.startswith("| ") and clip and not linea.startswith("| Minuto"):
         minuto, guion, oido = [c.strip() for c in linea.strip("|").split("|")]
@@ -90,7 +91,11 @@ pagina = ("<!doctype html><meta charset='utf-8'><title>Revisar referencias</titl
           "corrige <code>verdad/referencias/&lt;clip&gt;.txt</code>. Si se dijo el guion, no cambies nada.</p>"
           + "".join(f + ("</table>" if f.startswith("<tr>") and (i + 1 == len(filas) or filas[i + 1].startswith("<h2>")) else "")
                     for i, f in enumerate(filas))
-          + "<script>document.body.classList.add('solo');let t;function oir(c,s){document.querySelectorAll('audio').forEach(a=>a.pause());"
-            "const a=document.getElementById(c);a.currentTime=s;a.play();clearTimeout(t);t=setTimeout(()=>a.pause(),8000)}"
+          + "<script>document.body.classList.add('solo');let t;function oir(c,s){"
+            "document.querySelectorAll('audio').forEach(a=>a.pause());const a=document.getElementById(c);"
+            # hay que esperar a que el audio cargue antes de saltar al segundo pedido
+            "const ir=()=>{a.currentTime=s;a.play().catch(e=>alert('No se pudo reproducir: '+e.message));"
+            "clearTimeout(t);t=setTimeout(()=>a.pause(),8000)};"
+            "if(a.readyState>=1)ir();else{a.addEventListener('loadedmetadata',ir,{once:true});a.load()}}"
             "</script>")
 (RAIZ / "verdad" / "revisar.html").write_text(pagina, encoding="utf-8")
