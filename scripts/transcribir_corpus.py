@@ -10,6 +10,7 @@ Ejemplos:
 """
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -45,6 +46,8 @@ if conf["dispositivo"] == "auto":
 carpeta_audio = RAIZ / (cfg["rutas"]["audio"] if args.nivel == "L0" else Path(cfg["rutas"]["audio_degradado"]) / args.nivel)
 nombre_modelo = alias or conf["modelo"].split("/")[-1].replace("faster-whisper-", "")
 corrida = f"{args.nivel}_{nombre_modelo}_{conf['precision']}_{conf['dispositivo']}_glosario-{conf['glosario_modo']}"
+if conf["dispositivo"] == "cpu" and "COLAB_RELEASE_TAG" in os.environ:
+    corrida += "_colab"                                         # CPU de Colab ≠ CPU de la laptop
 destino = RAIZ / cfg["rutas"]["cache"] / "transcripciones" / corrida
 destino.mkdir(parents=True, exist_ok=True)
 
