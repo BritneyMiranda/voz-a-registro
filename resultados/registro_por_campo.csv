@@ -1,0 +1,562 @@
+corrida,metodo,clip,tarea,campo,correcto,error_abs,verificado,valor
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E01,entrevista,anios_experiencia,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E01,entrevista,ultimo_puesto,False,,True,"""analista de datos senior veo"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E02,entrevista,ultimo_puesto,False,,True,"""desarrollador backend dijiste"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""Spring Boot"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E04,entrevista,tecnologias,True,,True,"[""PySpark"", ""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E04,entrevista,pretension_salarial,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E04,entrevista,disponibilidad,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E04,entrevista,nivel_ingles,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L02,pedido,items,True,,True,"[{""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 1, ""precio_unitario"": 10}]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L02,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L02,pedido,metodo_pago,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L02,pedido,total_dicho,False,79.0,True,35.0
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L03,pedido,direccion_entrega,False,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto calle los pinos 340 en miraflores como paga"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 2, ""precio_unitario"": 10}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 2, ""precio_unitario"": 52}]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L04,pedido,direccion_entrega,False,,True,"""manzana f manzana f manzana f manzana f lote 12 urbanizacion san antonio en carabayllo al costado de la loza deportiva manzana f lote 12 urbanizacion san antonio carabayllo como va a pagar"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L05,pedido,items,True,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 1, ""precio_unitario"": 10}]"
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L05,pedido,promocion,True,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L05,pedido,direccion_entrega,False,,True,"""avenida arequipa 4120 oficina 501 miraflores hay que dejarlo en recepcion en el primer piso avenida arequipa 4120 oficina 501 miraflores con tarjeta con tarjeta con tarjeta con tarjeta con tarjeta con tarjeta con tarjeta por favor le confirmo chicharron de pescado personal 29 cevicheria clasico personal 28 suspiro limeno 12 en ca cola de litro y medio 10 su total es 79 soles 79 perfecto llega en 30 minutos aproximadamente gracias gracias gracias gracias kevin gracias kevin gracias guy gracias ganon jorga 발 la ola ceviche clasico arroz con mariscos lomo saltado aji de gallina chicha morada"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_float16_cuda_glosario-hotwords,reglas,L05,pedido,total_dicho,False,49.0,True,30.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E01,entrevista,ultimo_puesto,False,,True,"""analista de datos senior veo"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""Spring Boot"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E04,entrevista,tecnologias,True,,True,"[""PySpark"", ""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E04,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 9500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L02,pedido,items,True,,True,"[{""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 1, ""precio_unitario"": 10}]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L02,pedido,direccion_entrega,False,,True,"""avenida brasil 2875 en pueblo libre es 1 casa con puerta negra hay que tocar el timbre de arriba avenida brasil 2875 pueblo libre puerta negra forma de pago tarjeta el motorizado lleva pos"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L02,pedido,total_dicho,False,79.0,True,35.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L03,pedido,direccion_entrega,False,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto calle los pinos 340 en miraflores como paga"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L04,pedido,direccion_entrega,False,,True,"""manzana f lote 12 urbanizacion san antonio en carabayllo al costado de la loza deportiva manzana f lote 12 urbanizacion san antonio carabayllo como va a pagar"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L05,pedido,items,True,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 1, ""precio_unitario"": 10}]"
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L05,pedido,promocion,True,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L05,pedido,direccion_entrega,False,,True,"""avenida arequipa 4120 oficina 501 miraflores hay que dejarlo en recepcion en el primer piso avenida arequipa 4120 oficina 501 miraflores se deja en recepcion forma de pago con tarjeta por favor le confirmo chicharron de pescado personal 29 cevicheria clasico personal 28 suspiro limeno 12 enca kola de litro y medio 10 su total es 79 soles 79 perfecto llega en 30 minutos aproximadamente gracias gracias kevin gracias kevin gracias kevin gracias kevin л"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_float16_cuda_glosario-initial_prompt,reglas,L05,pedido,total_dicho,False,49.0,True,30.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 9500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,True,,True,"""avenida brasil 2875 en pueblo libre"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 en miraflores"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}]"
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,True,,True,"""avenida arequipa 4120 oficina 501 miraflores"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 9500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L02,pedido,direccion_entrega,True,,True,"""avenida brasil 2875 en pueblo libre"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L05,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L05,pedido,direccion_entrega,True,,True,"""avenida arequipa 4120 oficina 501 miraflores"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_large-v3-turbo_int8_cpu_glosario-ninguno_colab,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""Spring Boot"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 9500, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,True,,True,"""avenida brasil 2875 en pueblo libre"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L05,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}]"
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,True,,True,"""avenida arequipa 4120 oficina 501 miraflores"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_large-v3-turbo_int8_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L0_small_float16_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_small_float16_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_small_float16_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_small_float16_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_small_float16_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""SQL"", ""Java"", ""Spring Boot"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_small_float16_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_small_float16_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_small_float16_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_small_float16_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_small_float16_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,False,,False,null
+L0_small_float16_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_small_float16_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_small_float16_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,False,1500.0,True,"{""monto"": 8000, ""moneda"": ""PEN""}"
+L0_small_float16_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_small_float16_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,False,,True,"[""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_small_float16_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_small_float16_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_small_float16_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_small_float16_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_small_float16_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,False,400.0,True,512.0
+L0_small_float16_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L0_small_float16_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,False,,True,"""avenida brasil 2875 en pueblo libre es 1 casa con puerta negra hay que tocar el timbre de arriba avenida brasil 2875 pueblo libre puerta negra forma de pago"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,False,79.0,True,35.0
+L0_small_float16_cuda_glosario-ninguno,reglas,L03,pedido,items,False,,True,"[{""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_small_float16_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_small_float16_cuda_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L0_small_float16_cuda_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_small_float16_cuda_glosario-ninguno,reglas,L05,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}]"
+L0_small_float16_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L0_small_float16_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,False,,False,"""avenida de equipa 4"""
+L0_small_float16_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,False,,False,null
+L0_small_float16_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L0_small_int8_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L0_small_int8_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L0_small_int8_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L0_small_int8_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L0_small_int8_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""SQL"", ""Java"", ""Spring Boot"", ""Docker"", ""Kubernetes"", ""Go""]"
+L0_small_int8_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L0_small_int8_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L0_small_int8_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L0_small_int8_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L0_small_int8_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,False,,False,null
+L0_small_int8_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L0_small_int8_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L0_small_int8_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,False,1500.0,True,"{""monto"": 8000, ""moneda"": ""PEN""}"
+L0_small_int8_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L0_small_int8_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,False,,True,"[""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L0_small_int8_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L0_small_int8_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L0_small_int8_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L0_small_int8_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L0_small_int8_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,False,400.0,True,512.0
+L0_small_int8_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L0_small_int8_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,True,,True,"""avenida brasil 2875 en pueblo libre"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L0_small_int8_cuda_glosario-ninguno,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L0_small_int8_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L0_small_int8_cuda_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L0_small_int8_cuda_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L0_small_int8_cuda_glosario-ninguno,reglas,L05,pedido,items,True,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 1, ""precio_unitario"": 10}]"
+L0_small_int8_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L0_small_int8_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,False,,False,"""avenida de equipa 4"""
+L0_small_int8_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,False,,False,null
+L0_small_int8_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""Power BI"", ""Airflow"", ""Excel""]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 9500, ""moneda"": ""PEN""}"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,True,,True,"""avenida brasil 2875 en pueblo libre"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 miraflores"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,items,True,,True,"[{""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 2, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,items,True,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}, {""producto"": ""inca kola"", ""tamano"": ""1.5 L"", ""cantidad"": 1, ""precio_unitario"": 10}]"
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,True,,True,"""avenida arequipa 4120 oficina 501 miraflores"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L1_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,True,,True,"""analista de datos senior"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""Python"", ""pandas"", ""scikit-learn"", ""Power BI"", ""Airflow"", ""Excel""]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,True,0.0,True,6.5
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""Java"", ""PostgreSQL"", ""Docker"", ""Kubernetes"", ""Go""]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,True,,True,"[""Figma"", ""Miro"", ""Maze"", ""HTML"", ""CSS""]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""AWS"", ""S3"", ""Glue"", ""Snowflake"", ""dbt""]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 9500, ""moneda"": ""PEN""}"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,True,,True,"""2026-11-29"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,True,,True,"""asistente de inteligencia comercial"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,True,,True,"[""SQL"", ""Power BI"", ""Power Query"", ""Excel"", ""Tableau""]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 3800, ""moneda"": ""PEN""}"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,True,,True,"""yape"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}, {""producto"": ""arroz con mariscos"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 56}]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,True,,True,"""avenida brasil 2875 en pueblo libre"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,items,True,,True,"[{""producto"": ""ají de gallina"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 24}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle los pinos 340 en miraflores a espaldas del parque reducto"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,True,0.0,True,92.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,promocion,True,,True,"""jarra_gratis"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion san antonio en caraballo al costado de la losa deportiva"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,True,,True,"""plin"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}]"
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,True,,True,"""avenida arequipa 4120 oficina 501 miraflores"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L2_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,anios_experiencia,True,0.0,True,4.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,ultimo_puesto,False,,True,"""analista de autosenio"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,tecnologias,False,,True,"[""SQL"", ""pandas"", ""Power BI"", ""Excel""]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 6500, ""moneda"": ""PEN""}"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,disponibilidad,True,,True,"""2026-11-13"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E01,entrevista,nivel_ingles,True,,True,"""intermedio"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,anios_experiencia,False,0.5,True,6.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,ultimo_puesto,True,,True,"""desarrollador backend"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,tecnologias,False,,True,"[""SQL"", ""Java"", ""Docker"", ""Kubernetes"", ""Go""]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 7200, ""moneda"": ""PEN""}"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,disponibilidad,True,,True,"""inmediata"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E02,entrevista,nivel_ingles,True,,True,"""avanzado"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,anios_experiencia,True,0.0,True,3.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,ultimo_puesto,True,,True,"""lider de diseno"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,tecnologias,False,,True,"[""Figma"", ""Miro"", ""HTML"", ""CSS""]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,pretension_salarial,True,0.0,True,"{""monto"": 1500, ""moneda"": ""USD""}"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,disponibilidad,True,,True,"""2026-12-01"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E03,entrevista,nivel_ingles,True,,True,"""básico"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,anios_experiencia,True,0.0,True,8.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,ultimo_puesto,True,,True,"""jefe de ingenieria de datos"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,tecnologias,False,,True,"[""Databricks"", ""S3""]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,pretension_salarial,False,1500.0,True,"{""monto"": 8000, ""moneda"": ""PEN""}"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,disponibilidad,False,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E04,entrevista,nivel_ingles,False,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,anios_experiencia,True,0.0,True,1.5
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,ultimo_puesto,False,,True,"""asistente de la inteligencia comercial"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,tecnologias,False,,True,"[""SQL"", ""Power BI"", ""Excel"", ""Tableau""]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,pretension_salarial,False,600.0,True,"{""monto"": 3200, ""moneda"": ""PEN""}"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,disponibilidad,True,,True,"""2026-11-12"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,E05,entrevista,nivel_ingles,True,,True,"""básico"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,items,True,,True,"[{""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 32}, {""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,promocion,True,,True,"""descuento_100"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,direccion_entrega,False,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,metodo_pago,False,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L01,pedido,total_dicho,True,0.0,True,112.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,items,False,,True,"[{""producto"": ""ceviche clásico"", ""tamano"": ""fuente"", ""cantidad"": 1, ""precio_unitario"": 52}, {""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 2, ""precio_unitario"": 29}]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,promocion,True,,True,"""descuento_100"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,direccion_entrega,False,,True,"""avenida brasil 2875 pueblo libre es 1 casa con puerta negra hay que tocar el timbre del rio"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,metodo_pago,True,,True,"""tarjeta"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L02,pedido,total_dicho,True,0.0,True,114.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,items,False,,True,"[{""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 2, ""precio_unitario"": 12}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 3, ""precio_unitario"": 6}]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,promocion,True,,True,"""suspiro_2x1"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,direccion_entrega,True,,True,"""calle en los pinos 340 milaflores"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,metodo_pago,True,,True,"""efectivo"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L03,pedido,total_dicho,False,2.0,True,90.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,items,False,,True,"[{""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""lomo saltado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 32}]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,promocion,False,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,direccion_entrega,True,,True,"""manzana f lote 12 urbanizacion de san antonio caraballo"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,metodo_pago,False,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L04,pedido,total_dicho,True,0.0,True,152.0
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,items,False,,True,"[{""producto"": ""chicharrón de pescado"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 29}, {""producto"": ""ceviche clásico"", ""tamano"": ""personal"", ""cantidad"": 1, ""precio_unitario"": 28}, {""producto"": ""suspiro limeño"", ""tamano"": ""unidad"", ""cantidad"": 1, ""precio_unitario"": 12}]"
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,promocion,True,,False,null
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,direccion_entrega,True,,True,"""avenida arequipa 4120 oficina 501 miraflores"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,metodo_pago,True,,True,"""tarjeta"""
+L3_large-v3-turbo_float16_cuda_glosario-ninguno,reglas,L05,pedido,total_dicho,True,0.0,True,79.0
