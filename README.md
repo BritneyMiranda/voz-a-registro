@@ -18,7 +18,8 @@ Este proyecto entrega eso y además dice qué campos no se pueden creer.
 - **Todo lo que se dice en las grabaciones es inventado**: personas, empresas, sueldos, direcciones, teléfonos y
   pedidos. No hay datos personales reales de nadie.
 - **Todas las personas que aparecen en las grabaciones aceptaron participar y que su voz se use en este proyecto.**
-  La autora aparece en los 10 clips; la otra voz es de una compañera del curso, que pidió no ser nombrada. _(confirmar)_
+  La autora aparece en los 10 clips; la otra voz es de una persona del mismo curso, que aceptó participar (la autora
+  también participó en sus grabaciones, con un guion distinto). No se la nombra aquí.
 
 ## El corpus
 
