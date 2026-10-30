@@ -14,8 +14,19 @@ celdas = [
              "%cd /content/voz-a-registro\n!pip install -q -r requirements-colab.txt"),
     ("code", "from google.colab import drive\ndrive.mount('/content/drive')\n"
              "!mkdir -p audio && cp /content/drive/MyDrive/voz_a_registro_audio/*.mp3 audio/ && ls audio"),
+    ("md", "ctranslate2 (el motor de faster-whisper) busca cuBLAS y cuDNN 9 por su cuenta: si no los encuentra, "
+           "la corrida en GPU muere sin transcribir nada. Se instalan aquí y se agregan a `LD_LIBRARY_PATH`."),
+    ("code", "!pip install -q nvidia-cublas-cu12 'nvidia-cudnn-cu12==9.*'\n"
+             "import os, nvidia.cublas.lib, nvidia.cudnn.lib\n"
+             "libs = [os.path.dirname(nvidia.cublas.lib.__file__), os.path.dirname(nvidia.cudnn.lib.__file__)]\n"
+             "os.environ['LD_LIBRARY_PATH'] = ':'.join(libs + [os.environ.get('LD_LIBRARY_PATH', '')])\n"
+             "print(os.environ['LD_LIBRARY_PATH'])"),
     ("code", "import ctranslate2, torch\nprint('GPUs que ve ctranslate2:', ctranslate2.get_cuda_device_count())\n"
-             "print('torch.cuda:', torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else '')"),
+             "print('torch.cuda:', torch.cuda.is_available(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else '')\n"
+             "# prueba corta en GPU: si falla, el error aparece aquí y no a mitad de la noche\n"
+             "!python -c \"from faster_whisper import WhisperModel; import numpy as np; "
+             "m = WhisperModel('Systran/faster-whisper-small', device='cuda', compute_type='float16'); "
+             "s, i = m.transcribe(np.zeros(16000, np.float32)); list(s); print('GPU OK:', m.model.device)\""),
     ("md", "## 3. Escalera de degradación (L1 WhatsApp, L2 teléfono, L3 ruido)"),
     ("code", "!python scripts/degradar.py"),
     ("md", "## 4. Transcripciones\nCada corrida es un proceso nuevo, así la VRAM medida incluye cargar el modelo."),
@@ -32,11 +43,18 @@ celdas = [
              "    # CPU contra GPU en la MISMA máquina, sobre dos clips (en CPU es ~40 veces más lento)\n"
              "    '--modelo large-v3-turbo --precision int8 --dispositivo cpu --clips E01 L01',\n"
              "]\n"
-             "for c in corridas:\n    print('>>>', c)\n    !python scripts/transcribir_corpus.py {c}"),
+             "import subprocess\n"
+             "with open('cache/registro_colab.log', 'w') as log:\n"
+             "    for c in corridas:\n"
+             "        r = subprocess.run(f'python scripts/transcribir_corpus.py {c}', shell=True, capture_output=True, text=True)\n"
+             "        log.write(f'>>> {c}\\n{r.stdout}\\n{r.stderr}\\n')\n"
+             "        print('>>>', c, '| OK' if r.returncode == 0 else '| FALLÓ')\n"
+             "        print(r.stdout[-600:] if r.returncode == 0 else r.stderr[-1500:])"),
     ("md", "## 5. Extracción con Qwen (modelo de lenguaje local, en la GPU)"),
     ("code", "!python scripts/extraer_llm.py --corridas "
              "L0_large-v3-turbo_float16_cuda_glosario-ninguno L1_large-v3-turbo_float16_cuda_glosario-ninguno "
-             "L2_large-v3-turbo_float16_cuda_glosario-ninguno L3_large-v3-turbo_float16_cuda_glosario-ninguno"),
+             "L2_large-v3-turbo_float16_cuda_glosario-ninguno L3_large-v3-turbo_float16_cuda_glosario-ninguno "
+             "2>&1 | tee -a cache/registro_colab.log"),
     ("md", "## 6. Métricas y descarga\nDescarga `cache_colab.zip` y pásalo a la carpeta del proyecto."),
     ("code", "!nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv > cache/gpu_colab.csv\n"
              "!python scripts/evaluar.py\n!zip -qr cache_colab.zip cache resultados\n"
